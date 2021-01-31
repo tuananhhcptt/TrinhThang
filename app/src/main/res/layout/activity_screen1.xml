@@ -5,31 +5,91 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DB313E"
-    android:gravity="center"
     android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".Screen1">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
-        <EditText
-            android:gravity="center_horizontal"
-            android:textColor="@android:color/white"
-            android:textColorHint="@android:color/white"
-            android:id="@+id/input_email"
-            android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_clear" />
+
+        <Space
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="Email" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <Button
-        android:id="@+id/login"
-        android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/ic_home" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="xxx"/>
+        android:layout_gravity="center_horizontal"
+        android:text="Nhập số điệnthoại"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginBottom="8dp">-->
 
+    <!--        <EditText-->
+    <!--            android:id="@+id/input_email"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="center_horizontal"-->
+    <!--            android:hint="Email"-->
+    <!--            android:inputType="textEmailAddress"-->
+    <!--            android:textColor="@android:color/white"-->
+    <!--            android:textColorHint="@android:color/white" />-->
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:gravity="center_horizontal"
+        android:inputType="numberPassword"
+        android:textColor="@android:color/white"
+        android:textSize="25dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_shape"
+        android:minWidth="150dp"
+        android:text="Tiếp tục"
+        android:textAllCaps="false" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 </LinearLayout>
