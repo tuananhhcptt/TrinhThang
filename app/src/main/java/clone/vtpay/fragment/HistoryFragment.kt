@@ -4,20 +4,15 @@ import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.AdapterView.OnItemClickListener
-import android.widget.ListView
+import android.view.*
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import clone.vtpay.R
 import clone.vtpay.activity.DealDetailActivity
 import clone.vtpay.adapter.HistoryAdapter
-import clone.vtpay.adapter.ItemArrayAdapter
 import clone.vtpay.repository.HistoryItem
+import kotlinx.android.synthetic.main.fragment_history.*
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
@@ -27,6 +22,7 @@ import java.nio.charset.Charset
 class HistoryFragment : Fragment() {
     val TAG = "HistoryFragment"
     lateinit var itemArrayAdapter: HistoryAdapter
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -49,10 +45,16 @@ class HistoryFragment : Fragment() {
         return view
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         LoadTextAsync().execute()
+        toolbar.inflateMenu(R.menu.hitory_menu);
+        toolbar.setOnMenuItemClickListener {
+            false
+        }
     }
+
 
     inner class LoadTextAsync : AsyncTask<Void, Void, List<HistoryItem>>() {
         override fun doInBackground(vararg params: Void?): List<HistoryItem> {
