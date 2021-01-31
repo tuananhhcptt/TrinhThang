@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/padding_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.daimajia.swipe.SwipeLayout android:id="@+id/swipe" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/view_swipe_from_right" android:layout_width="wrap_content" android:layout_height="84dp">
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_delete" android:background="@color/color_ff645c" android:layout_width="@dimen/_75sdp" android:layout_height="match_parent" android:text="@string/delete" android:drawableTop="@drawable/ic_delete_32_white" android:layout_weight="1"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/lnLinkAccount" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_logo" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:src="@drawable/ic_logo_vtpay_red_new"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_weight="1" android:layout_toRightOf="@+id/iv_logo" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_header" android:textColor="@color/text_color_new" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_sub_title" android:visibility="gone" android:layout_width="117dp" android:layout_height="28dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/ic_icon" android:padding="@dimen/_10sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_margin="@dimen/margin_large" app:srcCompat="@drawable/ic_next_svg"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

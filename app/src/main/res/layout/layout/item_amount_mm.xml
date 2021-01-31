@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/rlItem" android:background="@drawable/bg_amount_mm" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp" android:layout_marginStart="@dimen/dimen_8dp" android:layout_marginEnd="@dimen/dimen_8dp">
+    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_amount_mm" android:gravity="center" android:id="@+id/tvAmount" android:layout_width="match_parent" android:layout_height="@dimen/dimen_40dp" android:singleLine="true" android:layout_centerInParent="true" android:fontFamily="@font/sf_pro_display_regular"/>
+</RelativeLayout>

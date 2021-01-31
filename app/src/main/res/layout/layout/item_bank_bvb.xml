@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/_16sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_icon" android:layout_width="@dimen/_100sdp" android:layout_height="28dp" android:src="0x7f0806f5" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/img_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/new_text_color" android:id="@+id/tv_bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BaoViet Bank"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="#aaaaaa" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngân hàng Bảo Việt"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_next" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="0x7f08058c" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:paddingTop="@dimen/layout_margin_small" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/image_arrow_right" android:layout_width="@dimen/layout_margin" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_width="@dimen/popup_arrow_size" android:layout_height="@dimen/popup_arrow_size" android:src="0x7f080668"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_icon" android:layout_width="@dimen/icon_size_medium" android:layout_height="@dimen/icon_size_medium" android:layout_marginLeft="@dimen/popup_arrow_size" android:layout_marginTop="@dimen/textview_spacing" android:layout_marginRight="@dimen/popup_arrow_size" android:src="0x7f08085b" android:layout_alignParentTop="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/image_arrow_right" android:layout_toRightOf="@+id/iv_icon" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="top" android:layout_gravity="top" android:id="@+id/tv_acc" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sổ tiết kiệm"/>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textview_spacing">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="top" android:id="@+id/tv_sub" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="kỳ hạn" android:layout_weight="54" android:lineSpacingExtra="@dimen/textview_spacing"/>
+            <View android:background="#cccccc" android:layout_width="1dp" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/btn_debit" android:paddingLeft="@dimen/layout_margin_small" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="46">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/md_grey_600" android:id="@+id/tv_debit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số dư:"/>
+                <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10000"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

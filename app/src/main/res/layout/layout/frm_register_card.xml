@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_register_vtt_card" android:padding="@dimen/layout_margin_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40dp" android:layout_height="26dp" android:layout_marginRight="@dimen/layout_margin_normal" android:src="@drawable/ic_card_vtp"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_black_1000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thẻ ViettelPay" android:layout_weight="1"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f080591" android:tint="@color/md_black_1000"/>
+    </LinearLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="2dp"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_register_mastercard" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40dp" android:layout_height="26dp" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="@drawable/ic_mastercard_new"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_black_1000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/activity_create_mastercard" android:layout_weight="1"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f080591" android:tint="@color/md_black_1000"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="@dimen/_3sdp" app:cardPreventCornerOverlap="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:text="Số tiền cần thanh toán"/>
+            <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#ee0033" android:id="@+id/bill_code" android:background="@drawable/bg_vietmoney_rounded_corners" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_3sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_5sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

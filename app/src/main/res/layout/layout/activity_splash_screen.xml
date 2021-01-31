@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <Button android:textSize="@dimen/text_size_16sp" android:textColor="@color/colorPrimary" android:id="@+id/tvBack" android:background="@null" android:padding="@dimen/_15sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="@string/back" android:layout_centerVertical="true" android:textAllCaps="false"/>
+        <Button android:textSize="@dimen/text_size_16sp" android:textColor="@color/colorPrimary" android:layout_gravity="right" android:id="@+id/tvCancel" android:background="@null" android:padding="@dimen/_15sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="@string/game_skip" android:layout_centerVertical="true" android:textAllCaps="false"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/pager_splash_screen" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+        <p474me.relex.circleindicator.CircleIndicator android:id="@+id/indicator" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_40sdp" app:ci_animator="@anim/scale_with_alpha" app:ci_drawable="@drawable/indicator_selected" app:ci_drawable_unselected="@drawable/indicator_normal" app:ci_height="@dimen/_7sdp" app:ci_width="@dimen/_7sdp"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginBottom="@dimen/_10sdp" android:weightSum="1">
+        <Button android:textSize="@dimen/text_size_18sp" android:id="@+id/tvNext" android:layout_width="@dimen/_200sdp" android:layout_height="wrap_content" android:text="@string/cont" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" style="@style/button_gradient"/>
+    </RelativeLayout>
+</LinearLayout>

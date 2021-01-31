@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lnl_lst_packet" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet1" android:background="@drawable/drawble_boder_white" android:paddingLeft="1dp" android:paddingTop="8dp" android:paddingRight="1dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cơ bản"/>
+            <TextView android:textSize="10sp" android:textColor="@color/color_red_EE0033" android:id="@+id/value_packet1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quyền lợi 100 triệu đồng"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet2" android:background="@drawable/drawble_boder_gray" android:paddingLeft="1dp" android:paddingTop="8dp" android:paddingRight="1dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiêu chuẩn"/>
+            <TextView android:textSize="10sp" android:textColor="@color/colorBlackTrans50" android:id="@+id/value_packet2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quyền lợi 250 triệu đồng"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet3" android:background="@drawable/drawble_boder_gray" android:paddingLeft="1dp" android:paddingTop="8dp" android:paddingRight="1dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="2dp" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nâng cao"/>
+            <TextView android:textSize="10sp" android:textColor="@color/colorBlackTrans50" android:id="@+id/value_packet3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quyền lợi 500 triệu đồng"/>
+        </LinearLayout>
+    </LinearLayout>
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

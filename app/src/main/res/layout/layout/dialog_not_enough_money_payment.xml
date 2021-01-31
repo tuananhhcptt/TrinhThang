@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:onClick="onClick">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/bg_white_radius_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="17dp" android:textColor="@color/default_color_gradient" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_enough_money"/>
+        <TextView android:textSize="17dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tvRecharge" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nạp tiền"/>
+        <TextView android:textSize="17dp" android:textColor="#d68530" android:gravity="center" android:id="@+id/tvOtherMoney" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hủy"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@android:color/white" android:paddingLeft="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="20sp" android:textStyle="bold" android:textColor="#263d60" android:id="@+id/edit_thread_billsharing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:hint="Tên cuộc chia tiền" android:maxLength="50" android:imeOptions="actionNext" app:met_clearButton="true" app:met_floatingLabel="2"/>
+    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="20sp" android:textStyle="bold" android:textColor="#263d60" android:id="@+id/edit_reason_billsharing" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:hint="Nội dung chia tiền" android:maxLength="50" android:imeOptions="actionNext" app:met_clearButton="true" app:met_floatingLabel="2"/>
+    <TextView android:textSize="14sp" android:textColor="#7e7f7f" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="ẢNH HÓA ĐƠN"/>
+    <LinearLayout android:layout_gravity="bottom" android:id="@+id/ll_picked_photos" android:visibility="visible" android:layout_width="match_parent" android:layout_height="75dp" android:layout_margin="12dp" android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/rv_selected_images" android:layout_width="wrap_content" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <ImageView android:id="@+id/iv_add" android:layout_width="65dp" android:layout_height="65dp" android:layout_margin="6dp" app:srcCompat="@drawable/ic_add_photo"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:id="@+id/btn_create_request_second" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+    </LinearLayout>
+</LinearLayout>

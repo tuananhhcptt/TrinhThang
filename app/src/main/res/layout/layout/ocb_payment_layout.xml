@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lnSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_18sdp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgBanner" android:layout_width="123dp" android:layout_height="76dp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_18sdp" android:layout_marginRight="@dimen/_18sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#b6b6b6" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nhà cung cấp dịch vụ" android:layout_weight="0.3"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#263d60" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ngân hàng OCB" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp">
+            <RadioGroup android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:textSize="13sp" android:textColor="@color/dark_grey_blue" android:id="@+id/rbCardNum" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="CMND/Thẻ căn cước" android:layout_weight="1"/>
+                <RadioButton android:textSize="13sp" android:textColor="@color/dark_grey_blue" android:id="@+id/rbContractNum" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số hợp đồng" android:layout_weight="1.5"/>
+            </RadioGroup>
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="16sp" android:textColor="@color/text_color_new" android:textColorHint="@color/md_grey_500" android:id="@+id/edtSearchInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:lines="1" android:maxLength="25" android:digits="abcdefghijklmnopqrstuvwxyzQWERTZUIOPASDFGHJKLYXCVBNM0123456789" android:layout_centerVertical="true" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="1" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_email"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@+id/btnCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="16dp" android:foreground="?attr/selectableItemBackground" android:text="Kiểm tra" style="@style/button_send_style"/>
+    <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp"/>
+</LinearLayout>

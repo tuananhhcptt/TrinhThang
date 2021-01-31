@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_5sdp" android:layout_margin="10dp" android:src="@drawable/line_control"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_finger" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+            <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bộ lọc"/>
+        </LinearLayout>
+        <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/ln_1" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Giờ khởi hành sớm nhất" android:layout_weight="1.5"/>
+                <ImageView android:id="@+id/iv_1" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f08048c" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:id="@+id/ln_2" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Giờ khởi hành muộn nhất" android:layout_weight="1.5"/>
+                <ImageView android:id="@+id/iv_2" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f08048c" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:id="@+id/ln_3" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian chạy nhanh nhất" android:layout_weight="1.5"/>
+                <ImageView android:id="@+id/iv_3" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f08048c" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:id="@+id/ln_4" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_gravity="center" android:id="@+id/seat_name" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian chạy lâu nhất" android:layout_weight="1.5"/>
+                <ImageView android:id="@+id/iv_4" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f08048c" android:layout_weight="0.5"/>
+            </LinearLayout>
+            <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

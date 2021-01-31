@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/md_grey_100" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/lo_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:orientation="vertical" android:id="@+id/toolbar" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_close_white_vector" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0x7f07030f">
+                    <ImageView android:id="@+id/iv_bank1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080537" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:text="@string/cre_step_1" android:layout_toLeftOf="@+id/iv_bank1"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0x7f07030f">
+                    <ImageView android:id="@+id/iv_bank2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:src="0x7f080538" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin_small" android:text="@string/cre_step_2" android:layout_toRightOf="@+id/iv_bank2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0x7f07030f">
+                    <ImageView android:id="@+id/iv_step3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080537" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:text="@string/cre_step_3" android:layout_toLeftOf="@+id/iv_step3"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/swipe" android:tag="layout/view_vtp_user_item_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include android:id="@+id/view_swipe_from_right" layout="@layout/view_swipe_to_delete"/>
+    <RelativeLayout android:id="@+id/rl_front" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/_80sdp">
+        <FrameLayout android:id="@+id/fl_avatar" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_margin="@dimen/_15sdp" android:layout_centerVertical="true">
+            <com.bplus.vtpay.view.CircleImageView android:id="@+id/imgAvatar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_avatar_default_40"/>
+            <TextView android:textSize="@dimen/text_size_22sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/tv_short_name_contact" android:background="@drawable/circle_border_bg" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/TxtProDisplayMedium"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/fl_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_222" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="097-647-1300" style="@style/TxtProDisplayMedium"/>
+            <TextView android:textSize="@dimen/text_size_13sp" android:textColor="@color/color_7a7a7a" android:id="@+id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TxtProDisplayMedium"/>
+        </LinearLayout>
+        <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>

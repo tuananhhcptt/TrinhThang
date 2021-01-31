@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/mainView" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/logoVTP" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp" app:srcCompat="@drawable/ic_logo_red_new"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lnMoneySource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_50sdp" android:layout_toRightOf="@+id/logoVTP" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvMoneySourceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tài khoản ViettelPay"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_007ddd" android:id="@+id/tvMoneySourceAmount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <vn.viettelpay.views.CheckBox android:id="@+id/checkVtp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

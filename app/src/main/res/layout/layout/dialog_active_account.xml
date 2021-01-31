@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin">
+            <Spinner android:id="@+id/spinner_list_bank" android:layout_width="match_parent" android:layout_height="0dp" android:popupBackground="0x7f080231" android:dropDownWidth="match_parent" android:spinnerMode="dropdown"/>
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/layout_list_bank" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_list_bank" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_provider" app:met_bottomTextSize="@dimen/text_size_sub" style="@style/edit_text_style"/>
+                <ImageView android:layout_width="@dimen/transfer_arow_size" android:layout_height="@dimen/transfer_arow_size" android:src="0x7f080667" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_input_cur_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:hint="@string/hint_pin" android:fontFamily="sans-serif" app:met_bottomTextSize="@dimen/text_size_sub" style="@style/edit_text_pin_style"/>
+        <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_input_new_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:hint="@string/hint_pin_new" android:fontFamily="sans-serif" app:met_bottomTextSize="@dimen/text_size_sub" style="@style/edit_text_pin_style"/>
+        <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_input_confirm_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:hint="@string/hint_re_pin_new" android:fontFamily="sans-serif" app:met_bottomTextSize="@dimen/text_size_sub" style="@style/edit_text_pin_style"/>
+    </LinearLayout>
+</ScrollView>

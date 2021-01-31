@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_big" android:src="0x7f0808a9"/>
+        <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/new_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_big" android:text="Tài khoản tiết kiệm" android:fontFamily="@font/sf_pro_text_regular"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="80dp" android:layout_marginTop="23dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <View android:layout_gravity="center_vertical" android:layout_width="6dp" android:layout_height="6dp" style="@style/dot_oval"/>
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="#263b60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="An toàn, nhanh chóng"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <View android:layout_gravity="center_vertical" android:layout_width="6dp" android:layout_height="6dp" style="@style/dot_oval"/>
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="#263b60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Không cần đến quầy giao dịch"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <View android:layout_gravity="center_vertical" android:layout_width="6dp" android:layout_height="6dp" style="@style/dot_oval"/>
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="#263b60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Lãi suất hấp dẫn từ các ngân hàng"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/create_account" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height" android:layout_marginLeft="@dimen/layout_margin_big" android:layout_marginTop="30dp" android:layout_marginRight="@dimen/layout_margin_big" android:text="Bắt đầu" android:fontFamily="@font/sf_pro_text_regular" style="@style/button_gradient"/>
+    </LinearLayout>
+</LinearLayout>

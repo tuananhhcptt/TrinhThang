@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_confirm">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:layout_marginStart="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HỢP ĐỒNG ĐANG NỢ CƯỚC" android:letterSpacing="-0.04"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layoutMain" android:background="@drawable/background_white_rounded_10sdp" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:id="@+id/tvCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã khách hàng: " android:letterSpacing="-0.04"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_4a4a4a" android:id="@+id/nameCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:lineSpacingExtra="8sp" android:letterSpacing="-0.04"/>
+                <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/_10sdp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_time_limit_payment" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tổng nợ" android:letterSpacing="-0.04"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/color_ff001f" android:gravity="right" android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/start_amount"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layoutOPT" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="TRẢ NỢ CƯỚC" android:letterSpacing="-0.04"/>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_rounded_10sdp" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <RadioGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rb_group" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/_5sdp">
+                        <RadioButton android:textSize="@dimen/_10sdp" android:gravity="center_vertical" android:id="@+id/rb_pay_all" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Toàn bộ" android:layout_weight="1"/>
+                        <RadioButton android:textSize="@dimen/_10sdp" android:gravity="center_vertical" android:id="@+id/rb_pay_other" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số khác" android:layout_weight="1"/>
+                    </RadioGroup>
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_10sdp" android:hint="@string/hint_amount" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Tiếp tục" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+</RelativeLayout>

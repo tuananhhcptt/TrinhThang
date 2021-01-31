@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/layout_package" android:background="@drawable/background_white_rounded_shadow_5sdp" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:layout_weight="5">
+    <ImageView android:id="@+id/img_package" android:padding="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="@dimen/_120sdp" android:layout_weight="2"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tình yêu Bạc"/>
+        <TextView android:textSize="@dimen/_18sdp" android:textColor="@color/viettel_color" android:id="@+id/tv_money_pack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="480.000đ"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_9b9b9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nhận được"/>
+        <TextView android:textSize="@dimen/_20sdp" android:textColor="@color/color_d3802e" android:id="@+id/tv_money_receiver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8.000.000đ"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_9b9b9b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="khi kết hôn"/>
+    </LinearLayout>
+</LinearLayout>

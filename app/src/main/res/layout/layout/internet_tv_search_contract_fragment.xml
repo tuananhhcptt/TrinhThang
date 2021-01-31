@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" app:cardCornerRadius="@dimen/_8sdp" app:cardElevation="4dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_18sdp" android:layout_marginRight="@dimen/_18sdp">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ln_logo" android:background="@drawable/circle_border_bg" android:padding="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                            <ImageView android:id="@+id/imgBanner" android:padding="@dimen/_4sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:src="@drawable/logo_internet_tv"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_15sdp" android:layout_toEndOf="@+id/ln_logo">
+                            <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_7a7a7a" android:id="@+id/txt_title_provider" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/don_vi_van_hanh"/>
+                            <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="Viettel"/>
+                        </LinearLayout>
+                        <RelativeLayout android:id="@+id/bg_discount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080182"/>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/colorWhite" android:id="@+id/txt_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_18sdp">
+                        <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thong_tin_thanh_toan_theo" android:lineSpacingExtra="7sp"/>
+                        <TableLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                                    <RadioButton android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:id="@+id/rbTelnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone" android:buttonTint="@color/viettel_color"/>
+                                    <RelativeLayout android:id="@+id/rl_discount_phone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_2sdp" android:layout_toEndOf="@+id/rbTelnumber">
+                                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0801e7"/>
+                                        <TextView android:textSize="@dimen/_6sdp" android:textColor="@color/colorWhite" android:id="@+id/txt_discount_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                                    </RelativeLayout>
+                                </RelativeLayout>
+                                <RadioButton android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:id="@+id/rbCMND" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/so_cmnd" android:layout_weight="1" android:buttonTint="@color/viettel_color"/>
+                            </TableRow>
+                            <TableRow android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <RadioButton android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:id="@+id/rbIdNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/ma_hop_dong" android:layout_weight="1" android:buttonTint="@color/viettel_color"/>
+                                <RadioButton android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:id="@+id/rbAccount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Account" android:layout_weight="1" android:buttonTint="@color/viettel_color"/>
+                            </TableRow>
+                        </TableLayout>
+                        <com.google.android.material.textfield.TextInputLayout android:id="@+id/text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" app:endIconMode="2" app:errorEnabled="true">
+                            <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_18sp" android:textColor="@color/text_color_new" android:textColorHint="@color/md_grey_500" android:id="@+id/edt_search_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:lines="1" android:maxLength="50" android:inputType="textEmailAddress" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="1" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_email"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_7a7a7a" android:id="@+id/tv_note_campain" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp" android:letterSpacing="-0.03"/>
+            <ImageView android:id="@+id/img_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_gravity="bottom" android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:foreground="?attr/selectableItemBackground" android:text="@string/label_continue" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp" style="@style/button_send_style"/>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#19888888" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ImageView android:id="@+id/selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_centerVertical="true" app:srcCompat="@drawable/icon_fpt_unchecked_vector"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:layout_toRightOf="@+id/selector" android:layout_toEndOf="@+id/selector">
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#ee0033" android:id="@+id/package_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_fpt_period_vector"/>
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#b6b6b6" android:id="@+id/package_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_fpt_period_vector"/>
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#b6b6b6" android:id="@+id/package_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/promotion_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_fpt_period_vector"/>
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#b6b6b6" android:id="@+id/package_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_fpt_total_vector"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/package_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:layout_marginStart="@dimen/_4sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

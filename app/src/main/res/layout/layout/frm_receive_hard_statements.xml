@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bplus.vtpay.screen.issuance_statements.PickDateLayout android:id="@+id/lo_pick_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:type="-6"/>
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorRed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal" android:text="@string/label_note_hard_statement"/>
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/md_grey_600" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal" android:text="Quý khách vui lòng nhập địa chỉ nhận sao kê"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="2dp" app:cardBackgroundColor="@color/colorWhite">
+                <com.bplus.vtpay.screen.issuance_statements.PickAddressLayout android:id="@+id/lo_pick_address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" app:cardBackgroundColor="@color/colorWhite" app:cardElevation="2dp">
+                <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:textColorHint="@color/md_grey_500" android:id="@+id/edt_number_statements" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Số lượng bản sao kê" android:lines="1" android:maxLength="3" android:digits="0987654321" android:inputType="number" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="1" app:met_primaryColor="@color/tokenDark100"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_500" android:id="@+id/tv_fee" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin" android:text="Xác nhận" style="@style/button_gradient"/>
+</LinearLayout>

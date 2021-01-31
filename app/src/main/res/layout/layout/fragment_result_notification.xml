@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:tag="layout/fragment_result_notification_0" android:background="#fff" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:paddingTop="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_16sdp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/lnContentTransaction" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/img_status" android:tag="binding_1" android:layout_width="@dimen/_180sdp" android:layout_height="@dimen/_180sdp" android:layout_marginTop="@dimen/_24sdp" android:layout_marginBottom="@dimen/_16sdp" app:lottie_autoPlay="true" app:lottie_loop="true"/>
+                <TextView android:textSize="@dimen/text_size_22sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/tv_status" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_25sdp"/>
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_show_notification_setup_app" android:tag="binding_3" android:background="@drawable/background_show_notification_setup_app" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp"/>
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:gravity="center_horizontal" android:id="@+id/tv_detail" android:tag="binding_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp"/>
+                <View android:id="@+id/view_above" android:tag="binding_5" android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_20sdp"/>
+                <FrameLayout android:id="@+id/fragment_container_new" android:paddingBottom="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="@dimen/_8sdp" android:paddingEnd="@dimen/_8sdp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_red_EE0033" android:id="@+id/tvShare" android:tag="binding_6" android:padding="@dimen/_8sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardElevation="@dimen/dimen_10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/text_size_18sp" android:gravity="center" android:id="@+id/btnPrimaryButton" android:tag="binding_7" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_marginBottom="@dimen/_16sdp" android:foreground="?attr/selectableItemBackground" style="@style/new_button_send_style"/>
+            <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_red_EE0033" android:gravity="center" android:id="@+id/tvOtherAction" android:tag="binding_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

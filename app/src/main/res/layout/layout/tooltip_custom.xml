@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.github.florent37.shapeofview.shapes.RoundRectView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginRight="@dimen/_20sdp" app:shape_roundRect_topLeftRadius="@dimen/_15sdp" app:shape_roundRect_topRightRadius="@dimen/_15sdp">
+        <ImageView android:id="@+id/img_portrait_ava" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080829" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:background="@drawable/drawable_tooltip_text" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginRight="@dimen/_20sdp" android:text="Toa xe giường nằm có khoang số 3 và 4 là khoang 2 giường đặc biệt rộng rãi, thoải mái, tiện nghi, hiện đại"/>
+</LinearLayout>

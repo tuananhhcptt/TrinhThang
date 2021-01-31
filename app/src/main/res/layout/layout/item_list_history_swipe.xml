@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.daimajia.swipe.SwipeLayout android:id="@+id/swipe" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftEdgeSwipeOffset="0dp" app:rightEdgeSwipeOffset="0dp">
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/view_swipe_from_right" android:layout_width="wrap_content" android:layout_height="@dimen/_75sdp">
+            <TextView android:textSize="@dimen/text_size_11sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_auto_pay" android:background="@color/color_red_EE0033" android:padding="@dimen/_8sdp" android:visibility="gone" android:layout_width="@dimen/_75sdp" android:layout_height="match_parent" android:text="@string/function_type_auto_payment" android:drawableTop="@drawable/ic_settings"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_reuse" android:background="@color/color_007ddd" android:padding="@dimen/_15sdp" android:visibility="gone" android:layout_width="@dimen/_75sdp" android:layout_height="match_parent" android:text="@string/dung_lai" android:drawableTop="@drawable/ic_direct_32_white" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_delete" android:background="@color/color_ff645c" android:padding="@dimen/_15sdp" android:layout_width="@dimen/_75sdp" android:layout_height="match_parent" android:text="@string/delete" android:drawableTop="@drawable/ic_delete_32_white" android:layout_weight="1"/>
+        </LinearLayout>
+        <include layout="@layout/item_list_history_content"/>
+    </com.daimajia.swipe.SwipeLayout>
+    <View android:id="@+id/view_line_item" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginStart="@dimen/_35sdp"/>
+</LinearLayout>

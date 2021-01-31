@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MUA VÉ TÀU"/>
+            <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/totalMoney" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/text_size_sub" android:textColor="#ee0033" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thành công"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp">
+            <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#7d7d7d" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Nguồn tiền" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="end" android:id="@+id/moneySource" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#7d7d7d" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Phí giao dịch" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="end" android:id="@+id/fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#7d7d7d" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Mã giao dịch" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="end" android:id="@+id/transactionNumber" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#7d7d7d" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="end" android:id="@+id/trainDate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@android:color/black" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Danh sách vé điện tử" android:textAllCaps="true"/>
+        <TextView android:textColor="@color/md_grey_700" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vé đi" android:textAllCaps="true"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_inbound" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:spanCount="2"/>
+        <TextView android:id="@+id/tv_back" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vé về" android:textAllCaps="true"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_outbound" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:spanCount="2"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

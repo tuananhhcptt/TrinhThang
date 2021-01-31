@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+        <TextView android:textSize="@dimen/_20sdp" android:textColor="#263d60" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40sdp" android:text="Thông tin gói bảo hiểm"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Tên gói bảo hiểm" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvNamePackage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Phí bảo hiểm" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvFee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Thời gian tham gia" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvDuration" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Ngày bắt đầu hiệu lực" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvStartDate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp">
+        <TextView android:textSize="@dimen/_20sdp" android:textColor="#263d60" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="Thông tin hợp đồng"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Họ tên" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Ngày sinh" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvBirthDay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Số CMND" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvCMND" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_10sdp" android:text="Giới tính" android:layout_weight="1"/>
+            <TextView android:textColor="#263d60" android:id="@+id/tvGender" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:layout_marginBottom="@dimen/layout_margin" android:text="TIẾP TỤC" style="@style/button_gradient"/>
+</LinearLayout>

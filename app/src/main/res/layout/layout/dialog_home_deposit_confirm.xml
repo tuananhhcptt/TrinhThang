@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:gravity="center" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xác nhận thông tin"/>
+            <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_9sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền muốn nạp"/>
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/color_red_F11B53" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp"/>
+                <TextView android:textSize="@dimen/_9sdp" android:textStyle="italic" android:textColor="#aaaaaa" android:id="@+id/amount_in_word" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp"/>
+                <RelativeLayout android:background="@drawable/background_border_rounded_3sdp" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_2sdp">
+                    <View android:id="@+id/divider" android:background="#eeeeee" android:layout_width="1dp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HỦY" android:layout_toLeftOf="@+id/divider" android:layout_centerVertical="true" android:layout_toStartOf="@+id/divider"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_red_F11B53" android:gravity="center" android:id="@+id/confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="XÁC NHẬN" android:layout_toRightOf="@+id/divider" android:layout_centerVertical="true" android:layout_toEndOf="@+id/divider"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="13sp" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:text="THANH TOÁN NỢ CƯỚC" android:layout_marginStart="@dimen/_12sdp"/>
+            <include android:visibility="gone" layout="@layout/input_payment_owe_internet_tv"/>
+            <include layout="@layout/input_info_contract_internettv_layout"/>
+            <include android:id="@+id/lnCĐT" layout="@layout/input_early_payment_internet_tv_layout"/>
+            <Button android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/btn_next" android:background="@drawable/bg_button_green_shadow_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_1sdp" android:foreground="?attr/selectableItemBackground" android:text="Tiếp tục"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

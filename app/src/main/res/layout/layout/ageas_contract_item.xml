@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="11dp" android:elevation="3dp" app:cardCornerRadius="23dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_11sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Số tiền tối thiểu cần thanh toán"/>
+            <TextView android:textSize="@dimen/_24sdp" android:textStyle="bold" android:textColor="#263d60" android:id="@+id/contract_min_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="20.800.000đ"/>
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/viettel_color" android:id="@+id/contract_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã hợp đồng: CTHT24350582" style="@style/contract_code_gray_bg"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

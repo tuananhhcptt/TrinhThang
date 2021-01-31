@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/web_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btnLink"/>
+    <Button android:id="@+id/btnLink" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/_30sdp" android:layout_marginBottom="@dimen/_30sdp" android:text="Đồng ý" android:layout_alignParentBottom="true" style="@style/new_button_send_style"/>
+</RelativeLayout>

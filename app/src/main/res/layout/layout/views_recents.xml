@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:tag="layout/views_recents_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenDark100" android:id="@+id/text_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Danh sách người nhận" android:textAllCaps="true" style="@style/fontBold13"/>
+    <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenCyan100" android:id="@+id/text_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tất cả(20)" android:textAllCaps="true" android:layout_alignParentEnd="true" style="@style/fontMedium14"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recentRecyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing16" android:layout_below="@+id/text_list" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/views_dialog_request_camera_permission_0" android:background="@color/tokenBlack" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/btn_back" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:layout_marginTop="@dimen/tokenSpacing16" android:src="@drawable/views_icon_left_arrow_white" android:layout_marginStart="@dimen/tokenSpacing16"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="@dimen/tokenSizing64" android:layout_height="@dimen/tokenSizing64" android:src="@drawable/views_icon_camera"/>
+            <TextView android:textColor="@color/tokenWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing24" android:text="@string/view_need_to_access_camera" android:singleLine="true" android:layout_marginStart="@dimen/tokenSpacing16" android:layout_marginEnd="@dimen/tokenSpacing16" style="@style/fontBold18"/>
+            <TextView android:textColor="@color/tokenWhite" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing08" android:text="@string/view_click_to_access_camera" android:layout_marginStart="@dimen/tokenSpacing16" android:layout_marginEnd="@dimen/tokenSpacing16" style="@style/fontRegular16"/>
+            <p523vn.viettelpay.views.button.VDSButton android:id="@+id/btn_access_permission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing24" app:btSize="2" app:btText="@string/view_access_camera_permission" app:btType="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

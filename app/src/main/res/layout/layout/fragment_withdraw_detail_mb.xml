@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lo_panel" android:background="@drawable/color_gradient_new" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ln_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_back_vector"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/_28sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_3sdp" android:layout_marginEnd="@dimen/_12sdp">
+                <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xác nhận thông tin cá nhân"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/new_text_color" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_24sdp" android:text="CHI TIẾT GIAO DỊCH" android:lines="2"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:elevation="@dimen/_5sdp" app:cardCornerRadius="@dimen/_5sdp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+                    <RelativeLayout android:id="@+id/lo_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Mã rút tiền" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Tài khoản" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_time_creat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Thời gian tạo mã" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_time_withdraw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="-----------------" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Thời gian rút tiền" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="Chưa rút tiền" android:layout_alignParentRight="true"/>
+                        <com.bplus.vtpay.view.CircleImageView android:layout_gravity="center" android:id="@+id/img_color_status" android:layout_width="@dimen/_5sdp" android:layout_height="@dimen/_5sdp" android:layout_marginTop="@dimen/_6sdp" android:layout_marginRight="@dimen/_3sdp" android:src="@color/topaz" android:layout_toLeftOf="@+id/tv_status"> &gt; 
+                        </com.bplus.vtpay.view.CircleImageView>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Trạng thái" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Số tiền rút" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                        <TextView android:textSize="14sp" android:textColor="@color/text_color_new" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Phí giao dịch" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/rl_total_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="@dimen/_15sdp">
+                        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="Tổng tiền phải trả" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:layout_gravity="bottom" android:id="@+id/btn_cancel_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_7sdp" android:text="Hủy mã rút tiền" style="@style/button_cancel"/>
+                <TextView android:layout_gravity="bottom" android:id="@+id/btn_back_home" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_7sdp" android:text="Quay về trang chủ" style="@style/button_cancel"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

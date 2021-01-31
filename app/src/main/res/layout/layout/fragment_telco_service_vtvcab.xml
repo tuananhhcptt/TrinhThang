@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorWhite" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                <ImageView android:id="@+id/iv_provider" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_40sdp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginStart="@dimen/_15sdp">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/md_grey_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đơn vị phát hành" android:includeFontPadding="false"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:maxLines="2" android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/lo_bill_code" android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_service_vtvcab" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lo_details" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:id="@+id/line_bottom" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_3sdp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+                    <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_debit_sub" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:text="Mã thanh toán"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/button_call_to_action_white_text_color" android:id="@+id/tv_reload" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/_3sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHỌN LẠI" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_900" android:id="@+id/tv_payment_code" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_reload" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_reload"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_amount_sub" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:text="Số tiền" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_name_sub" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:text="Tên" android:layout_toLeftOf="@+id/tv_name_sub" android:layout_toStartOf="@+id/tv_name_sub"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_900" android:id="@+id/tv_name" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_900" android:id="@+id/tv_amount" android:background="?attr/selectableItemBackground" android:paddingTop="@dimen/_2sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_3sdp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lo_select_month_payment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@+id/lo_list_month" android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_weight="2">
+                        <Spinner android:id="@+id/spinner_month" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignBottom="@+id/edt_list_month"/>
+                        <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_list_month" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Số tháng" android:lines="1" android:editable="false" app:met_bottomTextSize="@dimen/_8sdp" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_style"/>
+                        <com.mikepenz.iconics.view.IconicsImageView android:padding="@dimen/_2sdp" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                        <View android:id="@+id/amount_list_click_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/edt_list_month" android:layout_alignBottom="@+id/edt_list_month"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:id="@+id/btn_check_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="@string/next" style="@style/button_gradient"/>
+        <TextView android:id="@+id/btn_vtvcab_payment" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="@string/payment" style="@style/button_gradient"/>
+        <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="@dimen/_5sdp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_7sdp" android:layout_marginRight="@dimen/_15sdp"/>
+        </ScrollView>
+    </LinearLayout>
+</ScrollView>

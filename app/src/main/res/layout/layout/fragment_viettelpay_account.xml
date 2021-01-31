@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="#263d60" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_16sdp" android:text="@string/suggest_confirm"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_border_width" android:paddingTop="@dimen/_14sdp" android:paddingBottom="@dimen/_18sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_16sdp">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/_5sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/md_black_1000" android:id="@+id/tvNumpage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp"/>
+                <LinearLayout android:layout_gravity="center" android:background="@drawable/background_blue_corner" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_30sdp">
+                    <TextView android:textStyle="bold" android:textColor="@color/blue_diamond" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="ĐANG DÙNG"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:text="Không thể chuyển tiền"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:layout_marginRight="@dimen/_15sdp" android:text="Số dư tối đa 5 triệu đồng"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:layout_marginRight="@dimen/_15sdp" android:text="Giới hạn về dịch vụ"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_corner_20dp" android:paddingTop="@dimen/_14sdp" android:paddingBottom="@dimen/_14sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_16sdp">
+            <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/md_black_1000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:text="Nâng cấp lên gói 3"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:id="@+id/tvFreeTransfer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:text="@string/free_transfer_money"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:text="Số dư không giới hạn"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:text="Vay và gửi tiết kiệm"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:layout_marginLeft="@dimen/_20sdp" app:srcCompat="@drawable/ic_check_red"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:text="Miễn phí đăng ký, miễn phí duy trì"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textStyle="normal" android:id="@+id/btnGotoStore" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Quầy giao dịch gần nhất" android:layout_below="@+id/btn_call_support" style="@style/button_gradient"/>
+    </RelativeLayout>
+</RelativeLayout>

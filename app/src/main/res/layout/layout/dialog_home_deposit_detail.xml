@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:padding="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_400" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small"/>
+        <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/new_text_color" android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Số tiền:"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/new_text_color" android:id="@+id/address" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/new_text_color" android:id="@+id/phone_number" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small"/>
+        <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="#7e7f7f" android:id="@+id/detail_amount_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền:"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/new_text_color" android:id="@+id/detail_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="#7e7f7f" android:id="@+id/detail_transfer_fee_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phí giao dịch:"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/new_text_color" android:id="@+id/detail_transfer_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="#7e7f7f" android:id="@+id/detail_charge_fee_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phí thu tiền:"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/new_text_color" android:id="@+id/detail_charge_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_normal">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="#7e7f7f" android:id="@+id/detail_total_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tổng tiền:"/>
+            <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/new_text_color" android:id="@+id/detail_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/margin_small"/>
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="#7e7f7f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Lời nhắn:"/>
+        <TextView android:textColor="@color/text_color_new" android:id="@+id/message" android:background="@drawable/background_message" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginTop="@dimen/margin_small" android:lines="2"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_400" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_normal"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_normal">
+            <TextView android:textColor="@color/color_red_F11B53" android:layout_gravity="center_horizontal" android:id="@+id/edit" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_small" android:text="Chỉnh sửa thông tin" android:layout_weight="1" android:textAllCaps="false" android:layout_marginEnd="@dimen/margin_small" style="@style/button_send_border"/>
+            <TextView android:id="@+id/cancel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:text="Hủy" android:layout_weight="1" android:layout_marginStart="@dimen/margin_small" style="@style/button_gradient"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/close" android:paddingLeft="15dp" android:paddingBottom="15dp" android:layout_width="50dp" android:layout_height="50dp" android:tint="#e4263d60" android:layout_alignParentRight="true" android:paddingStart="15dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_cancel_vector"/>
+</RelativeLayout>

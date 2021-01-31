@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/background" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/background" android:layout_alignTop="@+id/background" android:layout_alignRight="@+id/background" android:layout_alignBottom="@+id/background">
+            <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="300"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="900">
+                <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="550"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1250">
+                    <TextView android:textSize="@dimen/_24sdp" android:textStyle="bold" android:textColor="@color/redDark" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đổi thưởng"/>
+                    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp"/>
+                    </ScrollView>
+                </LinearLayout>
+                <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="350"/>
+            </LinearLayout>
+            <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="360"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="@dimen/_20sdp" android:paddingRight="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btn_continue" android:layout_width="@dimen/_110sdp" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/btn_redeem_reward" android:layout_width="@dimen/_110sdp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp"/>
+    </LinearLayout>
+</LinearLayout>

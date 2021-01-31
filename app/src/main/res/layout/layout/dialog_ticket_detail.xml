@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:orientation="vertical" android:id="@+id/toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_close_black_vector" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:title="Chi tiết vé"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <com.necistudio.vigerpdf.utils.ViewPagerZoomVertical android:id="@+id/viewPagerTicket" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/progressBar" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:layout_centerInParent="true"/>
+        <TextView android:textColor="@android:color/black" android:id="@+id/tv_error" android:padding="24dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Có lỗi xảy ra khi tải thông tin vé. Vui lòng thử lại sau." android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/my_build_section_divider" android:layout_width="match_parent" android:layout_height="@dimen/_15sdp"/>
+        <View android:id="@+id/gap" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="@dimen/_5sdp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/md_grey_600" android:id="@+id/tv_title" android:background="@color/colorWhite" android:paddingLeft="@dimen/layout_margin" android:paddingTop="@dimen/_7sdp" android:paddingRight="@dimen/layout_margin" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/new_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm"/>
+            <ImageView android:padding="@dimen/_3sdp" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="0x7f080591" android:tint="@color/md_black_1000" android:layout_centerInParent="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

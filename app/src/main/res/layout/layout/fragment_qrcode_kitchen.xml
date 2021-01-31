@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/_20sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/iv_status" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_150sdp"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Bếp ăn" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_kitchen_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Nhân viên" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_use_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lo_used_time" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian đã sử dụng" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_used_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/_13sdp" android:textColor="@android:color/white" android:id="@+id/btn_close" android:background="@drawable/bg_button_new_gradient" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_margin="@dimen/_10sdp" android:text="Quay lại" android:textAllCaps="false"/>
+</LinearLayout>

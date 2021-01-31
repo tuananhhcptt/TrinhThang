@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_container" android:paddingTop="@dimen/top_bar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_history" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/empty_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:text="Không có lịch sử giao dịch nào" android:layout_centerInParent="true"/>
+        <View android:id="@+id/v_sd" android:background="0x7f0807b5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

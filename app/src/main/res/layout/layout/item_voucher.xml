@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_3sdp" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_7sdp" app:cardPreventCornerOverlap="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp"/>
+        <RelativeLayout android:id="@+id/data_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/button_action" android:layout_centerVertical="true" android:layout_toStartOf="@+id/button_action">
+                <ImageView android:id="@+id/icon_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_clock_vector"/>
+                <TextView android:textSize="@dimen/_9sdp" android:textColor="#666666" android:id="@+id/from" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_weight="1"/>
+                <ImageView android:id="@+id/icon_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_clock_vector"/>
+                <TextView android:textSize="@dimen/_9sdp" android:textColor="#666666" android:id="@+id/to" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+            <TextView android:id="@+id/button_action" android:layout_width="wrap_content" android:layout_height="@dimen/_30sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/call_to_action_gradient"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

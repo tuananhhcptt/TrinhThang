@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#222222" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_16sdp" android:text="@string/info_register" android:textAllCaps="true"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tv_title" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="@dimen/_3sdp">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_12sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginRight="@dimen/_16sdp">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tài khoản thanh toán" android:layout_weight="1"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" app:srcCompat="@drawable/ic_logo_red_new"/>
+                    <TextView android:textSize="@dimen/_13sdp" android:textColor="#222222" android:id="@+id/tv_money_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ViettelPay" android:layout_marginStart="@dimen/dimen_10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số điện thoại đăng ký" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/_13sdp" android:textColor="#222222" android:gravity="right" android:id="@+id/tv_phone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số tiền nạp" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/_13sdp" android:textColor="#222222" android:gravity="right" android:id="@+id/tv_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            </LinearLayout>
+            <View android:background="#e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_12sdp"/>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp">
+                <TextView android:textSize="@dimen/_13sdp" android:textColor="#4e4e4e" android:layout_gravity="center_vertical" android:id="@+id/tv_rule" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button android:textSize="@dimen/_14sdp" android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_16sdp" android:text="Xác nhận" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/button_gradient"/>
+</RelativeLayout>

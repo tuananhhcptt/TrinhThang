@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lo_logo" android:padding="@dimen/_7sdp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_logo" android:background="@drawable/circle_border_green_bg" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" android:scaleType="centerInside" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toRightOf="@+id/lo_logo" android:layout_alignBottom="@+id/lo_logo">
+        <LinearLayout android:gravity="center_vertical" android:paddingLeft="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/text_color_new" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="@color/md_grey_500" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

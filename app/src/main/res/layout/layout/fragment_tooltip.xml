@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewParent" android:tag="layout/fragment_tooltip_0" android:background="#66000000" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/viewDialog" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imgArrow" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_8sdp" android:src="@drawable/white_arrow" android:scaleType="fitXY"/>
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:background="@drawable/bg_white_radius_20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp">
+            <TextView android:textSize="16sp" android:textColor="@color/color_222222" android:layout_gravity="right" android:id="@+id/tvContent" android:paddingLeft="@dimen/_12sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_16sdp" android:paddingBottom="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/tool_tip_2" android:fontFamily="@font/sf_pro_display_medium"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:id="@+id/tvCancel" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_12sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bỏ qua"/>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_gravity="right" android:id="@+id/tvContinue" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:paddingBottom="@dimen/_12sdp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cont" android:textAllCaps="true"/>
+            </FrameLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/imgArrowDown" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_8sdp" android:layout_marginTop="@dimen/_minus2sdp" android:src="@drawable/white_arrow" android:scaleType="fitXY" android:rotation="180"/>
+    </LinearLayout>
+</FrameLayout>

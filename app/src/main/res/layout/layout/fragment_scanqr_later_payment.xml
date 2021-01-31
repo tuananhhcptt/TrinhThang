@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnCustomerName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp">
+            <TextView android:textColor="@color/colorBlackTrans85" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tên khách hàng" android:layout_weight="1.5"/>
+            <TextView android:gravity="right" android:id="@+id/tvCustomerName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnContractNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp">
+            <TextView android:textColor="@color/colorBlackTrans85" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số hợp đồng" android:layout_weight="1.5"/>
+            <TextView android:gravity="right" android:id="@+id/tvContractNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnIsdn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp">
+            <TextView android:textColor="@color/colorBlackTrans85" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số điện thoại" android:layout_weight="1.5"/>
+            <TextView android:gravity="right" android:id="@+id/tvIsdn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lnDiscountAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp">
+            <TextView android:textColor="@color/colorBlackTrans85" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nợ cước" android:layout_weight="1.5"/>
+            <TextView android:gravity="right" android:id="@+id/tvDiscountAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_10sdp">
+            <TextView android:textColor="@color/colorBlackTrans85" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số tiền thanh toán" android:layout_weight="1.5"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:gravity="right" android:id="@+id/edtMoneyPay" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Số tiền(đ)" android:inputType="number" app:met_bottomTextSize="@dimen/text_size_main_new" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@+id/check" android:layout_width="@dimen/_200sdp" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+</LinearLayout>

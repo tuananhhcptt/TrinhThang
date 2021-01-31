@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/color_gradient_new" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:weightSum="1">
+        <ImageView android:id="@+id/button_back" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_40sdp" android:layout_height="match_parent" app:srcCompat="@drawable/icon_back_vector"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_40sdp" android:layout_marginRight="@dimen/_40sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/web_view" android:paddingBottom="@dimen/_50sdp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TextView android:layout_gravity="bottom" android:id="@+id/button_action" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp" style="@style/button_gradient"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/ln_loading" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

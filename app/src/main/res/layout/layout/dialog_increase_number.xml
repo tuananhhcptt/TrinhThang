@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardCornerRadius="10dp" app:cardPreventCornerOverlap="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+            <TextView android:textSize="24sp" android:textStyle="bold" android:textColor="#ee0033" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số lượng gói khám"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_decrease" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_decrease_grey_vector"/>
+                <EditText android:textSize="24sp" android:textColor="#36364b" android:id="@+id/edt_number" android:background="@null" android:padding="32dp" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:cursorVisible="false"/>
+                <ImageView android:id="@+id/iv_increase" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_increase_vector"/>
+            </LinearLayout>
+            <Button android:textSize="@dimen/text_size_small" android:textColor="#ee0033" android:id="@+id/btn_confirm" android:background="@drawable/bg_gray_new" android:paddingTop="@dimen/padding_large" android:paddingBottom="@dimen/padding_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginRight="32dp" android:text="Xác Nhận"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

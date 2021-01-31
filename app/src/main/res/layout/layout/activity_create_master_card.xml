@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panel" android:paddingTop="@dimen/statusbar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <ScrollView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/card_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_normal">
+                <ImageView android:id="@+id/card" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="10" android:layout_alignTop="@+id/card" android:layout_alignBottom="@+id/card">
+                    <View android:id="@+id/lo_number_card" android:layout_width="match_parent" android:layout_height="0dp"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="5.5">
+                        <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="20sp" android:textColor="@color/colorWhite" android:gravity="bottom" android:id="@+id/card_num_1" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_label_hidden_card_number" android:maxLines="1" android:layout_weight="2" app:autoSizeMaxTextSize="20dp"/>
+                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="20sp" android:textColor="@color/colorWhite" android:gravity="bottom" android:id="@+id/card_num_2" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_label_hidden_card_number" android:maxLines="1" android:layout_weight="2" app:autoSizeMaxTextSize="20dp"/>
+                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="20sp" android:textColor="@color/colorWhite" android:gravity="bottom" android:id="@+id/card_num_3" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_label_hidden_card_number" android:maxLines="1" android:layout_weight="2" app:autoSizeMaxTextSize="20dp"/>
+                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="20sp" android:textColor="@color/colorWhite" android:gravity="bottom" android:id="@+id/card_num_4" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/txt_label_hidden_card_number" android:maxLines="1" android:layout_weight="2" app:autoSizeMaxTextSize="20dp"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3.5">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3.5">
+                            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="2">
+                                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="5.5">
+                                    <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="9dp" android:textColor="@color/colorWhiteTrans50" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tên chủ thẻ" android:maxLines="1" android:textAllCaps="true"/>
+                                    <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="16sp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:id="@+id/card_name" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:textAllCaps="true" app:autoSizeMaxTextSize="16dp"/>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_weight="2">
+                                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="9dp" android:textColor="@color/colorWhiteTrans50" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hết hạn" android:maxLines="1" android:textAllCaps="true"/>
+                                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                            <ImageView android:id="@+id/iv_card_date_none" android:visibility="visible" android:layout_width="30dp" android:layout_height="wrap_content" android:src="@drawable/ic_none_date_card" android:scaleType="fitCenter"/>
+                                            <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="16sp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:id="@+id/card_date" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:textAllCaps="true" app:autoSizeMaxTextSize="16dp"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                                <LinearLayout android:orientation="vertical" android:id="@+id/lo_cvv" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                    <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="9dp" android:textColor="@color/colorWhiteTrans50" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CVV" android:maxLines="1" android:textAllCaps="true"/>
+                                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                                        <ImageView android:layout_gravity="center" android:id="@+id/iv_cvv_card_none" android:visibility="visible" android:layout_width="20dp" android:layout_height="wrap_content" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_none_cvv_card_vector"/>
+                                        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="16sp" android:textColor="@color/colorWhite" android:gravity="center_vertical" android:id="@+id/card_cvv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:textAllCaps="true" app:autoSizeMaxTextSize="16dp"/>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <ImageView android:id="@+id/iv_bg_lock_half" android:background="@drawable/bg_blue_radius_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/iv_lock_half" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_unlock_vector"/>
+                    </RelativeLayout>
+                    <ImageView android:id="@+id/iv_bg_lock_full" android:background="@drawable/bg_blue_radius_10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_lock_full" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_lock_white"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lo_details" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_info" android:paddingLeft="@dimen/margin_xlarge" android:paddingRight="@dimen/margin_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_master_card"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/fee" android:paddingLeft="@dimen/margin_xlarge" android:paddingRight="@dimen/margin_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                <TextView android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/txt_label_query_master_card" style="@style/button_gradient"/>
+                <TextView android:textColor="#ee0000" android:paddingLeft="@dimen/margin_xlarge" android:paddingRight="@dimen/margin_xlarge" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/create_master_card_note"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_note_sub" android:paddingLeft="@dimen/margin_xlarge" android:paddingRight="@dimen/margin_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/create_master_card_note_sub"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lo_action" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lo_balance" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_money_new_vector"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_500" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số dư"/>
+                                <ImageView android:id="@+id/view_money" android:padding="@dimen/_3sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginRight="@dimen/_5sdp" android:tint="@color/md_grey_500" android:layout_toLeftOf="@+id/balance" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_5sdp" android:layout_toStartOf="@+id/balance" app:srcCompat="@drawable/icon_show_money_off_vector"/>
+                            </LinearLayout>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:id="@+id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="******"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_lock_card" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="@drawable/ic_lock_card"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_lock_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_label_lock_master_card"/>
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_500" android:id="@+id/tv_lock_card_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_label_lock_master_card_info"/>
+                    </LinearLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f080591" android:tint="@color/md_grey_400"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

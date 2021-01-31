@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/bg_info_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="@dimen/_10sdp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/_45sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="wrap_content" android:adjustViewBounds="true"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_weight="1" android:layout_marginStart="@dimen/_15sdp">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="#333333" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:lines="1" android:singleLine="true" android:layout_marginStart="@dimen/_15sdp"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/white" android:gravity="top" android:id="@+id/newTicket" android:background="@drawable/bg_button_yellow_radius" android:paddingLeft="@dimen/_8sdp" android:paddingRight="@dimen/_8sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:text="Mới" android:layout_toRightOf="@+id/name"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/count" android:background="@drawable/background_function_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+        <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+    </LinearLayout>
+    <View android:id="@+id/underLine" android:background="@color/colorBlackTrans10" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp"/>
+</LinearLayout>

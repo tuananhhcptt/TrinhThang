@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_big" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/color_4a4a4a" android:gravity="center" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginBottom="@dimen/_10sdp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/close_btn" android:background="@drawable/bg_border_btn" android:layout_width="@dimen/_120sdp" android:layout_height="50dp" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small" android:text="ĐÓNG"/>
+    </LinearLayout>
+</RelativeLayout>

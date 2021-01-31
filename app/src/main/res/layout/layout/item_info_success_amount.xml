@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:tag="layout/item_info_success_amount_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:baselineAligned="false">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/_20sdp">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_7a7a7a" android:id="@+id/tv_sub" android:tag="binding_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="@font/sf_pro_display_regular"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/text_size_22sp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="end" android:id="@+id/tv_text" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/_140sdp" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="@font/sf_pro_display_bold" android:layout_toStartOf="@+id/txtVND"/>
+        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:ellipsize="end" android:gravity="end" android:id="@+id/txtVND" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/_140sdp" android:text="@string/title_vietnam_currency" android:maxLines="1" android:layout_centerVertical="true" android:fontFamily="@font/sf_pro_display_regular" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

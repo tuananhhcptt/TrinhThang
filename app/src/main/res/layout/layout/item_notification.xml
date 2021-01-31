@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_icon" android:layout_width="@dimen/_62sdp" android:layout_height="@dimen/_35sdp" android:layout_marginRight="@dimen/_10sdp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_10sdp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_icon" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_icon">
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/md_teal_500" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="#393939" android:id="@+id/txt_short_description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="hfkaj" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#9a9a9a" android:gravity="center_vertical" android:id="@+id/txt_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

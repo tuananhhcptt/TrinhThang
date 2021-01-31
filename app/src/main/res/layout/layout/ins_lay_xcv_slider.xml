@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_0" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_0" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_0" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_0" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_1" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_1" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_1" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_1" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_2" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_2" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_2" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_2" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_3" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_3" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_3" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_3" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_4" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_4" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_4" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_4" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_5" android:background="#ffffff" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_5" android:layout_width="match_parent" android:layout_height="@dimen/ins_car_im_size" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="16sp" android:textColor="#212121" android:id="@+id/title_5" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:id="@+id/content_5" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:paddingStart="8dp" android:paddingEnd="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageButton android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/leftBt" android:background="#99111111" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="34dp" android:layout_height="52dp" android:src="@drawable/left" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+    <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/rightBt" android:background="#99111111" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="34dp" android:layout_height="52dp" android:src="@drawable/right" android:minWidth="0dp" android:minHeight="0dp" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/carouselIconIv" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="centerInside"/>
+</FrameLayout>

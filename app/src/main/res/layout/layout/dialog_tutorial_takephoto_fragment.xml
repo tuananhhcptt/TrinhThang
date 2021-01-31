@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#90ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_background_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_36sdp">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/animation_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_14sdp" app:lottie_autoPlay="true" app:lottie_loop="true"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chụp CMND/CCCD"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:gravity="center" android:id="@+id/tvContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_skip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:layout_marginTop="@dimen/_40sdp" android:layout_marginRight="@dimen/_24sdp" android:layout_marginBottom="@dimen/_5sdp" android:text="@string/understand" style="@style/button_gradient"/>
+    </LinearLayout>
+</RelativeLayout>

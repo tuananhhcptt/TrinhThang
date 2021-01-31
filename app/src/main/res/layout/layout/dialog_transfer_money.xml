@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_3sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="#ffffff"/>
+    <com.bplus.vtpay.view.CustomNestedScroll android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="@string/transfer"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_service" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/layout_sample" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="DANH SÁCH NGƯỜI NHẬN"/>
+                <com.bplus.vtpay.view.NestedRecyclerView android:id="@+id/list_sample" android:paddingLeft="@dimen/_6sdp" android:paddingRight="@dimen/_6sdp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:overScrollMode="never"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bplus.vtpay.view.CustomNestedScroll>
+</LinearLayout>

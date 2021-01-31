@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:background="@drawable/link_manager_change_limit_bottom" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chỉnh sửa hạn mức" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/color_red_FF4850" android:id="@+id/tvClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đóng" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_bottom_radius_10dp" android:padding="@dimen/padding_xlarge" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hạn mức giao dịch"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/text_size_edittext" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/edt_trans_limit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Hạn mức giao dịch" android:maxLength="10" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelAlwaysShown="false" app:met_floatingLabelText="" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_30sdp" android:text="đ" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_700" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="Hạn mức/ngày"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/text_size_edittext" android:textStyle="bold" android:id="@+id/edt_daily_limit" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Hạn mức giao dịch" android:maxLength="10" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelAlwaysShown="false" app:met_floatingLabelText="" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_30sdp" android:text="đ" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_big">
+                <Button android:id="@+id/btn_continue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/margin_normal" android:text="Tiếp tục" android:layout_weight="1" android:layout_marginEnd="0dp" style="@style/button_gradient"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

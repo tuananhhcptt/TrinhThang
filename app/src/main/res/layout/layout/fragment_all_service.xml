@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@null" android:paddingTop="@dimen/_40sdp" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:popupTheme="@style/AppTheme.PopupOverlay">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+            <androidx.appcompat.widget.Toolbar android:theme="@style/AppTheme.PopupOverlay" android:id="@+id/toolbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_collapseMode="1" app:popupTheme="@style/AppTheme.PopupOverlay"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/top_recycler_view" android:background="@android:color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+                <View android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <com.google.android.material.tabs.CustomTabLayout android:id="@+id/tab" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:overScrollMode="never" app:tabGravity="0" app:tabIndicatorColor="@color/color_red_EE0033" app:tabMode="0" app:tabSelectedTextColor="@color/color_red_EE0033" app:tabTextAppearance="@style/TabLayOutSearch" app:tabTextColor="#7e7f7f"/>
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@android:color/white" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_search" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:weightSum="1">
+        <ImageView android:id="@+id/button_back" android:paddingLeft="@dimen/_5sdp" android:paddingTop="@dimen/_13sdp" android:paddingRight="@dimen/_5sdp" android:paddingBottom="@dimen/_13sdp" android:layout_width="@dimen/_40sdp" android:layout_height="match_parent" app:srcCompat="@drawable/icon_back_vector"/>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_round_search_transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="@dimen/_5sdp" android:layout_weight="1">
+            <ImageView android:padding="@dimen/_7sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_search"/>
+            <TextView android:textSize="@dimen/cluster_text_size" android:textColor="@color/white" android:textColorHint="#a2dedf" android:gravity="center_vertical" android:id="@+id/input_search" android:background="@null" android:padding="@dimen/_5sdp" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/action_search" android:lines="1" android:singleLine="true" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_40sdp">
+        <include layout="@layout/file_not_found_layout"/>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

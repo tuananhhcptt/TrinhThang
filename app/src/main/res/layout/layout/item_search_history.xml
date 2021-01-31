@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:id="@+id/container" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/viewBackGround" android:background="@drawable/bg_service_unselected_74" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_centerHorizontal="true"/>
+        <com.github.florent37.shapeofview.shapes.RoundRectView android:gravity="center" android:id="@+id/lo_view_active" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/animation_view" android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_70sdp" android:adjustViewBounds="true"/>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+        <ImageView android:id="@+id/img_check" android:visibility="gone" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:layout_marginTop="@dimen/_minus5sdp" android:src="@drawable/ic_checkbox_round_check" android:layout_alignTop="@+id/viewBackGround" android:layout_alignEnd="@+id/viewBackGround"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/service_title" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/name" android:paddingBottom="@dimen/_2sdp" android:layout_width="74dp" android:layout_height="wrap_content" android:lines="2" android:fontFamily="@font/sf_pro_display_medium"/>
+</LinearLayout>

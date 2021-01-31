@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_5sdp" android:layout_margin="10dp" android:src="@drawable/line_control"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_finger" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp">
+                <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thêm tiền tiết kiệm"/>
+            </LinearLayout>
+            <View android:background="#e4e3e3" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:id="@+id/tv_amount_balance" android:background="#ffffff" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số dư tài khoản: ...đ"/>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:text="Số tiền" android:textAllCaps="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/layout_edt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="24sp" android:textColor="#263d60" android:gravity="center" android:id="@+id/edt_topup" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:hint="Nhập số tiền muốn thêm" android:maxLength="13" android:layout_weight="1" android:inputType="number" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="0" app:met_primaryColor="@color/tokenDark100"/>
+                <TextView android:textSize="@dimen/_14sdp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/title_vietnam_currency"/>
+            </LinearLayout>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:text="Xác nhận" style="@style/button_gradient"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

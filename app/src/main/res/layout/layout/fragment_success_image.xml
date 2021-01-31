@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:padding="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_24sdp" android:layout_marginBottom="@dimen/_16sdp" app:srcCompat="@drawable/ic_transfer_fail"/>
+            <TextView android:textSize="@dimen/_16sdp" android:textColor="#ff3b30" android:gravity="center_horizontal" android:id="@+id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_36sdp" android:layout_marginRight="@dimen/_36sdp"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#333333" android:gravity="center_horizontal" android:id="@+id/tv_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_36sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_36sdp" android:layout_below="@+id/tv_status"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/_14sdp" android:textStyle="bold" android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="@dimen/_45sdp" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Thử lại" android:layout_above="@+id/tv_back_home" style="@style/new_button_send_style"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_red_F11B53" android:gravity="center_horizontal" android:id="@+id/tv_back_home" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:text="Về trang chủ" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

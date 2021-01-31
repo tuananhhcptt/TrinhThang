@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_header" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <ImageView android:id="@+id/btn_close" android:layout_width="@dimen/icon_size_normal" android:layout_height="@dimen/icon_size_normal" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_navigate_before_white"/>
+        <TextView android:textAppearance="@style/Toolbar.TitleText" android:textSize="@dimen/text_size_header" android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saving_title2" android:layout_toRightOf="@+id/btn_close" android:layout_centerVertical="true"/>
+        <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/saving_empty_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080858"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_800" android:gravity="center" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/saving_empty"/>
+        </LinearLayout>
+        <ScrollView android:id="@+id/saving_content" android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/saving_bidv" layout="@layout/saving_bank_item"/>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                <include android:id="@+id/saving_mb" layout="@layout/saving_bank_item"/>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+                <include android:id="@+id/saving_bp" layout="@layout/saving_bank_item"/>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

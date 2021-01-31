@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f3f5f5" android:padding="8dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_radius_5dp" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_header" android:textColor="@color/text_color_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Thông tin gói bảo hiểm"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tên gói bảo hiểm" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_packet_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Phí bảo hiểm" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thời gian tham gia" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_time" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Ngày bắt đầu hiệu lực" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_date_start" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_radius_5dp" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="@dimen/text_size_header" android:textColor="@color/text_color_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Thông tin hợp đồng"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Họ tên" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_user_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Ngày sinh" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_date_birth" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số CMTND" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_identify" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Giới tính" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_gender" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp">
+                    <TextView android:textSize="@dimen/text_size_edittext" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Email" android:layout_weight="1"/>
+                    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="0.2"/>
+                    <TextView android:textSize="@dimen/text_size_edittext" android:textColor="@color/text_color_new" android:id="@+id/txt_email" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <Button android:id="@+id/btn_continue_page_two" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

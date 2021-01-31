@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_create_billsharing" android:paddingLeft="12dp" android:paddingTop="24dp" android:paddingRight="12dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_create_billsharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0804ce"/>
+            <TextView android:textColor="#263d60" android:layout_gravity="center_vertical" android:id="@+id/tv_create_billsharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:text="Tạo yêu cầu chia tiền"/>
+        </LinearLayout>
+        <View android:background="#e3e3e3" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12dp" android:paddingTop="24dp" android:paddingRight="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#7e7f7f" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="YÊU CẦU ĐANG CHỜ"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/next_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080592" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <TextView android:textColor="#007aff" android:id="@+id/tv_all_bill_sharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:text="Xem tất cả" android:layout_toLeftOf="@+id/next_arrow"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layout_nocontent" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_no_bill" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="44dp" android:src="0x7f080261" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Không có yêu cầu đang chờ nào!" android:layout_below="@+id/img_no_bill" android:layout_centerHorizontal="true"/>
+        <TextView android:textColor="#ee0033" android:id="@+id/tv_all_bill_sharing1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="Lịch sử yêu cầu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_create_billsharing1" android:background="@drawable/button_gradient_background" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44dp" android:layout_marginRight="44dp" android:layout_marginBottom="20dp" android:text="Tạo yêu cầu chia tiền" android:layout_above="@+id/tv_all_bill_sharing1" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

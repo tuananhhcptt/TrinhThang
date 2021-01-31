@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/mainContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/buttonSuccess">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:src="@drawable/img_success"/>
+        <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="#222222" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/payment_successful"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_normal" android:text="Thông tin giao dịch" android:textAllCaps="true" android:layout_marginStart="@dimen/margin_large"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:elevation="@dimen/_3sdp" app:cardCornerRadius="@dimen/_3sdp" app:cardElevation="@dimen/_3sdp">
+            <LinearLayout android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcvData" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button android:id="@+id/buttonSuccess" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal" android:text="Về màn hình Ưu đãi của tôi" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/call_to_action_gradient"/>
+</RelativeLayout>

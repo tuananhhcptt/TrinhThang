@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:focusable="true" android:scrollbars="none" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_provider" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_40sdp" android:adjustViewBounds="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginStart="@dimen/_15sdp">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đơn vị phát hành" android:includeFontPadding="false"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@android:color/black" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp" android:paddingStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_15sdp">
+                <LinearLayout android:orientation="vertical" android:id="@+id/lo_manage" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" android:hint="Mã giao dịch OTA" android:maxLength="20" android:imeOptions="actionDone" android:textAllCaps="true" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+                    <TextView android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="0dp" android:text="@string/check" android:textAllCaps="false" style="@style/button_gradient"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lo_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                    <TextView android:id="@+id/btn_payment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="0dp" android:text="@string/pay" android:textAllCaps="false" style="@style/button_gradient"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="@dimen/_2sdp" android:layout_marginTop="@dimen/_5sdp"/>
+            <ScrollView android:padding="@dimen/_10sdp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp"/>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

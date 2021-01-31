@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/layout_margin_small" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bplus.vtpay.util.materialedittext.MaterialAutoCompleteTextView android:textSize="@dimen/text_size_login_register" android:gravity="left" android:id="@+id/edt_phone_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_phone_viettel" android:layout_centerVertical="true" android:inputType="none|text|textCapCharacters|textAutoCorrect" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="false" app:met_floatingLabel="2" app:met_primaryColor="@color/text_color_new" app:met_textColor="@color/text_color_new" app:met_textColorHint="@color/text_color_new" app:met_underlineColor="@color/text_color_new" style="@style/autocomplete_edit_text_phone_style"/>
+        <ImageView android:id="@+id/iv_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0804c9" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giá trị Voucher Viettel Privilege hiện có"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nhập số tiền bạn muốn thanh toán"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/edt_edit_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:imeOptions="actionDone" style="@style/edit_text_amount_style"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="right" android:id="@+id/txt_detail" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền ưu đãi (nhân 2 giá trị Voucher)"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_endow_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giá trị Voucher còn lại"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_amount_balance" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền Voucher Viettel Privilege"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_discount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phí"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small">
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/grey_font" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền phải thanh toán"/>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:id="@+id/tv_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/tv_payment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_big" android:text="Thanh toán" style="@style/button_gradient"/>
+</LinearLayout>

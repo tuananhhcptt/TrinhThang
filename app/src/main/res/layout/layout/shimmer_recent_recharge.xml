@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ll_shimmer_recent" android:tag="layout/shimmer_recent_recharge_0" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp">
+        <LinearLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+            <include layout="@layout/view_recent_recharge_shimmer_item"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

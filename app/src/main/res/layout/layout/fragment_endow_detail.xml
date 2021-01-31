@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#eeeeee" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/lo_btn_bottom">
+        <androidx.cardview.widget.CardView android:id="@+id/cv_item" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:elevation="3dp" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_endow_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY"/>
+                <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#263d60" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/tv_endow_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large" android:layout_marginTop="@dimen/margin_large" android:layout_marginRight="@dimen/margin_large" android:text="Elevent 10.000đ" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+                <TextView android:textSize="@dimen/_9sdp" android:textColor="#4a4a4a" android:layout_gravity="center" android:id="@+id/tv_endow_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="Hạn sử dụng: "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <WebView android:id="@+id/wv_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/cv_item"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lo_btn_bottom" android:background="@color/white" android:padding="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_btn_use" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:text="Sử dụng ngay" style="@style/btn_gradient_rounded"/>
+        <TextView android:id="@+id/tv_btn_gift" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="Tặng bạn bè" android:textAllCaps="false" style="@style/call_to_action_white"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_btn_buy_endow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/margin_small" android:text="Mua ngay" style="@style/btn_gradient_rounded"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:gravity="center" android:id="@+id/tv_btn_get_it_now" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:layout_marginTop="@dimen/margin_small" android:text="Nhận ngay" style="@style/btn_gradient_rounded"/>
+    </LinearLayout>
+</RelativeLayout>

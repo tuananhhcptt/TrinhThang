@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/ic_contact_item_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/initials" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:layout_margin="1dp" android:src="@drawable/bg_circle" android:tint="#c62635" android:layout_centerInParent="true"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/initial_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DM" android:maxLength="2" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@+id/name" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="35dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:lines="1" android:maxLength="14" android:layout_toRightOf="@+id/initials" android:layout_centerVertical="true" android:layout_toEndOf="@+id/initials"/>
+    <ImageView android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="10dp" android:src="@drawable/ic_close_vector" android:layout_toRightOf="@+id/name" android:layout_centerVertical="true" android:layout_toEndOf="@+id/name"/>
+</RelativeLayout>

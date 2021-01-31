@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:tag="layout/views_coach_tooltip_0" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/container_animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing04" android:layout_marginBottom="@dimen/tokenSpacing04">
+        <ImageView android:id="@+id/triangle_top" android:tag="binding_1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3dp" app:srcCompat="@drawable/views_icon_triangle"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tooltip" android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1dp"/>
+        <ImageView android:id="@+id/triangle_bottom" android:tag="binding_3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:rotation="180" app:srcCompat="@drawable/views_icon_triangle"/>
+    </LinearLayout>
+</LinearLayout>

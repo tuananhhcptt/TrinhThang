@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/_10sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp">
+            <com.github.florent37.shapeofview.shapes.CircleView android:id="@+id/avatar_container" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp">
+                <ImageView android:id="@+id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" app:srcCompat="@drawable/default_avatar"/>
+            </com.github.florent37.shapeofview.shapes.CircleView>
+            <ImageView android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:srcCompat="0x7f0803fd"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/button_account" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@android:color/white" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:lines="1" android:singleLine="true" android:layout_marginStart="@dimen/_10sdp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginStart="@dimen/_10sdp">
+                <androidx.appcompat.widget.AppCompatTextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/package_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" app:drawableEndCompat="@drawable/ic_chevron_right_white_24dp"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/iconConfirmAcc" android:visibility="gone" android:layout_width="@dimen/_10sdp" android:layout_height="@dimen/_10sdp" android:layout_marginLeft="@dimen/_10sdp" android:src="@drawable/ic_check_copy"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lo_select_my_qr" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/_15sdp" android:layout_marginTop="@dimen/_5sdp" android:adjustViewBounds="true" android:tint="@android:color/white" app:srcCompat="@drawable/icon_qr_select"/>
+            <TextView android:textColor="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/ma_nhan_tien"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:background="@android:color/white" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_30sdp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp" android:overScrollMode="never" android:nestedScrollingEnabled="false"/>
+</LinearLayout>

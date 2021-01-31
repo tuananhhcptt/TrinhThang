@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Quyền lợi bảo hiểm" android:layout_weight="0.8"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Gói cơ bản" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Gói tiêu chuẩn" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Gói nâng cao" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_600" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Trợ cấp viện phí hàng ngày (tối đa 20 ngày/lần; không quá 50 ngày/năm)" android:layout_weight="0.8"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_basic1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="100.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_standard1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="200.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_advance1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="300.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_600" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Trợ cấp phẫu thuật chi trả 1 lần (trong vòng 30 ngày sau tai nạn)" android:layout_weight="0.8"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_basic2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="1.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_standard2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="2.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_advance2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="3.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_600" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Quyền lợi tử vong chi trả 1 lần trong thời gian nằm viện điều trị thương tật do tai nạn (trong vòng 30 ngàu sau tai nạn)" android:layout_weight="0.8"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_basic3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="10.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_standard3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="20.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_advance3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="30.000.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_600" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="Phí bảo hiểm theo năm" android:layout_weight="0.8"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:id="@+id/tv_basic4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="432.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:id="@+id/tv_standard4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="864.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#263d60" android:gravity="center" android:id="@+id/tv_advance4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="1.296.000đ" android:layout_weight="0.9"/>
+        <View android:background="@color/md_grey_600" android:layout_width="1dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View android:background="@color/md_grey_600" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

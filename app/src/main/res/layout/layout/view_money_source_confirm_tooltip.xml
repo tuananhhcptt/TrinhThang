@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewParent" android:tag="layout/view_money_source_confirm_tooltip_0" android:background="#66000000" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <FrameLayout android:id="@+id/view_tooltip_receiver_source" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/viewDialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+        <ImageView android:id="@+id/imgArrow" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_8sdp" android:src="@drawable/white_arrow" android:scaleType="fitXY" android:tint="@color/tokenBlue10"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/view_tooltip" android:background="@drawable/bg_e6f2fc_radius_20dp" android:paddingBottom="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" style="@style/TxtProDisplayMedium"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imgArrowDown" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_8sdp" android:layout_marginTop="@dimen/_minus2sdp" android:src="@drawable/white_arrow" android:scaleType="fitXY" android:tint="@color/tokenBlue10" android:rotation="180"/>
+    </LinearLayout>
+</RelativeLayout>

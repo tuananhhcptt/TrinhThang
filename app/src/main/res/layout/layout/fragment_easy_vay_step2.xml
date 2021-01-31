@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_progress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_43sdp" android:layout_marginRight="@dimen/_60sdp">
+            <ImageView android:id="@+id/imv_st1" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/background_blue"/>
+            <ImageView android:id="@+id/v_st2" android:layout_width="0dp" android:layout_height="1dp" android:src="@color/label_text_color_1" android:layout_weight="1.3"/>
+            <ImageView android:id="@+id/imv_st2" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/background_progress_circle"/>
+            <ImageView android:id="@+id/v_st3" android:layout_width="0dp" android:layout_height="1dp" android:src="@color/label_text_color_1" android:layout_weight="1.6"/>
+            <ImageView android:id="@+id/imv_st3" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="@drawable/background_progress_circle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginRight="@dimen/_30sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/topaz" android:id="@+id/txt_st1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/personal"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/label_text_color_1" android:id="@+id/txt_st2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/income"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/label_text_color_1" android:id="@+id/txt_st3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/verifier"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView android:id="@+id/scroll" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/ll_progress">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/easy_vay_personal_info_layout"/>
+            <include android:visibility="gone" layout="@layout/easy_vay_current_address_layout"/>
+            <include layout="@layout/easy_vay_detail_info_layout"/>
+            <include layout="@layout/easy_vay_relationship_layout"/>
+            <TextView android:id="@+id/btn_confirm_step_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp" android:text="@string/label_continue" style="@style/button_gradient"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

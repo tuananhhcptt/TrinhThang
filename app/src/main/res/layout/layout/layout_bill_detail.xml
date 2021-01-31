@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_radius_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#ee0033" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:text="Chi tiết hoá đơn"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:nestedScrollingEnabled="false"/>
+            <TextView android:textSize="@dimen/text_size_small" android:textColor="#ee0033" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_confirm" android:background="@drawable/bg_gray_new" android:paddingLeft="@dimen/_60sdp" android:paddingTop="@dimen/padding_large" android:paddingRight="@dimen/_60sdp" android:paddingBottom="@dimen/padding_large" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="ĐÓNG"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+    <RelativeLayout android:background="@drawable/home_deposit_title_background" android:padding="@dimen/_3sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="@dimen/_15sdp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn gói dịch vụ" android:layout_centerInParent="true" app:autoSizeMaxTextSize="@dimen/_15sdp"/>
+        <ImageView android:id="@+id/btn_close" android:padding="@dimen/_7sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_close_white_vector"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_white_bottom_radius_10dp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:padding="@dimen/_7sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="#b6b6b6" app:srcCompat="@drawable/icon_search_vector"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_12sdp" android:textColor="#263d60" android:textColorHint="#b6b6b6" android:id="@+id/edt_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tìm kiếm" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="0" app:met_floatingLabelTextSize="@dimen/_9sdp" app:met_hideUnderline="true" app:met_primaryColor="@color/tokenDark100"/>
+            </LinearLayout>
+            <View android:background="#e3e3e3" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:overScrollMode="never" android:layout_marginStart="@dimen/_15sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

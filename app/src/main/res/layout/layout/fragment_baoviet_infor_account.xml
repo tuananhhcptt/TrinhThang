@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#cc454f63" android:paddingLeft="@dimen/_36sdp" android:paddingRight="@dimen/_36sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_shadow_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:paddingTop="@dimen/_6sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TIỀN MUA XE" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_close" android:padding="@dimen/_14sdp" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_delete_svg"/>
+        </RelativeLayout>
+        <View android:background="#4dffffff" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#99ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="SỐ TIỀN GỐC"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@+id/tv_money_source" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="#98ffffff" android:id="@+id/tv_currency" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp"/>
+        </LinearLayout>
+        <View android:background="#4dffffff" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp"/>
+        <RelativeLayout android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SỐ TÀI KHOẢN"/>
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#99ffffff" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KỲ HẠN" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:id="@+id/tv_account_number" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:gravity="right" android:id="@+id/tv_period" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#99ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NGÀY ĐÁO HẠN"/>
+            <TextView android:textSize="@dimen/_9sdp" android:textColor="#99ffffff" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LÃI CỘNG DỒN" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:id="@+id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:gravity="right" android:id="@+id/tv_add_interest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_toLeftOf="@+id/tv_currency_2"/>
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:gravity="right" android:id="@+id/tv_currency_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="#99ffffff" android:paddingLeft="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="HÌNH THỨC"/>
+        <TextView android:textSize="@dimen/_11sdp" android:textColor="@android:color/white" android:id="@+id/tv_type" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true"/>
+        <TextView android:textSize="@dimen/_9sdp" android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@+id/tv_receive_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="Nhận thông tin qua email"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_email" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nhập địa chỉ email" android:layout_weight="1" android:inputType="textEmailAddress" app:met_textColor="@android:color/white" app:met_textColorHint="#99ffffff" app:met_underlineColor="#66ffffff"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_airplane" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:layout_marginLeft="@dimen/_3sdp" app:srcCompat="@drawable/ic_send_email"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:gravity="center_horizontal" android:id="@+id/btn_end_pay" android:background="@drawable/bg_button_white_radius" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_12sdp" android:text="Tất toán"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:layout_marginBottom="@dimen/_16sdp">
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_logo_baoviet" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_weight="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:theme="@style/AppTheme.WhiteAccent" android:id="@+id/loading" android:visibility="gone" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/indicator_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_13sp" android:ellipsize="end" android:id="@+id/isb_progress" android:paddingLeft="@dimen/_8sdp" android:paddingTop="@dimen/_4sdp" android:paddingRight="@dimen/_8sdp" android:paddingBottom="@dimen/_4sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/_12sdp" android:text="Indicator" android:maxLines="1"/>
+    </LinearLayout>
+    <com.bplus.vtpay.widget.indicatorseekbar.ArrowView android:layout_gravity="center_horizontal" android:id="@+id/indicator_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

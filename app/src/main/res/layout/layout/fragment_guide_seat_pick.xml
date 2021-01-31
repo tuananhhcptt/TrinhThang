@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/bg_white_radius_20sdp" android:layout_width="match_parent" android:layout_height="@dimen/_220sdp" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+        <com.airbnb.lottie.LottieAnimationView android:id="@+id/lv_animation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/guide_vetau"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lv_animation">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Ngồi mềm 2 tầng"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_4sdp" android:text="Quý khách vuốt sang bên phải để lựa chọn tầng 2"/>
+                <View android:id="@+id/line_bottom" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_4sdp">
+                    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#ee0033" android:gravity="center" android:id="@+id/close" android:layout_width="0dp" android:layout_height="match_parent" android:text="Đã hiểu" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

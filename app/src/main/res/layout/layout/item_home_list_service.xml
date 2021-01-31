@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.bplus.vtpay.view.recyclerviewpager.RecyclerViewPager android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="@dimen/_180sdp" android:nestedScrollingEnabled="true"/>
+</FrameLayout>

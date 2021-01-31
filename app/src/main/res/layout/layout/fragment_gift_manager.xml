@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="@dimen/top_bar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/background" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lo_comming" android:background="@drawable/bg_white_radius_10dp" android:padding="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/_5sdp" android:scaleType="fitCenter" android:adjustViewBounds="true">
+                <ImageView android:id="@+id/iv_game_teaser" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/lo_game_tet" android:background="@drawable/bg_white_radius_10dp" android:padding="@dimen/_7sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/_5sdp" android:scaleType="fitCenter" android:adjustViewBounds="true">
+                <ImageView android:id="@+id/iv_game_tet" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

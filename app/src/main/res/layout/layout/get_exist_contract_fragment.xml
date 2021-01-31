@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_18sdp" android:text="@string/money_source_linked_card"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_18sdp" android:layout_marginRight="@dimen/_12sdp">
+        <ImageView android:id="@+id/logoVTP" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp" app:srcCompat="@drawable/ic_logo_red_new"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvNameSource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="ViettelPay" android:layout_toRightOf="@+id/logoVTP" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/topaz" android:gravity="center" android:id="@+id/tvChangeMoneySource" android:paddingLeft="@dimen/_4sdp" android:paddingRight="@dimen/_4sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="Thay đổi" android:layout_alignTop="@+id/logoVTP" android:layout_alignBottom="@+id/logoVTP" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_18sdp" android:text="@string/info_contract"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_12sdp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/so_hop_dong"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvContractNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/owner_contract"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvCusName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cus_type"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvCusType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:id="@+id/tvDateLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_10sdp">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Danh sách xe"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/topaz" android:id="@+id/tvShowLstVehicle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chi tiết" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/viewCancelLink" android:paddingTop="@dimen/_6sdp" android:paddingRight="@dimen/_6sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_18sdp">
+        <ImageView android:id="@+id/iconDelete" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f0804de"/>
+        <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_ff645c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:text="@string/cancel_link" android:layout_toRightOf="@+id/iconDelete" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

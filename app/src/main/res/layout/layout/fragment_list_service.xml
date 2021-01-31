@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="0x7f0807b5" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bplus.vtpay.view.MyRecycleView android:id="@+id/rcv_list_service" android:paddingTop="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/layout_margin" android:nestedScrollingEnabled="false"/>
+            <TextView android:id="@+id/tv_empty" android:padding="@dimen/layout_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không có dịch vụ nào"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

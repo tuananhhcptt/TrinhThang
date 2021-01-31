@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textStyle="bold" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHỤP ẢNH CHÂN DUNG, GTTT"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ảnh chân dung"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_weight="3" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border_grey_10sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_camera_svg"/>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Chụp ảnh"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/iv_portrait_photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_delete_portrait" android:padding="@dimen/_10sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_delete_vector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMND/CĂN CƯỚC mặt trước"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_weight="3" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border_grey_10sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_camera_svg"/>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Chụp ảnh"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/iv_id_font_photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_delete_font_photo" android:padding="@dimen/_10sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_delete_vector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CMND/CĂN CƯỚC mặt sau"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_weight="3" app:cardCornerRadius="@dimen/_10sdp" app:cardElevation="0dp">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border_grey_10sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_camera_svg"/>
+                            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Chụp ảnh"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/iv_id_back_photo" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_delete_back_photo" android:padding="@dimen/_10sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_delete_vector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:id="@+id/btn_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_5sdp" android:text="@string/next" style="@style/button_gradient"/>
+</LinearLayout>

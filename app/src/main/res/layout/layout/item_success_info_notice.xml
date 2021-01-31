@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lo_main" android:tag="layout/item_success_info_notice_0" android:background="@drawable/background_show_notification_setup_app" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_12sdp">
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_4e4e4e" android:layout_gravity="center" android:id="@+id/tvValues" android:padding="@dimen/_12sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TxtProDisplayMedium"/>
+</FrameLayout>

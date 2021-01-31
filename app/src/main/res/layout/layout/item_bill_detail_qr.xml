@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_radius_8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+            <com.bplus.vtpay.widget.FormItemViewHorizontal2 android:id="@+id/tv_service_group" android:layout_width="match_parent" android:layout_height="wrap_content" app:form_label_text="Nhóm dịch vụ:" app:form_value_text=""/>
+            <com.bplus.vtpay.widget.FormItemViewHorizontal2 android:id="@+id/tv_transaction_code" android:layout_width="match_parent" android:layout_height="wrap_content" app:form_label_text="Mã giao dịch gốc:" app:form_value_text=""/>
+            <com.bplus.vtpay.widget.FormItemViewHorizontal2 android:id="@+id/tv_transaction_date" android:layout_width="match_parent" android:layout_height="wrap_content" app:form_label_text="Ngày giao dịch:" app:form_value_text=""/>
+            <com.bplus.vtpay.widget.FormItemViewHorizontal2 android:id="@+id/tv_total" android:layout_width="match_parent" android:layout_height="wrap_content" app:form_label_text="Tổng số tiền:"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

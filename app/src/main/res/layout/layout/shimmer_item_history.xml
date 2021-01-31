@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp">
+        <View android:background="@drawable/background_shimmer" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_16sdp">
+            <View android:background="@drawable/background_shimmer" android:layout_width="match_parent" android:layout_height="@dimen/_16sdp"/>
+            <View android:background="@drawable/background_shimmer" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_8sdp" android:layout_marginTop="@dimen/_4sdp"/>
+            <View android:background="@drawable/background_shimmer" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_8sdp" android:layout_marginTop="@dimen/_4sdp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="@dimen/_8sdp">
+            <View android:background="@drawable/background_shimmer" android:layout_width="match_parent" android:layout_height="@dimen/_16sdp"/>
+            <View android:background="@drawable/background_shimmer" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_8sdp" android:layout_marginTop="@dimen/_4sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#d3d3d3" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginStart="@dimen/_48sdp"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/lo_support_finger" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_finger" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f0804d2"/>
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Đăng nhập bằng vân tay" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+                <com.bplus.vtpay.widget.SwitchView android:id="@+id/sw_finger" android:layout_width="40dp" android:layout_height="40dp" app:color_off="@color/color_a7a7a7" app:color_on="@color/color_red_EE0033"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lo_warning_login" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f08047b"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp" android:text="Cảnh báo đăng nhập" android:layout_centerVertical="true" android:fontFamily="@font/sf_pro_display_medium" android:layout_toStartOf="@+id/sw_warning_login"/>
+                        <com.bplus.vtpay.widget.SwitchView android:id="@+id/sw_warning_login" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:color_off="@color/color_a7a7a7" app:color_on="@color/color_red_EE0033"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_7a7a7a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="Thông báo thuê bao đăng nhập trên thiết bị khác" android:fontFamily="@font/sf_pro_display_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/saveSessionLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f080568"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_16dp" android:text="Lưu phiên đăng nhập" android:layout_centerVertical="true" android:fontFamily="@font/sf_pro_display_medium" android:layout_toStartOf="@+id/saveSessionToggle"/>
+                        <com.bplus.vtpay.widget.SwitchView android:id="@+id/saveSessionToggle" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:color_off="@color/color_a7a7a7" app:color_on="@color/color_red_EE0033"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_7a7a7a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp" android:text="Chỉ cần đăng nhập 1 lần duy nhất trên 1 thiết bị" android:fontFamily="@font/sf_pro_display_regular"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="2dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_change_accuracy" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f0805b3"/>
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Phương thức xác thực" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_4e4e4e" android:id="@+id/tv_accuracy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_medium"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_8dp" android:src="0x7f0805dc"/>
+        </LinearLayout>
+        <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="2dp"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_change_password" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f080615"/>
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thay đổi mật khẩu" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f0805dc"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_link_manager" android:padding="@dimen/layout_margin_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f0805c7"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quản lý liên kết" android:fontFamily="@font/sf_pro_display_medium"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f0805dc"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_secret_question" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f080480"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/secret_question" android:fontFamily="@font/sf_pro_display_medium"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f0805dc"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_app_info" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin_normal" app:srcCompat="0x7f080422"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_info" android:fontFamily="@font/sf_pro_display_medium"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:src="0x7f0805dc"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

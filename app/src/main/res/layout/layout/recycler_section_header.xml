@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_FBFBFB" android:layout_width="match_parent" android:layout_height="@dimen/_32sdp">
+    <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/list_item_section_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingStart="@dimen/_16sdp"/>
+    <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

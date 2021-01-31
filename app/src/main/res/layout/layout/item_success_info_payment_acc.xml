@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/lo_main" android:tag="layout/item_success_info_payment_acc_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:weightSum="2">
+    <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_7a7a7a" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_bank_name" style="@style/TxtProDisplayMedium"/>
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:id="@+id/img_money_input" android:layout_width="@dimen/_18sdp" android:layout_height="@dimen/_18sdp" android:layout_marginRight="@dimen/_3sdp" android:src="@drawable/icon_vienthong" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222" android:ellipsize="marquee" android:gravity="end" android:layout_gravity="center_vertical" android:id="@+id/tvValues" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" style="@style/TxtProDisplayMedium"/>
+    </LinearLayout>
+</RelativeLayout>

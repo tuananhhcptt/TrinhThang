@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_centerInParent="true" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/back_card_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin">
+                <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_gravity="center" android:id="@+id/tvTitleOTP" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_title" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_15sdp" android:paddingRight="@dimen/_15sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_push_otp"/>
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_7sdp" android:hint="@string/hint_otp" android:maxLength="15" android:layout_weight="1" android:inputType="text" android:imeOptions="actionDone" android:textAllCaps="true" android:layout_marginStart="@dimen/_15sdp" android:layout_marginEnd="@dimen/_7sdp" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" app:met_primaryColor="@color/tokenDark100"/>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/viettel_color" android:id="@+id/tv_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+                        <ProgressBar android:id="@+id/progress_countdown" android:layout_width="@dimen/_28sdp" android:layout_height="@dimen/_28sdp" android:progressDrawable="@drawable/circle_progress" android:rotation="-90" style="?android:attr/progressBarStyleHorizontal"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_no_receive" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_7sdp" android:layout_marginRight="@dimen/_15sdp">
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/black" android:id="@+id/tv_no_otp" android:paddingTop="@dimen/_3sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Không nhận được mã?"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/viettel_color" android:id="@+id/tv_resend" android:background="?attr/selectableItemBackgroundBorderless" android:padding="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/txt_resend"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp" app:cardBackgroundColor="#e2e8ed" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+                        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_40sdp">
+                            <View android:id="@+id/divider" android:background="#b6b6b6" android:layout_width="1dp" android:layout_height="@dimen/_20sdp" android:layout_centerInParent="true"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="#263d60" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="match_parent" android:layout_height="match_parent" android:text="HỦY" android:layout_toLeftOf="@+id/divider" android:layout_toStartOf="@+id/divider"/>
+                            <TextView android:textSize="@dimen/_12sdp" android:textColor="#ee0033" android:gravity="center" android:id="@+id/btn_continue" android:layout_width="match_parent" android:layout_height="match_parent" android:text="XÁC NHẬN" android:layout_toRightOf="@+id/divider" android:layout_toEndOf="@+id/divider"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_8sdp" android:textColor="#4a4a4a" android:id="@+id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:text="Vui lòng chọn gói dịch vụ cần thanh toán"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_above="@+id/btn_send" android:layout_below="@+id/hint">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" app:cardCornerRadius="@dimen/_3sdp" app:cardElevation="@dimen/_3sdp" app:cardPreventCornerOverlap="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/contract_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp"/>
+                <View android:background="#19888888" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/select_package" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:hint="Chọn gói dịch vụ" android:drawableRight="0x7f080668" android:drawableEnd="0x7f080668" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="false" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <TextView android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="Thanh toán" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+</RelativeLayout>

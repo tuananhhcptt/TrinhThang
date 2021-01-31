@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_3sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="@color/colorWhiteTrans30"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scr_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_sheet" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/dimen_56dp">
+                <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_222222" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Chọn tài khoản nhận" android:fontFamily="@font/sf_pro_display_bold"/>
+                <ImageView android:id="@+id/imgClose" android:visibility="gone" android:layout_width="@dimen/dimen_16dp" android:layout_height="@dimen/dimen_16dp" android:src="@drawable/ic_close_1" android:tint="@color/color_222222" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/dimen_16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcvListMoneySource" android:paddingBottom="@dimen/dimen_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/background_home_recent_transfer" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_7sdp" android:paddingRight="@dimen/_5sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/bank_icon" android:layout_width="wrap_content" android:layout_height="@dimen/_20sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:padding="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="@dimen/_20sdp" android:adjustViewBounds="true" android:tint="@color/text_color_new" app:srcCompat="@drawable/icon_arrow_vector"/>
+        </FrameLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#333333" android:ellipsize="end" android:id="@+id/account" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#333333" android:ellipsize="end" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/md_white_1000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="amount"/>
+    <Button android:id="@+id/btn1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BIDV_EBANKING_INIT_TRANS"/>
+    <Button android:id="@+id/btn2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="RECHARGE_BIDV_EBANKING"/>
+    <Button android:id="@+id/btn3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="LINK_BIDV_EBANKING"/>
+    <Button android:id="@+id/btn4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="UNLINK_BIDV_EBANKING"/>
+    <Button android:id="@+id/btn5" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="WITHDRAW"/>
+</LinearLayout>

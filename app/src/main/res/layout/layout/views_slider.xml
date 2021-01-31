@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/views_slider_0" android:background="@color/tokenWhite" android:paddingTop="@dimen/tokenSpacing16" android:paddingBottom="@dimen/tokenSpacing16" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="@dimen/tokenSizing120" app:layout_constraintTop_toTopOf="0"/>
+    <p523vn.viettelpay.views.VDSPagination android:id="@+id/sliderPagination" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing08" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/viewPager"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

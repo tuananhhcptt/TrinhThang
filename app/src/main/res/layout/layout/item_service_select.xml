@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/cardView" android:padding="@dimen/_2sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?android:attr/selectableItemBackground">
+    <LinearLayout android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/iv_provider" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/service_title" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tv_provider" android:paddingBottom="@dimen/_2sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="2"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lnl_select" android:background="#105a5a5a" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/main_layout" android:layout_alignBottom="@+id/main_layout"/>
+</RelativeLayout>

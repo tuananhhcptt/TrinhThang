@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_truongsa_bottomsheet" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lnl_input1">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:src="0x7f08066f"/>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/img_close" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_close_black_vector"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/_15sdp" android:textColor="#19aeb1" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Danh sách những tấm lòng vàng"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_history_truongsa" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp"/>
+    <Button android:id="@+id/btn_see_more" android:paddingLeft="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:text=" Xem thêm" android:drawableLeft="0x7f0804eb" android:textAllCaps="false" android:drawableStart="0x7f0804eb" style="@style/button_gradient"/>
+</LinearLayout>

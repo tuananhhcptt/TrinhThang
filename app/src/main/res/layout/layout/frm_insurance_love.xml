@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:padding="@dimen/_10sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about" android:textAllCaps="true" android:letterSpacing="-0.04"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_rounded_shadow_5sdp" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/color_d3802e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insurance_label" android:letterSpacing="-0.03"/>
+                <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/color_4a4a4a" android:id="@+id/tv_contert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insurance_love_content" android:lineSpacingExtra="5sp"/>
+                <TextView android:textSize="@dimen/_14sdp" android:autoLink="web" android:linksClickable="true" android:id="@+id/tv_view_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/view_detail" android:letterSpacing="-0.04"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/choose_insurance_love" android:textAllCaps="true" android:letterSpacing="-0.04"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_package_insurance_love" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_10sdp" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

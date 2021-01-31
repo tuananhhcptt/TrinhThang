@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080369" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintBottom_toTopOf="@+id/main"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bottom_layout" android:paddingTop="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/bottom" app:layout_constraintTop_toBottomOf="@+id/bottom">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/rl_notification" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0805a1"/>
+            <TextView android:textSize="10sp" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông báo"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/iv_history" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_history_plus"/>
+            <TextView android:textSize="10sp" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông báo"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_button_create_bill" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/bottom" app:layout_constraintTop_toTopOf="@+id/bottom">
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+        <ImageView android:id="@+id/iv_create_request" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f0803fb" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="1"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/content" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/bottom" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

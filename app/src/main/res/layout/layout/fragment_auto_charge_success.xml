@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:padding="@dimen/_16sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_above="@+id/tv_continue" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/img_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:layout_marginBottom="@dimen/_16sdp" android:layout_centerHorizontal="true" app:srcCompat="0x7f080345"/>
+            <TextView android:textSize="@dimen/_16sdp" android:textColor="#222222" android:gravity="center_horizontal" android:id="@+id/tv_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="40dp" android:layout_marginRight="@dimen/_12sdp" android:layout_below="@+id/img_status"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#ee0033" android:id="@+id/tv_view_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp" android:text="@string/string_detail" android:layout_below="@+id/tv_status" android:layout_centerHorizontal="true"/>
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/_14sdp" android:id="@+id/tv_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Tiếp tục nạp tiền tự động" android:layout_above="@+id/tv_back_home" style="@style/new_button_send_style"/>
+    <TextView android:textSize="@dimen/_13sdp" android:textColor="#ee0033" android:id="@+id/tv_back_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:text="Về trang chủ" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

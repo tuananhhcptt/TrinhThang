@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ln_recent" android:background="#fcfcfc" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="#1c1c1c" android:gravity="center" android:id="@+id/tv_rank" android:background="@drawable/border_baoviet_unselect" android:layout_width="50dp" android:layout_height="50dp" android:textAlignment="center"/>
+</LinearLayout>

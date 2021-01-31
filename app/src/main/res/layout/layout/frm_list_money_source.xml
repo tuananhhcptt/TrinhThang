@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/content" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.bplus.vtpay.view.MyRecycleView android:id="@+id/rcv_list_money_source" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lnNoLinkedCard" android:background="@color/colorWhite" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f08075f"/>
+            <TextView android:textSize="@dimen/text_size_24sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_40dp" android:text="Bạn chưa có thẻ liên kết nào!" android:fontFamily="@font/sf_pro_display_bold"/>
+            <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_7a7a7a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:text="Liên kết thẻ ngay để dễ dàng thanh toán và sử dụng các dịch vụ trên ViettelPay." android:fontFamily="@font/sf_pro_display_regular"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:id="@+id/item_add_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp" android:text="@string/add_money_source_linked_card" android:textAllCaps="false" style="@style/button_gradient"/>
+</LinearLayout>

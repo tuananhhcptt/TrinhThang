@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewParent" android:tag="layout/fragment_success_telco_0" android:paddingLeft="@dimen/_12sdp" android:paddingRight="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.bplus.vtpay.view.NestedRecyclerView android:id="@+id/rcv_info" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_gravity="center" android:id="@+id/viewDetail" android:padding="@dimen/_4sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_20sdp" android:layout_below="@+id/rcv_info" android:layout_centerHorizontal="true">
+        <TextView android:id="@+id/tv_view_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem chi tiết"/>
+        <ImageView android:id="@+id/img_view_detail" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:tint="@color/tokenDark60"/>
+    </LinearLayout>
+</RelativeLayout>

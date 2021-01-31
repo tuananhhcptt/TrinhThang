@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/_60sdp">
+    <RelativeLayout android:id="@+id/card_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_centerVertical="true">
+        <RadioButton android:id="@+id/rb_contract" android:clickable="false" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:checked="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_name" android:paddingTop="@dimen/_4sdp" android:paddingBottom="@dimen/_4sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:layout_toRightOf="@+id/card_item" android:layout_centerVertical="true" android:layout_toEndOf="@+id/card_item">
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:id="@+id/tv_contract_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_4sdp" android:text="Dư nợ:" android:layout_toLeftOf="@+id/tv_contract_amount" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#ff001f" android:id="@+id/tv_contract_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_12sdp" android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/view_line_bottom" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

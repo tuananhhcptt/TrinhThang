@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:padding="16dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_image" android:layout_width="@dimen/_200sdp" android:layout_height="@dimen/_200sdp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginBottom="@dimen/_16sdp" android:src="0x7f080790" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/_17sdp" android:textStyle="bold" android:textColor="#222222" android:gravity="center" android:id="@+id/tv_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_6sdp" android:text="Rút tiền nhanh chóng không cần thẻ ATM" android:layout_below="@+id/img_image"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_14sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_below="@+id/tv_1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/im_b1" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_b1_guide" android:layout_centerInParent="true"/>
+                <View android:background="#ee0033" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_below="@+id/im_b1" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="#4e4e4e" android:layout_gravity="center_vertical" android:id="@+id/tv_b1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="Nhập số tiền cần rút và đợi mã rút tiền gửi về"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/im_b2" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_b2_guide" android:layout_centerInParent="true"/>
+                <View android:background="#ee0033" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_below="@+id/im_b2" android:layout_centerHorizontal="true"/>
+                <ImageView android:background="#ee0033" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_above="@+id/im_b2" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="#4e4e4e" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="Ra cây ATM của ngân hàng MB gần nhất"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/im_b3" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="@drawable/ic_b3_guide" android:layout_centerInParent="true"/>
+                <ImageView android:background="#ee0033" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_above="@+id/im_b3" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="#4e4e4e" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="Nhập mã rút tiền vào ATM để rút tiền"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/_13sdp" android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_8sdp" android:text="Trải nghiệm ngay" android:layout_alignParentBottom="true" style="@style/new_button_send_style"/>
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_parrent" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/layout_header" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardElevation="2dp">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:orientation="vertical" android:id="@+id/toolbar" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_close_white_vector" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@color/colorWhite"/>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:id="@+id/lo_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <fragment android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" class="com.google.android.gms.maps.SupportMapFragment"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView android:id="@+id/layout_search" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small">
+            <RelativeLayout android:id="@+id/container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height">
+                <com.mikepenz.iconics.view.IconicsImageView android:id="@+id/ic_search" android:padding="1dp" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_centerVertical="true" app:iiv_color="@color/md_grey_400" app:iiv_icon="@string/gmd_search"/>
+                <RelativeLayout android:id="@+id/btn_setting" android:background="?attr/selectableItemBackgroundBorderless" android:visibility="visible" android:layout_width="@dimen/icon_size_big" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <View android:background="#e0e0e0" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+                    <ImageView android:layout_width="@dimen/icon_size_normal" android:layout_height="@dimen/icon_size_normal" android:tint="@color/md_grey_600" android:layout_centerInParent="true" app:srcCompat="@drawable/ic_filter_vector"/>
+                </RelativeLayout>
+                <com.bplus.vtpay.util.materialedittext.MaterialAutoCompleteTextView android:id="@+id/autoCompleteTextView" android:background="#ffffffff" android:paddingRight="@dimen/icon_size_small" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="Nhập khu vực cần tìm" android:singleLine="true" android:popupBackground="@drawable/bg_radius_and_shadow" android:layout_toLeftOf="@+id/btn_setting" android:layout_toRightOf="@+id/ic_search" android:imeOptions="actionDone" android:dropDownHeight="150dp" android:dropDownVerticalOffset="10dp" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="false" app:met_primaryColor="#ffffffff" style="@style/edit_text_style"/>
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/btn_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toLeftOf="@+id/btn_setting" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="2dp" android:src="0x7f0804a9"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:id="@+id/layout_setting" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/layout_margin_small" android:layout_below="@+id/layout_search">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:padding="@dimen/layout_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cấu hình hiển thị"/>
+                <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:id="@+id/cb_chuyentien" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="5dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <ImageView android:id="@+id/ic_chuyentien" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/layout_margin_small" android:src="@drawable/checkbox_on"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ic_chuyentien">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điểm chuyển tiền"/>
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_dct_vettel"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/cb_cuahang" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="5dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ic_cuahang" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/layout_margin_small" android:src="@drawable/checkbox_on"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ic_cuahang">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cửa hàng trực tiếp"/>
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_chtt_vettel"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/cb_daily" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="5dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ic_daily" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/layout_margin_small" android:src="@drawable/checkbox_on"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ic_daily">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đại lý ủy quyền"/>
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_dluq_vettel"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/cb_sieuthi" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="5dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/layout_margin_small">
+                    <ImageView android:id="@+id/ic_sieuthi" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginTop="3dp" android:layout_marginRight="@dimen/layout_margin_small" android:src="@drawable/checkbox_on"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ic_sieuthi">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Siêu thị xuất nhập khẩu"/>
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/map_st_vettel"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/md_grey_600" android:id="@+id/tv_note" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70dp" android:layout_marginBottom="8dp" android:text="(Thông tin chỉ mang tính tham khảo)" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/layout_infowindow" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/google_map_popup_h" android:layout_alignParentBottom="true">
+            <View android:id="@+id/lo_shadown" android:background="@drawable/background_shadow_nguoc" android:layout_width="match_parent" android:layout_height="3dp" android:layout_alignParentTop="true"/>
+            <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lo_shadown">
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_right" android:layout_width="@dimen/actionbar_height" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <RelativeLayout android:gravity="center" android:id="@+id/btn_call" android:background="?attr/selectableItemBackground" android:padding="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f08046c" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center" android:id="@+id/btn_direct" android:background="?attr/selectableItemBackground" android:padding="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0804e6" android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <View android:id="@+id/view" android:background="#e0e0e0" android:layout_width="0.5dp" android:layout_height="match_parent" android:layout_toLeftOf="@+id/layout_right"/>
+                <RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="@dimen/layout_margin_small" android:paddingRight="5dp" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/view">
+                    <TextView android:textSize="@dimen/text_size_sub" android:textColor="@color/md_grey_600" android:id="@+id/tv_title_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin" android:text="Google Map" android:singleLine="true" android:layout_alignParentTop="true"/>
+                    <TextView android:textSize="@dimen/text_size_sub" android:textColor="@android:color/black" android:id="@+id/tv_phone_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/layout_margin" android:text="ĐT: 0999-999-999" android:maxLines="2" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/md_orange_A200" android:gravity="center_vertical" android:id="@+id/tv_snippet_info" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/layout_margin" android:text="Google Map" android:maxLines="2" android:layout_above="@+id/tv_phone_info" android:layout_below="@+id/tv_title_info"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/md_grey_600" android:gravity="center_horizontal" android:id="@+id/tv_not_sp" android:padding="@dimen/layout_margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thiết bị của bạn không hỗ trợ để thực hiện chức năng này." android:layout_below="@+id/layout_header"/>
+</RelativeLayout>

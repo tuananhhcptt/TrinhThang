@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:tag="layout/views_dropdown_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/tokenSpacing16">
+    <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenDark60" android:id="@+id/label" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/fontRegular13"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing04" android:layout_marginBottom="@dimen/tokenSpacing08">
+        <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenDark100" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/fontRegular18"/>
+        <ImageView android:id="@+id/iconDropdown" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/views_icon_arrow_down_16_dark100" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/tokenSpacing08" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:background="@color/tokenDark10" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+</LinearLayout>

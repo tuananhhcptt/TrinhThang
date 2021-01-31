@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/padding_normal" android:paddingTop="@dimen/padding_normal" android:paddingBottom="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_icon_data_package" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big" android:src="0x7f0807da"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_large">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_name_package" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="10sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_expired" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Bạn đang sử dụng gói cước này"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/margin_large">
+            <TextView android:textColor="@color/md_grey_600" android:id="@+id/tv_content" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_small" android:src="0x7f080668"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:id="@+id/tv_details" android:paddingTop="5dp" android:paddingBottom="@dimen/padding_normal" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small" android:text="CHI TIẾT"/>
+        <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</LinearLayout>

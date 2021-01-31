@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/bidv_layout" android:background="?attr/selectableItemBackground" android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingRight="5dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:paddingLeft="5dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="70dp" android:layout_height="55dp" android:layout_marginRight="10dp" android:src="0x7f080456"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/bidv_title" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginBottom="5dp" android:text="@string/bank_link_withdraw_bidv" android:layout_centerInParent="true"/>
+            <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/bidv_title"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

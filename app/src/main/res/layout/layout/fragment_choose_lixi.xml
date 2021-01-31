@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_parent" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/lixi_choose_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_marginTop="@dimen/layout_margin_small">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHỌN LÌ XÌ" android:layout_centerVertical="true"/>
+            <TextView android:textColor="@color/color_EE0033" android:id="@+id/btn_get_list_sample_card_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rcv_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@+id/rcv_list_lixi_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_padding_top" android:overScrollMode="never"/>
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/input_layout" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_below="@+id/top_layout">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="LỜI CHÚC (KHÔNG BẮT BUỘC)" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/color_EE0033" android:id="@+id/txt_content_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp" android:text="0/300" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_5sdp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_content" android:background="@drawable/bg_gray_radius_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:minHeight="@dimen/_60sdp">
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_12sdp" android:textColor="@color/color_aaa" android:gravity="top" android:id="@+id/edt_content" android:background="@android:color/transparent" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:minHeight="@dimen/_60sdp" android:hint="Lời chúc của bạn" android:minLines="1" android:maxLength="300" android:imeOptions="actionNext" app:met_clearButton="true" app:met_hideUnderline="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/color_warning_transfer_amount" android:layout_gravity="center" android:id="@+id/tv_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:lines="1"/>
+        <RelativeLayout android:id="@+id/rl_select_sample" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn_get_list_sample_message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center" android:background="0x7f08075b" android:layout_width="@dimen/_17sdp" android:layout_height="@dimen/_17sdp"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_EE0033" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn mẫu lời chúc" android:lines="1" android:layout_marginStart="@dimen/_3sdp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_next" android:background="0x7f08028b" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_20sdp" android:text="Tiếp tục" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

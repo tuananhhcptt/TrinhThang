@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/tab_view" android:tag="layout/tab_view_0" android:paddingTop="@dimen/_40sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/icon_group" android:layout_width="match_parent" android:layout_height="@dimen/_42sdp" android:layout_marginTop="@dimen/_10sdp">
+        <View android:id="@+id/tab_holder_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <ImageView android:id="@+id/tab1" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="center" android:layout_weight="1" app:srcCompat="@drawable/ic_chuyen_tien_60_white"/>
+        <ImageView android:id="@+id/imgReceiveMoney" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="center" android:layout_weight="1" app:srcCompat="@drawable/ic_nhan_tien_60_white"/>
+        <ImageView android:id="@+id/tab3" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="center" android:layout_weight="1" app:srcCompat="@drawable/ic_rut_tien_60_white"/>
+        <ImageView android:id="@+id/tab2" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="center" android:layout_weight="1" app:srcCompat="@drawable/ic_lien_ket_the_60_white"/>
+        <View android:id="@+id/tab_holder_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <View android:id="@+id/tab_holder_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <View android:id="@+id/tab_holder_4" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_group" android:layout_width="match_parent" android:layout_height="@dimen/_20sdp">
+        <View android:id="@+id/tab_holder_5" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <TextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tab1_title" android:layout_width="0dp" android:layout_height="match_parent" android:text="Chuyển tiền" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+        <TextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tvReceiveTitle" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:text="Nhận tiền" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+        <TextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tab3_title" android:layout_width="0dp" android:layout_height="match_parent" android:text="Rút tiền" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+        <TextView android:textSize="13sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tab2_title" android:layout_width="0dp" android:layout_height="match_parent" android:text="Liên kết thẻ" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+        <View android:id="@+id/tab_holder_6" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <View android:id="@+id/tab_holder_7" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+        <View android:id="@+id/tab_holder_8" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0"/>
+    </LinearLayout>
+</LinearLayout>

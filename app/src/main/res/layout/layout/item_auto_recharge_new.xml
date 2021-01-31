@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" app:clickToClose="true" app:drag_edge="2" app:show_mode="1">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lo_edit" android:background="#007ddd" android:padding="@dimen/_20sdp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_danh_ba"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Chỉnh sửa"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lo_cancel" android:background="#ff645c" android:padding="@dimen/_20sdp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_danh_ba"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Hủy"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/_13sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_13sdp" android:textColor="#222222" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="#222222" android:gravity="end" android:id="@+id/tv_amount" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:id="@+id/tv_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp"/>
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="#7a7a7a" android:id="@+id/tv_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_recharge" android:background="@drawable/bg_button_green_shadow_radius" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_2sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_6sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nạp ngay" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#e9e9e9" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</com.daimajia.swipe.SwipeLayout>

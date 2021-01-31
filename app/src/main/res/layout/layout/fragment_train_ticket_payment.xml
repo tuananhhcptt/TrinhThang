@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f4f3f3" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tab_layout_train_ticket" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="64dp" android:weightSum="2">
+        <Button android:textSize="@dimen/text_size_normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_one_way" android:background="@drawable/border_button_train_ticket_unselect" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginRight="10dp" android:text="Một chiều" android:layout_weight="0.4" android:textAllCaps="false" android:textAlignment="center"/>
+        <Button android:textSize="@dimen/text_size_normal" android:textColor="#000000" android:gravity="center" android:id="@+id/btn_return" android:background="@drawable/border_button_train_ticket_select" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="10dp" android:text="Khứ hồi" android:layout_weight="0.4" android:textAllCaps="false" android:textAlignment="center"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" app:cardCornerRadius="5dp" app:cardElevation="3dp">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ln1" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="GA ĐI" android:layout_weight="1"/>
+                <View android:background="#dedede" android:layout_width="0.1dp" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="CHỌN GA ĐẾN" android:layout_weight="1"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0805e8"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ln2" android:layout_width="match_parent" android:layout_height="50dp" android:weightSum="2" android:layout_below="@+id/ln1">
+                <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@+id/tv_pick_train_depart" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Hà Nội" android:layout_weight="1"/>
+                <View android:background="#dedede" android:layout_width="0.1dp" android:layout_height="match_parent"/>
+                <TextView android:gravity="center" android:id="@+id/tv_pick_train_arrivals" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Chọn ga đến" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" app:cardCornerRadius="7dp" app:cardElevation="3dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:weightSum="3">
+                <TextView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="NGÀY ĐI" android:layout_weight="0.8"/>
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_normal" android:id="@+id/tv_pick_depart_date" android:background="@drawable/border_train_textview" android:layout_width="0dp" android:layout_height="30dp" android:hint="Chọn ngày đi" android:layout_weight="1.6" android:textAlignment="center"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_pick_depart_date" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_calendar_dsvn" android:layout_weight="0.6"/>
+            </LinearLayout>
+            <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+            <LinearLayout android:id="@+id/ln_date_arrival" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:weightSum="3">
+                <TextView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="NGÀY VỀ" android:layout_weight="0.8"/>
+                <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/text_size_normal" android:id="@+id/tv_pick_arrivals_date" android:background="@drawable/border_train_textview" android:layout_width="0dp" android:layout_height="30dp" android:hint="Chọn ngày về" android:layout_weight="1.6" android:textAlignment="center"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_pick_arrivals_date" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_calendar_dsvn" android:layout_weight="0.6"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" app:cardCornerRadius="7dp" app:cardElevation="3dp">
+        <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:weightSum="3">
+            <TextView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Chon số lượng hành khách" android:layout_weight="2.4"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_pick_passenger" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f0805c2" android:layout_weight="0.6"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" app:cardCornerRadius="7dp" app:cardElevation="3dp">
+        <LinearLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:weightSum="3">
+            <TextView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Chon loại chỗ" android:layout_weight="2.4"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_pick_seat" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f0805c2" android:layout_weight="0.6"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:textSize="@dimen/text_size_normal" android:layout_gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/train_ticket_noti_1" android:textAlignment="center"/>
+    <Button android:id="@+id/btn_next_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+</LinearLayout>

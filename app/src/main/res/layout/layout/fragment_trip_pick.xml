@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" app:cardCornerRadius="7dp" app:cardElevation="0.8dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:weightSum="3">
+                <ImageView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_calendar_dsvn" android:layout_weight="0.5"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#333333" android:layout_gravity="center" android:id="@+id/tv_trip_pick_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2.5"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:weightSum="3">
+                <ImageView android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:src="0x7f080630" android:layout_weight="0.5"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="#333333" android:layout_gravity="center" android:id="@+id/tv_trip_pick_station" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2.5"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_trip_pick" android:layoutAnimation="@anim/layout_animation_fall_down" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp" android:overScrollMode="never"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="#263d60" android:gravity="center_vertical" android:id="@+id/name" android:paddingTop="@dimen/_7sdp" android:paddingRight="@dimen/_15sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <RadioButton android:layout_gravity="center_vertical" android:id="@+id/rb_selected" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_15sdp"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/finish">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:text="Yêu cầu nạp tiền của Quý khách đã được gửi tới ViettelPay. Số tiền nạp sẽ được chuyển tới tận nơi trong vòng 30-120 phút."/>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:text="THÔNG TIN YÊU CẦU NẠP"/>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/_8sdp" android:textColor="#b6b6b6" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:background="@drawable/background_status_waiting" android:padding="@dimen/_2sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đang chờ" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@+id/time"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_below="@+id/amount"/>
+                    <View android:id="@+id/divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_margin="@dimen/_10sdp" android:layout_below="@+id/detail"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divider"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@+id/finish" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_15sdp" android:text="KẾT THÚC" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+</RelativeLayout>

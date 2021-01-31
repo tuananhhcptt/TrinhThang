@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="#7e7f7f" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/list_bank_intro"/>
+    <TextView android:textSize="@dimen/_12sdp" android:textColor="#7e7f7f" android:layout_gravity="center_horizontal" android:id="@+id/tv_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quý khách tham khảo kỳ hạn, lãi suất tại đây."/>
+    <ListView android:id="@+id/list_bank" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp"/>
+</LinearLayout>

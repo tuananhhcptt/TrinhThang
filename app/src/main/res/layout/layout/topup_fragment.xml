@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:background="#cc454f63" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/white_color_background_rounded_corner_top" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#263d60" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:text="Thêm tiền tiết kiệm"/>
+        <View android:background="#e3e3e3" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:text="Số tiền" android:textAllCaps="true"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <TextView android:textColor="#ff001f" android:id="@+id/tv_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="3dp" android:text="Số tiền thêm vào từ 500.000đ - 50.000.000đ" android:layout_below="@+id/edt_topup"/>
+            <EditText android:textSize="24sp" android:textColor="#263d60" android:gravity="center" android:id="@+id/edt_topup" android:background="@drawable/background_border_rounded_8sdp" android:layout_width="match_parent" android:layout_height="63dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:hint="Nhập số tiền muốn thêm" android:inputType="number"/>
+        </RelativeLayout>
+        <TextView android:textSize="16sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height" android:layout_marginLeft="20dp" android:layout_marginTop="32dp" android:layout_marginRight="20dp" android:text="Xác nhận" style="@style/button_gradient"/>
+    </LinearLayout>
+</RelativeLayout>

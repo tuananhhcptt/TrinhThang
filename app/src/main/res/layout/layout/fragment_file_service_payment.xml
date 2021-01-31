@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/layout_margin">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_16sdp" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="3dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin">
+                        <ImageView android:id="@+id/iv_provider" android:layout_width="@dimen/iv_provider_width" android:layout_height="@dimen/iv_provider_height"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp">
+                            <TextView android:textSize="12dp" android:textColor="#b6b6b6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nhà cung cấp dịch vụ" android:includeFontPadding="false"/>
+                            <TextView android:textSize="16dp" android:textColor="@color/new_text_color" android:ellipsize="end" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_provider_padding_top" android:maxLines="2" android:includeFontPadding="false"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin" android:hint="Mã thanh toán" android:maxLength="50" android:layout_centerVertical="true" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_textColor="@color/new_text_color" style="@style/edit_text_style"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button android:textSize="@dimen/text_size_button" android:textColor="@android:color/white" android:id="@+id/btn_send" android:background="@drawable/bg_button_green_shadow_radius" android:paddingTop="6dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin" android:text="Kiểm tra" android:textAllCaps="false"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin"/>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

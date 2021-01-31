@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:text="@string/recharge_from_available_sources" android:fontFamily="@font/sf_pro_display_bold" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMoneySource" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/color_e9e9e9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/dimen_16dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_16dp">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recharge_from_counter" android:fontFamily="@font/sf_pro_display_bold"/>
+        <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_red_EE0033" android:id="@+id/tvViewAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/view_all" android:fontFamily="@font/sf_pro_display_bold" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_a7a7a7" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recharge_from_counter_description" android:fontFamily="@font/sf_pro_display_regular" android:layout_marginStart="@dimen/dimen_16dp" android:layout_marginEnd="@dimen/dimen_16dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCounterNear" android:padding="@dimen/dimen_8dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_8dp"/>
+</LinearLayout>

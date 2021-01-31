@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_date_start" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_calendar" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" app:srcCompat="@drawable/ic_calendar_svg"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_title_date_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="Từ ngày" android:layout_toRightOf="@+id/iv_calendar"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_date_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_below="@+id/iv_calendar"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/icon_down" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="0x7f080347" android:tint="@color/md_grey_500"/>
+                <ImageView android:id="@+id/icon_left" android:visibility="gone" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" android:src="@drawable/icon_left" android:tint="@color/md_grey_500"/>
+            </LinearLayout>
+            <View android:background="@color/color_line" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_date_end" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/iv_calendar_2" android:layout_width="@dimen/_16sdp" android:layout_height="@dimen/_16sdp" app:srcCompat="@drawable/ic_calendar_svg"/>
+                    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_title_date_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="Đến ngày" android:layout_toRightOf="@+id/iv_calendar_2"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_date_start_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_below="@+id/iv_calendar_2"/>
+                </RelativeLayout>
+                <ImageView android:id="@+id/icon_down_end" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginRight="5dp" android:src="0x7f080347" android:tint="@color/md_grey_500"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

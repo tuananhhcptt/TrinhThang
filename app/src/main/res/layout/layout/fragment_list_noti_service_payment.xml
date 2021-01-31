@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/md_grey_100" android:paddingBottom="?android:attr/actionBarSize" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView android:id="@+id/scroll_content" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_warning" android:padding="@dimen/_15sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mỗi thuê bao chỉ được đăng ký tối đa 3 mã khách hàng."/>
+                    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/_5sdp">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/ll_register_bill" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp">
+                            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_10sdp" android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_service_code_finance" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+                            </RelativeLayout>
+                            <Button android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_7sdp" android:layout_marginRight="0dp" android:text="@string/register_reg" style="@style/button_gradient"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:gravity="center_vertical" android:id="@+id/tv_list_bill" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_7sdp" android:paddingRight="@dimen/_15sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/txt_label_list_notification_evn"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_bill" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/padding_large" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@color/dark_grey_blue" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_term_loan_searching" android:lineSpacingExtra="4sp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/margin_small" android:layout_weight="11">
+        <WebView android:id="@+id/web_view_loan_term" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/margin_xlarge"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <Button android:id="@+id/button_register_loan" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:text="@string/accept" android:layout_weight="1" android:textAllCaps="false" android:layout_marginStart="0dp" android:layout_marginEnd="0dp" style="@style/button_gradient"/>
+</LinearLayout>

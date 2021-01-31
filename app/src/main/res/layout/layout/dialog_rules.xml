@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/rl_dialog" android:layout_width="wrap_content" android:layout_height="340dp">
+    <FrameLayout android:id="@+id/frameLayout_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thể lệ"/>
+        <Button android:layout_gravity="end" android:id="@+id/btn_close_dialog" android:background="0x7f08067b" android:layout_width="40dp" android:layout_height="40dp"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="280dp" android:layout_height="250dp" android:layout_marginTop="@dimen/layout_margin_normal" android:layout_below="@+id/frameLayout_dialog" android:layout_centerHorizontal="true">
+        <WebView android:id="@+id/webView_guide" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

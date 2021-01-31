@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_32sdp" android:layout_marginRight="@dimen/_18sdp">
+        <TextView android:textSize="13sp" android:textColor="@color/dark_grey_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CHI TIẾT HỢP ĐỒNG"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="14sp" android:textColor="#4a4a4a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số hợp đồng" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/dark_grey_blue" android:gravity="right" android:id="@+id/tvContractName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="14sp" android:textColor="#4a4a4a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Họ tên khách hàng" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/dark_grey_blue" android:gravity="right" android:id="@+id/tvCustName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="14sp" android:textColor="#4a4a4a" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số tiền cần thanh toán" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/dark_grey_blue" android:gravity="right" android:id="@+id/tvtotalFee" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textSize="13sp" android:textColor="@color/dark_grey_blue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="SỐ TIỀN THANH TOÁN"/>
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" app:cardCornerRadius="@dimen/_5sdp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp">
+                <TextView android:textSize="12sp" android:textColor="#b6b6b6" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" android:text="Số tiền khách hàng thanh toán" android:letterSpacing="-0.04"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textColor="@color/dark_grey_blue" android:id="@+id/edtCustPaid" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_weight="1" android:inputType="number" app:met_bottomTextSize="@dimen/_8sdp"/>
+                    <TextView android:layout_gravity="center" android:layout_width="@dimen/_60sdp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="@string/title_vietnam_currency" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <Button android:layout_gravity="bottom" android:id="@+id/btnPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_18sdp" android:layout_marginBottom="16dp" android:foreground="?attr/selectableItemBackground" android:text="Thanh toán" style="@style/button_send_style"/>
+</LinearLayout>

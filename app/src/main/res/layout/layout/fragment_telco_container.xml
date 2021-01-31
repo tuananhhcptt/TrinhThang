@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_15sdp">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="10dp" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    <androidx.cardview.widget.CardView android:id="@+id/lo_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_7sdp" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="@dimen/_2sdp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearlayout_recharge" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lo_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/tv_name" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_12sdp" android:src="0x7f080817" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_new" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/tvNameMoneySource" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nạp tiền vào ViettelPay" android:maxLines="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/tvNotSp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Nạp tiền dễ dàng, nhanh chóng từ hơn 40 ngân hàng"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_7sdp" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="@dimen/_2sdp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearlayout_withdraw" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_12sdp" android:src="0x7f080817" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_new" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rút tiền tại điểm giao dịch" android:maxLines="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Rút tiền tại các cửa hàng Viettel tại 63 tỉnh thành"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:textSize="@dimen/_12sdp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/recycle_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_7sdp" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="@dimen/_2sdp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearlayout_withdraw_mb" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_12sdp" android:src="0x7f080817" android:layout_alignParentRight="true"/>
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_new" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rút tiền tại ATM MB" android:maxLines="2"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Rút tiền trực tiếp tại các cây ATM MB không cần dùng thẻ vật lý"/>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:textSize="@dimen/_12sdp" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/recycle_mb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

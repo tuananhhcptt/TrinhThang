@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_3sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="#d8d8d8"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView android:id="@+id/scr_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_222" android:gravity="center" android:id="@+id/tv_title" android:paddingTop="@dimen/layout_margin_small" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Chọn ngân hàng người nhận" android:layout_centerHorizontal="true"/>
+                <View android:id="@+id/line_napas_bottom" android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/layout_margin_small" android:layout_below="@+id/tv_title"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_bank" android:paddingBottom="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line_napas_bottom" app:layoutManager="LinearLayoutManager"/>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

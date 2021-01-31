@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_info" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/_75sdp">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_15sdp" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_5sdp">
+        <ImageView android:id="@+id/img_logo" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f0807c6" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/_5sdp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lo_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_protext_medium" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentEnd="true"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_name" android:layout_width="@dimen/_150sdp" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@font/sf_protext_medium" android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp">
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_text_regular"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/gray_color" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_text_regular"/>
+                <com.bplus.vtpay.view.CircleImageView android:layout_gravity="center" android:id="@+id/img_color_status" android:layout_width="@dimen/_5sdp" android:layout_height="@dimen/_5sdp" android:layout_marginTop="@dimen/_2sdp" android:src="#7ed321" android:layout_marginStart="@dimen/_12sdp"/>
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/gray_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_text_regular" android:layout_marginStart="@dimen/_5sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

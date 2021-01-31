@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lnControl">
+        <include layout="@layout/input_info_baoankhang"/>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lnControl" android:background="#00aaa7" android:paddingLeft="@dimen/_2sdp" android:paddingRight="@dimen/_2sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/imgBanner">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ln_basic" android:background="@drawable/ankhang_tab_type" android:layout_width="match_parent" android:layout_height="@dimen/_50sdp" android:layout_marginRight="@dimen/_1sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Cơ bản"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Quyền lợi 16 triệu đồng"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ln_standard" android:background="@drawable/ankhang_container_background" android:layout_width="match_parent" android:layout_height="@dimen/_50sdp" android:layout_marginRight="@dimen/_1sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Tiêu chuẩn"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Quyền lợi 32 triệu đồng"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ln_advance" android:background="@drawable/ankhang_container_background" android:layout_width="match_parent" android:layout_height="@dimen/_50sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Nâng cao"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/md_grey_600" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Quyền lợi 48 triệu đồng"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

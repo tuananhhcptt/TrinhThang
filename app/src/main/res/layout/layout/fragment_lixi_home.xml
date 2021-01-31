@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/bg_red_gradient" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="0x7f080205" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:paddingStart="@dimen/_16sdp" android:paddingEnd="@dimen/_16sdp">
+            <include android:id="@+id/view_qr_remainning" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_270sdp" android:layout_marginBottom="@dimen/_24sdp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/layout_li_xi_qr_remaining"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/color_ffbe41" android:id="@+id/txt_lixi_total" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_70sdp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <View android:id="@+id/btn_show_lixi" android:layout_width="match_parent" android:layout_height="@dimen/_270sdp" android:layout_marginBottom="@dimen/_24sdp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_qr_lixi" android:background="0x7f08028d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#463d2b" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="Lì xì QR" android:fontFamily="@font/medium"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_traditional_lixi" android:background="0x7f08028d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#463d2b" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="Lì xì truyền thống" android:fontFamily="@font/medium"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_history" android:background="0x7f08028a" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_20sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="Lì xì của tôi" android:fontFamily="@font/medium"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

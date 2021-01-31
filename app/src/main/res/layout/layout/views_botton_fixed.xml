@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/views_botton_fixed_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_shadow" android:background="@drawable/views_shadow_buttonfixed_default" android:layout_width="match_parent" android:layout_height="@dimen/_10sdp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_frame" android:background="@color/tokenWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <p523vn.viettelpay.views.cell.VDSCellLabel android:id="@+id/celMoney" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing12" android:layout_marginBottom="@dimen/_minus4sdp" app:clType="2"/>
+        <p523vn.viettelpay.views.button.VDSButton android:id="@+id/action_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing08" app:btSize="2" app:btType="0"/>
+        <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenCyan100" android:layout_gravity="center" android:id="@+id/action_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tokenSpacing16" android:maxLines="1" style="@style/fontMedium18"/>
+    </LinearLayout>
+</LinearLayout>

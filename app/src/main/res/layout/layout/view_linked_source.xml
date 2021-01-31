@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/viewParent" android:layout_width="match_parent" android:layout_height="@dimen/_90sdp" android:maxHeight="@dimen/_95sdp">
+    <androidx.cardview.widget.CardView android:id="@+id/viewLinkedSource" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" app:cardCornerRadius="20dp" app:cardElevation="6dp" app:cardUseCompatPadding="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgBankIcon" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="@dimen/_16sdp" android:layout_marginTop="@dimen/_11sdp" android:layout_marginRight="@dimen/_7sdp" android:layout_marginBottom="@dimen/_9sdp" android:src="0x7f08061f"/>
+            <LinearLayout android:orientation="vertical" android:paddingRight="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/imgArrow" android:layout_toRightOf="@+id/imgBankIcon" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/color_7a7a7a" android:ellipsize="end" android:id="@+id/tvBankName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_2sdp" android:text="@string/money_source_linked_card" android:lines="1" style="@style/TxtProDisplayMedium"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/tvAccountNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:lines="1" android:fontFamily="@font/sf_pro_display_medium"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imgArrow" android:layout_width="@dimen/_9sdp" android:layout_height="@dimen/_16sdp" android:layout_marginRight="@dimen/_20sdp" android:src="@drawable/ic_arrow_right_3" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#263b60" android:id="@+id/tvTitleAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_16sdp" android:text="@string/bill_infor" android:textAllCaps="true"/>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/white_background_color" android:paddingTop="@dimen/_14sdp" android:paddingBottom="@dimen/_14sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginRight="@dimen/_14sdp">
+            <RadioGroup android:orientation="horizontal" android:id="@+id/rbGroup" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RadioButton android:textColor="#263d60" android:id="@+id/rbPart" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:checked="true" android:text="Số khác" android:layout_weight="1"/>
+                <RadioButton android:textColor="#263d60" android:id="@+id/rbAll" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số tiền kỳ này" android:layout_weight="1"/>
+            </RadioGroup>
+            <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_14sdp" android:text="Số tiền thanh toán"/>
+            <com.bplus.vtpay.util.materialedittext.MaterialAutoCompleteTextView android:id="@+id/edtAmount" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginRight="@dimen/_14sdp" android:inputType="number" app:met_clearButton="true"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_payment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_30sdp" android:text="Thanh toán" style="@style/button_gradient"/>
+        <TextView android:textColor="#263d60" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/_16sdp" android:text="@string/new_payment_easyvay"/>
+    </LinearLayout>
+</LinearLayout>

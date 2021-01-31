@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/lnl_lst_packet" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet1" android:background="@drawable/drawble_boder_white" android:paddingLeft="@dimen/_1sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_1sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_1sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_name_p1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/color_red_EE0033" android:gravity="center" android:id="@+id/value_packet1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet2" android:background="@drawable/drawble_boder_gray" android:paddingLeft="@dimen/_1sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_1sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_1sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_name_p2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/colorBlackTrans50" android:gravity="center" android:id="@+id/value_packet2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/packet3" android:background="@drawable/drawble_boder_gray" android:paddingLeft="@dimen/_1sdp" android:paddingTop="@dimen/_5sdp" android:paddingRight="@dimen/_1sdp" android:paddingBottom="@dimen/_5sdp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@dimen/_1sdp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_name_p3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/colorBlackTrans50" android:gravity="center" android:id="@+id/value_packet3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_container" android:background="@android:color/white" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tử vong do tai nạn:" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="end" android:id="@+id/accident_fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thương tật toàn bộ vĩnh viễn:" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="end" android:id="@+id/forever_full_injury" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Thương tật bộ phận vĩnh viễn:" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="end" android:id="@+id/forever_item_injury" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:gravity="start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Trợ cấp thu nhập (tối đa 10 tháng):" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:gravity="end" android:id="@+id/income_support" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorBlueNavi" android:gravity="end" android:id="@+id/right_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/right_detail"/>
+        </LinearLayout>
+        <View android:background="#dadada" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_3sdp"/>
+        <TextView android:textSize="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thời gian tham gia"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_participation_time" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="#dadada" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_3sdp"/>
+        <TextView android:textSize="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Ngày bắt đầu hiệu lực"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_start_date" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="#dadada" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_3sdp"/>
+        <TextView android:textSize="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Phí bảo hiểm"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_insurance_fee" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="#dadada" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_3sdp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_25sdp">
+            <CheckBox android:gravity="top" android:id="@+id/checkbox_rules" android:layout_width="wrap_content" android:layout_height="match_parent" android:button="@drawable/radio_ite_bg"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/text_color_new" android:id="@+id/txt_rule_focus" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_5sdp" android:text="@string/baotaman_insurance_rules" android:layout_marginStart="@dimen/_5sdp"/>
+        </LinearLayout>
+        <TextView android:layout_gravity="center" android:id="@+id/btn_continue_page_one" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_15sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+    </LinearLayout>
+</LinearLayout>

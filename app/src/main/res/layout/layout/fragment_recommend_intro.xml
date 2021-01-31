@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/fragment_recommend_intro_0" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/imgRecommend" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_info" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_weight="1"/>
+    <Button android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/layout_margin_small" android:text="Thiết lập xác thực" android:textAllCaps="false" style="@style/button_gradient"/>
+</LinearLayout>

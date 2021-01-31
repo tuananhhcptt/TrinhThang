@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_truongsa_bottomsheet" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+        <ImageView android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_3sdp" android:src="@drawable/border_edt" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp"/>
+            <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="#000000" android:paddingLeft="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="@dimen/_12sdp" android:paddingStart="@dimen/_5sdp"/>
+            <Button android:textColor="#ffffff" android:id="@+id/img_close" android:layout_width="@dimen/_120sdp" android:layout_height="wrap_content" android:text="TIẾP TỤC" style="@style/button_gradient"/>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/_40sdp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

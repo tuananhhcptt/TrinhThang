@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:background="@drawable/bg_color_ffeecd_border" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/text_size_24sp" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_27sdp" android:text="Lì xì QR còn lại" android:fontFamily="@font/bold" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/text_title">
+        <HorizontalScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginRight="@dimen/_18sdp" android:layout_marginBottom="@dimen/_20sdp" android:fillViewport="true">
+            <com.bplus.vtpay.view.HorizontalLixiListView android:id="@+id/lv_lixi_card" android:clickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" app:height_card="@dimen/_145sdp" app:isClickItem="false" app:margin_left_card="@dimen/_16sdp" app:width_card="@dimen/_90sdp"/>
+        </HorizontalScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:paddingTop="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_big" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yêu cầu xác thực thông tin"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/margin_small" android:layout_marginRight="@dimen/_10sdp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin">
+            <View android:background="@color/color_aaaaaa" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/btn_confirm_now" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_weight="1"/>
+            <View android:id="@+id/lineDivider1" android:background="@color/color_aaaaaa" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/btn_update_info" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_weight="1"/>
+            <View android:id="@+id/lineDivider2" android:background="@color/color_aaaaaa" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/color_7A7A7A" android:gravity="center" android:id="@+id/btn_skip" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

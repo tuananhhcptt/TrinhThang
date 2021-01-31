@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_position" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:lines="1" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5">
+        <TextView android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:maxLines="2"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/discount_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chiết khấu:"/>
+            <TextView android:textColor="@android:color/black" android:id="@+id/tv_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:lines="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/date_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày áp dụng:"/>
+            <TextView android:textColor="@android:color/black" android:id="@+id/tv_apply_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:lines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/colorPrimary" android:gravity="center" android:id="@+id/tv_change" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/make_change" android:layout_weight="1.25"/>
+</LinearLayout>

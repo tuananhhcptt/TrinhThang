@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_5sdp" android:layout_marginTop="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="#d8d8d8"/>
+    <com.bplus.vtpay.view.CustomNestedScroll android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_16sdp" android:layout_marginBottom="@dimen/_16sdp" android:text="Chọn giao dịch thanh toán tự động" android:textAlignment="center"/>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/lo_tra_truoc" android:paddingTop="@dimen/_7sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_16sdp">
+                    <ImageView android:id="@+id/iv_logo1" android:background="@drawable/circle_border_bg" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" android:src="@drawable/ic_auto_pre_paid" android:scaleType="centerInside"/>
+                    <TextView android:textSize="@dimen/_15sdp" android:textColor="#333333" android:id="@+id/tv_temp1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Nạp ĐT tự động (trả trước)" android:layout_toRightOf="@+id/iv_logo1" android:layout_marginStart="@dimen/_15sdp"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:id="@+id/tv_temp2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_condition_auto_top_up_post_paid" android:layout_toRightOf="@+id/iv_logo1" android:layout_below="@+id/tv_temp1" android:layout_marginStart="@dimen/_15sdp"/>
+                </RelativeLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/lo_tra_sau" android:paddingTop="@dimen/_7sdp" android:paddingBottom="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/_16sdp">
+                    <ImageView android:id="@+id/iv_logo_tra_sau" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" app:srcCompat="@drawable/ic_post_top_up_auto"/>
+                    <TextView android:textSize="@dimen/_15sdp" android:textColor="#333333" android:id="@+id/tv_title_tra_sau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_2sdp" android:text="Thanh toán cước di động (trả sau)" android:layout_toRightOf="@+id/iv_logo_tra_sau" android:layout_marginStart="@dimen/_15sdp"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:id="@+id/tv_detail_tra_sau" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tự động thanh toán toàn bộ cước hàng tháng" android:layout_toRightOf="@+id/iv_logo_tra_sau" android:layout_below="@+id/tv_title_tra_sau" android:layout_marginStart="@dimen/_15sdp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bplus.vtpay.view.CustomNestedScroll>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/dialog_layout" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/international_bank" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" app:cardCornerRadius="@dimen/_8sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ic_search_ct" android:padding="@dimen/_10sdp" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp" android:tint="#b6b6b6" android:layout_centerVertical="true" app:srcCompat="@drawable/icon_search_vector"/>
+            <EditText android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:textColorHint="#b6b6b6" android:id="@+id/edt_search" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp" android:hint="@string/action_search" android:layout_toRightOf="@+id/ic_search_ct" android:layout_toEndOf="@+id/ic_search_ct"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/elv_list_bank" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/_10sdp"/>
+        <include layout="@layout/file_not_found_layout"/>
+    </RelativeLayout>
+</LinearLayout>

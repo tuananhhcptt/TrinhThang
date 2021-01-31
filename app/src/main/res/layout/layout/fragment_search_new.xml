@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/colorWhite" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_search_map" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" app:srcCompat="@drawable/ic_tra_cuu_diem_giao_dich_chuyen_tien_viettel"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_black_1000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tra cứu điểm giao dịch, chuyển tiền Viettel" android:layout_weight="1"/>
+        <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginLeft="@dimen/_10sdp" android:src="0x7f080591" android:tint="@color/md_black_1000" android:layout_marginStart="@dimen/_10sdp"/>
+    </LinearLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_margin="@dimen/_1sdp"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/lo_search_atm" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginEnd="@dimen/_10sdp" app:srcCompat="@drawable/ic_tra_cuu_atm_phong_giao_dich_ngan_hang"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_black_1000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tra cứu ATM, phòng giao dịch ngân hàng" android:layout_weight="1"/>
+        <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:layout_marginLeft="@dimen/_10sdp" android:src="0x7f080591" android:tint="@color/md_black_1000" android:layout_marginStart="@dimen/_10sdp"/>
+    </LinearLayout>
+    <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_margin="@dimen/_1sdp"/>
+</LinearLayout>

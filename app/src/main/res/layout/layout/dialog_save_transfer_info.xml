@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardCornerRadius="10dp" app:cardPreventCornerOverlap="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/new_text_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lưu người nhận"/>
+            <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_10sdp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="Vui lòng nhập tên giao dịch mẫu"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialAutoCompleteTextView android:textSize="@dimen/_12sdp" android:textColorHint="@color/md_grey_600" android:gravity="center" android:id="@+id/edt_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_30sdp" android:hint="Nhập tên người nhận" android:maxLines="1" android:inputType="text" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_9sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_border_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_20sdp">
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/new_text_color" android:gravity="center" android:id="@+id/btn_cacel" android:layout_width="0dp" android:layout_height="@dimen/_35sdp" android:text="HỦY" android:layout_weight="1"/>
+                <View android:background="@color/color_eeeeee" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="#ee0033" android:gravity="center" android:id="@+id/btn_save" android:layout_width="0dp" android:layout_height="@dimen/_35sdp" android:text="LƯU" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

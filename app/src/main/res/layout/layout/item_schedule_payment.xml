@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/layout_package" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_5sdp">
+    <CheckBox android:textSize="@dimen/_12sdp" android:textColor="@color/color_4a4a4a" android:gravity="center_vertical" android:id="@+id/cb_period_payment" android:paddingLeft="@dimen/_5sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox_radiobutton_selector" android:text="Thanh toán toàn bộ"/>
+    <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:gravity="end" android:id="@+id/txtAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="50.000đ" android:letterSpacing="-0.04"/>
+</LinearLayout>

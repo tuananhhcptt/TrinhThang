@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/bg_white_radius_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginRight="25dp">
+        <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/default_color_gradient" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông báo"/>
+        <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:src="0x7f0806d7"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#000" android:gravity="center" android:id="@+id/tvCountLiXi" android:background="0x7f080726" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/default_color_gradient" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_lixi"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_button" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tvSkip" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Để sau" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_button" android:textColor="#d68530" android:gravity="center" android:id="@+id/tvOpen" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Mở luôn" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ececec" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin" android:src="0x7f080684" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="20dp" android:textColor="#263d60" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tính năng đang được xây dựng" android:layout_centerInParent="true"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin" android:text="Với dịch vụ nạp tiền tại nhà, khách hàng chỉ cần nhập thông tin trên ứng dụng  và gửi yêu cầu nạp tiền, nhân viên Viettel sẽ liên hệ với quý khách  để thực hiện yêu cầu trong vòng 24h." android:layout_below="@+id/title" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/btn_back" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin" android:text="Quay lại" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+</RelativeLayout>

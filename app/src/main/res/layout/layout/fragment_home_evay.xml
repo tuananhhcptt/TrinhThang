@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/sw_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:orientation="vertical" android:id="@+id/tl_create_loan" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:foreground="?android:attr/selectableItemBackground" android:elevation="3dp" app:cardCornerRadius="8dp" app:cardElevation="3dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/_55sdp" android:layout_margin="@dimen/_10sdp">
+                    <ImageView android:id="@+id/icon" android:background="0x7f080689" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_15sdp"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/dark_grey_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_create_loan" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_8sdp" android:layout_toEndOf="@+id/icon" android:letterSpacing="-0.04"/>
+                    <ImageView android:padding="@dimen/_3sdp" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:adjustViewBounds="true" android:tint="#263d60" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_3sdp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/dark_grey_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/label_loan_status" android:layout_marginStart="@dimen/_10sdp" android:letterSpacing="-0.04"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <include android:visibility="gone" layout="@layout/file_not_found_layout"/>
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_loan" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_5sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nạp tiền tận nơi" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/_6sdp" android:textColor="@android:color/white" android:background="@drawable/background_free" android:padding="@dimen/_3sdp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="MIỄN PHÍ" android:layout_toRightOf="@+id/title" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_5sdp" android:layout_toEndOf="@+id/title"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#aaaaaa" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="Chỉ cần cung cấp thông tin ngắn gọn, chúng tôi sẽ đến tận nơi và nạp ngay tiền cho bạn"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

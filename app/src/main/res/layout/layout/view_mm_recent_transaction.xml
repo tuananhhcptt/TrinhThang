@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/viewParent" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardElevation="2dp" app:cardUseCompatPadding="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_16sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp"/>
+        <TextView android:textSize="@dimen/text_size_12sp" android:textColor="#d3d3d3" android:layout_gravity="bottom" android:id="@+id/tvTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp"/>
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

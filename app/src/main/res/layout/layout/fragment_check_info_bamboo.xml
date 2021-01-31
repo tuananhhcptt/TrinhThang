@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:padding="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/lo_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_6sdp" app:cardCornerRadius="@dimen/_6sdp">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/_16sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/iv_logo" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_40sdp"/>
+                    <View android:background="@drawable/bg_ic_bamboo" android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_40sdp"/>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp">
+                    <TextView android:textSize="@dimen/_12sdp" android:textColor="#b6b6b6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nhà cung cấp dịch vụ"/>
+                    <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_13sdp" android:textColorHint="#b6b6b6" android:id="@+id/id_pnr" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_14sdp" android:hint="Nhập mã PNR" android:imeOptions="actionDone" app:met_baseColor="@color/new_text_color" app:met_bottomTextSize="@dimen/_16sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelText="Mã PNR" app:met_floatingLabelTextSize="@dimen/_12sdp" app:met_hideUnderline="true" app:met_primaryColor="#b6b6b6" style="@style/edit_text_bill_code_style_bamboo"/>
+            <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <View android:id="@+id/view" android:background="#ff0000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:id="@+id/error_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_10sdp" android:textColor="#ff0000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_2sdp" android:layout_marginTop="@dimen/_1sdp" android:text="Vui lòng nhập mã PNR."/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@+id/btn_check" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/_15sdp" android:text="KIỂM TRA" style="@style/button_gradient"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

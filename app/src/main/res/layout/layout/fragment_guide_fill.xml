@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_5sdp" android:layout_margin="10dp" android:src="@drawable/line_control"/>
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/_220sdp" android:layout_marginLeft="8dp" android:layout_marginTop="4dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+        <com.github.florent37.shapeofview.shapes.RoundRectView android:layout_width="match_parent" android:layout_height="wrap_content" app:shape_roundRect_bottomLeftRadius="24dp" app:shape_roundRect_bottomRightRadius="24dp" app:shape_roundRect_topLeftRadius="24dp" app:shape_roundRect_topRightRadius="24dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="0x7f080791" android:scaleType="centerCrop"/>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/drawable_tooltip_text" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp">
+                <TextView android:textSize="@dimen/_16sdp" android:textColor="#000000" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Chọn loại chỗ nhanh"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/text_color_new" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_4sdp" android:text="Chạm vào icon góc trên bên phải để chọn các loại\10 chỗ nhanh chóng."/>
+                <View android:id="@+id/line_bottom" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="4dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_4sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="#ee0033" android:gravity="center" android:id="@+id/close" android:layout_width="0dp" android:layout_height="match_parent" android:text="Đóng" android:layout_weight="1"/>
+                    <View android:background="#e0e0e0" android:layout_width="1dp" android:layout_height="@dimen/_30sdp"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="#ee0033" android:gravity="center" android:id="@+id/choose" android:layout_width="0dp" android:layout_height="match_parent" android:text="Chọn ngay" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

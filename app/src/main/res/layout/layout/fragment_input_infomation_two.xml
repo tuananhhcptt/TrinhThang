@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/full_frame" android:background="#e4e4e4" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lnl_content" android:background="@drawable/bg_input" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp">
+            <ImageView android:layout_gravity="center" android:id="@+id/top_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lnl_input2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lnl_portrait_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp" style="@style/edittext_info_style">
+                    <ImageView android:id="@+id/img_portrait_ava" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_label_image" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:gravity="center_vertical" android:id="@+id/txt_portrait_ava" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10sdp" android:hint="Ảnh chụp chân dung" android:layout_marginStart="@dimen/_10sdp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lnl_front_identify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp" style="@style/edittext_info_style">
+                    <ImageView android:id="@+id/img_front_indentify_ava" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_label_image" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:gravity="center_vertical" android:id="@+id/txt_front_indentify_ava" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10sdp" android:hint="Ảnh mặt trước CMTND" android:layout_marginStart="@dimen/_10sdp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/lnl_back_identify" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_15sdp" style="@style/edittext_info_style">
+                    <ImageView android:id="@+id/img_back_indentify_ava" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_20sdp" android:src="@drawable/ic_label_image" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                    <TextView android:textSize="@dimen/_12sdp" android:gravity="center_vertical" android:id="@+id/txt_back_indentify_ava" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10sdp" android:hint="Ảnh mặt sau CMTND" android:layout_marginStart="@dimen/_10sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@+id/btn_end" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tiếp tục" style="@style/button_gradient"/>
+            <TextView android:textSize="@dimen/_10sdp" android:gravity="center" android:id="@+id/txt_ignore" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/under_ignore"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

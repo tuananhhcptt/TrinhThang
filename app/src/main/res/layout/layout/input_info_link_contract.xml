@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/background_white_corner" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/init_search" layout="@layout/init_search_type_layout"/>
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/init_search" layout="@layout/init_contract_or_plate_layout"/>
+    <Button android:textSize="@dimen/_16sdp" android:layout_gravity="bottom" android:id="@+id/btnContinue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_30sdp" android:layout_marginRight="@dimen/_18sdp" android:layout_marginBottom="@dimen/_30sdp" android:text="Tiếp tục" android:layout_alignParentBottom="true" style="@style/new_button_send_style"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="5.3">
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.bplus.vtpay.view.CircleImageView android:id="@+id/icon_background" android:layout_width="38dp" android:layout_height="38dp" android:src="0x7f0804a5" app:civ_fill_color="#ee0033"/>
+                <com.bplus.vtpay.view.CircleImageView android:id="@+id/iv_contact" android:padding="1px" android:layout_width="38dp" android:layout_height="38dp"/>
+                <ImageView android:id="@+id/iv_contact_mask" android:padding="5dp" android:visibility="gone" android:layout_width="38dp" android:layout_height="38dp" android:src="0x7f0806ed" android:scaleType="fitCenter"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/colorWhite" android:id="@+id/tv_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CT" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="12dp">
+                <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/tv_name_member_to_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="#7e7f7f" android:id="@+id/tv_phone_member_to_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textSize="10dp" android:id="@+id/tv_vnd" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_vietnam_currency" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            <TextView android:textSize="16sp" android:textColor="#263d60" android:gravity="right" android:id="@+id/tv_money_to_share" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0" android:layout_toLeftOf="@+id/tv_vnd" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="number"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#e3e3e3" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/_10sdp"/>
+</LinearLayout>

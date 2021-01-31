@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_description" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_7sdp">
+        <EditText android:textSize="@dimen/_12sdp" android:textColorHint="@color/colorWhiteTrans50" android:gravity="center" android:id="@+id/edt_password" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/_30sdp" android:hint="@string/hint_password_new" android:inputType="none|text|textAutoCorrect|number|phone" android:textCursorDrawable="@drawable/cursor_edittext_white" android:fontFamily="sans-serif" style="@style/edit_text_pin_style"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/lo_password" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_30sdp" android:layout_centerInParent="true">
+            <com.bplus.vtpay.view.MyRecycleView android:orientation="vertical" android:id="@+id/rcv_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lo_select_password" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/iv_clear_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0804ab" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0.75dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <EditText android:textSize="@dimen/_12sdp" android:textColorHint="@color/colorWhiteTrans50" android:gravity="center" android:id="@+id/edt_confirm_password" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/_30sdp" android:layout_marginBottom="@dimen/_1sdp" android:hint="@string/hint_confirm_password_new" android:inputType="none|text|textAutoCorrect|number|phone" android:textCursorDrawable="@drawable/cursor_edittext_white" android:fontFamily="sans-serif" style="@style/edit_text_pin_style"/>
+        <RelativeLayout android:gravity="center" android:id="@+id/lo_confirm_pasword" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_30sdp" android:layout_centerInParent="true">
+            <com.bplus.vtpay.view.MyRecycleView android:orientation="vertical" android:id="@+id/rcv_dot_confirm_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lo_select_confirm_password" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:id="@+id/iv_clear_confirm_password" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0804ab" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/iv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="0.75dp"/>
+    <Button android:id="@+id/btn_next" android:paddingLeft="@dimen/_40sdp" android:paddingRight="@dimen/_40sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:text="@string/next" android:textAllCaps="false" style="@style/button_login"/>
+    <TextView android:textSize="@dimen/_10sdp" android:textColor="@color/colorWhite" android:id="@+id/tv_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Hủy bỏ"/>
+</LinearLayout>

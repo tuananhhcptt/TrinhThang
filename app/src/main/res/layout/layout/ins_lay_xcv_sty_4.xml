@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/insiderLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/buttonContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/closeBt" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <com.useinsider.insider.InsiderView android:id="@+id/htmlView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginBottom="@dimen/_12sdp">
+        <RadioGroup android:id="@+id/rbGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbChoosedContract" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <TextView android:textSize="14sp" android:textColor="#4a4a4a" android:layout_gravity="center" android:id="@+id/tvContractName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Hợp đồng số BCL0200140695"/>
+    </LinearLayout>
+    <View android:background="@color/colorBlackTrans5" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginRight="@dimen/_18sdp"/>
+</LinearLayout>

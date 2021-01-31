@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height">
+    <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/img_check" android:layout_width="@dimen/icon_size_small" android:layout_height="@dimen/icon_size_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/checkbox_on"/>
+    <TextView android:textColor="@color/md_grey_600" android:gravity="center_vertical" android:id="@+id/tv_cityname_item" android:layout_width="match_parent" android:layout_height="@dimen/transfer_button_send_height" android:text="ACB - Ngân Hàng Á Châu" android:layout_toLeftOf="@+id/img_check" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin" android:elevation="3dp" app:cardCornerRadius="11dp" app:cardElevation="11dp">
+        <RelativeLayout android:padding="@dimen/layout_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_logo" android:layout_width="81dp" android:layout_height="50dp" android:src="0x7f0807c8"/>
+            <TextView android:textSize="12sp" android:textColor="#b6b6b6" android:id="@+id/tv_provider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="3dp" android:text="Nhà cung cấp dịch vụ" android:layout_toRightOf="@+id/iv_logo"/>
+            <TextView android:textSize="16sp" android:textColor="#263d60" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="3dp" android:text="Nộp học phí" android:layout_toRightOf="@+id/iv_logo" android:layout_below="@+id/tv_provider"/>
+            <RelativeLayout android:id="@+id/edt_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:layout_below="@+id/iv_logo">
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="16sp" android:id="@+id/edt_payment_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Mã thanh toán" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextColor="@color/color_222"/>
+                <ImageView android:id="@+id/iv_qr" android:background="#ffffff" android:visibility="visible" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="3dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_qr_svg"/> tools:visibility=&quot;visible&quot;\10                    /&gt; 
+            </RelativeLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Khách hàng có thể quét mã QR code để truy vấn thông tin " android:layout_below="@+id/edt_container"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@+id/tv_check" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="kiểm tra" style="@style/button_gradient"/>
+    <ScrollView android:id="@+id/scroll_cms" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/layout_margin_small">
+        <WebView android:id="@+id/webview" android:background="@android:color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin"/>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ln_recent" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/new_text_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:text="GIAO DỊCH GẦN ĐÂY"/>
+        <View android:background="#e0e0e0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="@dimen/_12sdp" android:layout_below="@+id/rcv_recent_trans"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/loading" android:visibility="gone" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/rcv_recent_trans" android:background="@color/white" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_12sdp" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</LinearLayout>

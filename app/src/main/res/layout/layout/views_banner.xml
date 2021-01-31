@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/container" android:tag="layout/views_banner_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p523vn.viettelpay.views.cardview.VDSCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cvCornerRadius="@dimen/tokenBorderRadius08">
+        <RelativeLayout android:background="@color/tokenWhite" android:layout_width="match_parent" android:layout_height="@dimen/tokenSizing88">
+            <p523vn.viettelpay.views.VDSImageView android:id="@+id/image_thumbnail" android:layout_width="@dimen/tokenSizing88" android:layout_height="@dimen/tokenSizing88" android:layout_marginEnd="@dimen/tokenSpacing04"/>
+            <RelativeLayout android:padding="@dimen/tokenSpacing04" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_toEndOf="@+id/image_thumbnail">
+                <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenDark100" android:ellipsize="end" android:id="@+id/contentBanner" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:layout_toStartOf="@+id/image_close_banner" style="@style/fontRegular14"/>
+                <p523vn.viettelpay.views.VDSImageView android:id="@+id/image_close_banner" android:layout_width="@dimen/tokenSizing16" android:layout_height="@dimen/tokenSizing16" android:src="@drawable/views_icon_close_banner" android:layout_alignParentEnd="true"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layoutLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tokenSpacing04" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/tokenSpacing04" android:layout_alignParentEnd="true">
+                    <p523vn.viettelpay.views.VDSTextView android:textColor="@color/tokenCyan100" android:id="@+id/contentLink" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@style/fontBold13"/>
+                    <p523vn.viettelpay.views.VDSImageView android:id="@+id/image_next" android:layout_width="@dimen/tokenSizing16" android:layout_height="@dimen/tokenSizing16" android:src="@drawable/views_icon_right_arrow_16_cyan100"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </p523vn.viettelpay.views.cardview.VDSCardView>
+</RelativeLayout>

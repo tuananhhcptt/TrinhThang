@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/md_grey_100" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/text_color_new" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty_warning" android:paddingLeft="@dimen/margin_small" android:paddingRight="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quý khách không có yêu cầu nạp tiền nào!"/>
+</FrameLayout>

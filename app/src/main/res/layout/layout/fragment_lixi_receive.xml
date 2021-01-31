@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/empty_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/empty_icon" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f08075e" android:adjustViewBounds="true"/>
+        <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/color_222" android:gravity="center" android:id="@+id/warning" android:padding="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Chưa có lì xì nào được gửi" android:layout_below="@+id/empty_icon"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_20sdp" android:layout_alignParentBottom="true">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/rl_qr_lixi" android:background="0x7f08028b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_10sdp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="Tạo lì xì QR"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_traditional_lixi" android:background="0x7f08028b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:text="Tạo lì xì truyền thống"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/swipe_layout" android:paddingBottom="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/list_history" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

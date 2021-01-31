@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ll_shimmer_provider" android:tag="layout/shimmer_get_telco_provider_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/tokenDark20" android:layout_width="match_parent" android:layout_height="@dimen/_45sdp"/>
+        <LinearLayout android:tag="binding_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:baselineAligned="false">
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+        </LinearLayout>
+        <LinearLayout android:tag="binding_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:baselineAligned="false">
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+            <include android:layout_width="wrap_content" android:layout_height="@dimen/_40sdp" android:layout_weight="1" layout="@layout/view_telco_amount_shimmer_item"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>

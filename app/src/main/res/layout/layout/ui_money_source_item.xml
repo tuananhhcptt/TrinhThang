@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<p523vn.viettelpay.views.cell.VDSCell xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cell_acc" android:tag="layout/ui_money_source_item_0" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tokenSpacing08" android:layout_marginBottom="@dimen/tokenSpacing08" app:cellType="1"/>

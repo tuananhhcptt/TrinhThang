@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lo_voucher_not_found" android:background="@android:color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_find_not_found" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_65sdp" android:src="0x7f08075d" android:layout_centerHorizontal="true"/>
+    <TextView android:textColor="@color/color_222" android:id="@+id/txt_content_notify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_18sdp" android:layout_marginTop="@dimen/_16sdp" android:layout_marginRight="@dimen/_18sdp" android:text="@string/khong_tim_thay_ket_qua_phu_hop" android:layout_below="@+id/img_find_not_found" android:layout_centerHorizontal="true" android:fontFamily="@font/sf_pro_display_medium"/>
+</RelativeLayout>

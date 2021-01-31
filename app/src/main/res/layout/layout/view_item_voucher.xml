@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="6dp" app:cardUseCompatPadding="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.github.florent37.shapeofview.shapes.RoundRectView android:layout_width="match_parent" android:layout_height="wrap_content" app:shape_roundRect_bottomLeftRadius="@dimen/_7sdp" app:shape_roundRect_bottomRightRadius="@dimen/_7sdp" app:shape_roundRect_topLeftRadius="@dimen/_7sdp" app:shape_roundRect_topRightRadius="@dimen/_7sdp">
+            <ImageView android:id="@+id/iv_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        </com.github.florent37.shapeofview.shapes.RoundRectView>
+        <TextView android:textSize="@dimen/cluster_text_size" android:textColor="@color/color_222222" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp" android:lines="2" android:fontFamily="@font/sf_pro_display_medium"/>
+        <RelativeLayout android:gravity="bottom" android:id="@+id/data_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <ImageView android:id="@+id/icon_to" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_calendar_dsvn" android:adjustViewBounds="true"/>
+                <TextView android:textSize="13sp" android:textColor="#7a7a7a" android:id="@+id/to" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:lines="1" android:singleLine="true" android:layout_weight="1"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

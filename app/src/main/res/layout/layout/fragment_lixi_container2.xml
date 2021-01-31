@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ll_amount_view">
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/new_red" app:tabSelectedTextColor="@color/new_red" app:tabTextAppearance="@style/TextAppearance.Widget.TabWidget" app:tabTextColor="#333333"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewPager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabs"/>
+    </RelativeLayout>
+    <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_above="@+id/ll_amount_view"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_amount_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@color/color_333" android:id="@+id/txt_label_amount" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Tổng số tiền"/>
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/color_333" android:gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tv_amount_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/start_amount"/>
+    </LinearLayout>
+</RelativeLayout>

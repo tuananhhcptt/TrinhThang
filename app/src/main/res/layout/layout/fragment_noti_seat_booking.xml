@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lnl_corner" android:background="@drawable/bg_white_radius" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lnl_ticket" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/text_color_new" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số vé" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="#000000" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_number_ticket" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/text_color_new" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tổng tiền" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/text_size_title" android:textColor="#000000" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_money" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/_2sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+</LinearLayout>

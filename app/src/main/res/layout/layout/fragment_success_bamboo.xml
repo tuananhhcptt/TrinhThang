@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:background="#e2e8ed" android:paddingLeft="@dimen/_14sdp" android:paddingTop="@dimen/_9sdp" android:paddingBottom="@dimen/_9sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tài khoản thanh toán"/>
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/_14sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Số điện thoại"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textColor="#4a4a4a" android:id="@+id/phone_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3sp"/>
+        <TextView android:textSize="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8sp" android:text="Ngân hàng"/>
+        <TextView android:textSize="@dimen/_13sdp" android:textColor="#4a4a4a" android:id="@+id/bank_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3sp"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:background="#b6b6b6" android:paddingLeft="@dimen/_14sdp" android:paddingTop="@dimen/_9sdp" android:paddingBottom="@dimen/_9sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Giao dịch thanh toán"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/_14sdp" android:paddingTop="@dimen/_8sdp" android:paddingRight="@dimen/_14sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã NCCDV:"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:id="@+id/tv_service_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mã PNR:"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:id="@+id/tv_pnr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền:"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textStyle="bold" android:textColor="#4a4a4a" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_14sdp" android:text="Hiệu lực:"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#4a4a4a" android:gravity="right" android:id="@+id/tv_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_8sdp">
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_14sdp" android:text="Nội dung:"/>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="#4a4a4a" android:gravity="right" android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tv_back_home" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_36sdp" android:text="VỀ MÀN HÌNH TRANG CHỦ" style="@style/button_gradient"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="0x7f08023d" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <ImageView android:id="@+id/image_logo_vtp" android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_55sdp" android:layout_marginTop="@dimen/_55sdp" android:src="0x7f0808dd" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/title_splash_screen" android:layout_below="@+id/image_logo_vtp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="3">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/tip_trick_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:background="@drawable/splash_boder" android:paddingLeft="@dimen/_7sdp" android:paddingTop="@dimen/_3sdp" android:paddingRight="@dimen/_7sdp" android:paddingBottom="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_50sdp">
+                <ProgressBar android:id="@+id/loading" android:paddingLeft="@dimen/_3sdp" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:paddingStart="@dimen/_3sdp" android:indeterminateTint="@android:color/white"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/md_white_1000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/_7sdp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="Đang tải dữ liệu, vui lòng đợi..." android:paddingStart="@dimen/_7sdp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="#ffffff" android:gravity="center" android:id="@+id/imgWatermark" android:padding="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/description_viettel" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

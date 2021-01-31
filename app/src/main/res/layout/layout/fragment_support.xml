@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn_introduce" android:padding="@dimen/_12sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f0806ae"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Giới thiệu ViettelPay" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+            <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_help" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f080746"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Hướng dẫn sử dụng" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+            <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_feedback" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" app:srcCompat="@drawable/ic_feedback_app"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Góp ý nhanh" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+            <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_term_condition" android:padding="@dimen/_12sdp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" app:srcCompat="@drawable/ic_term_and_condition_vector"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Điều khoản dịch vụ" android:layout_weight="1" android:layout_marginStart="@dimen/_7sdp"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+            <View android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="@dimen/_12sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f080647"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Phiên bản" android:layout_weight="1" android:layout_marginStart="@dimen/_7sdp"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:id="@+id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/tv_intro_code" android:padding="@dimen/_12sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="@dimen/_20sdp" android:layout_height="@dimen/_20sdp" android:src="0x7f08053a"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:text="Mã giới thiệu" android:layout_weight="1" android:layout_marginStart="@dimen/_7sdp"/>
+                <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_7sdp" android:layout_marginStart="@dimen/_7sdp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_certificate" android:layout_width="@dimen/_100sdp" android:layout_height="@dimen/_35sdp" android:layout_marginBottom="@dimen/_10sdp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

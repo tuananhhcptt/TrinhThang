@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_15sdp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp">
+            <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/text_color_new" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/arrow" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_15sdp" android:layout_height="@dimen/_15sdp" android:src="0x7f080668" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            <TextView android:textSize="@dimen/_8sdp" android:textColor="@color/text_color_new" android:id="@+id/sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:layout_toLeftOf="@+id/arrow" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_5sdp" android:layout_toStartOf="@+id/arrow"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#aaaaaa" android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_15sdp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_10sdp" android:overScrollMode="never" android:layout_marginStart="@dimen/_15sdp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

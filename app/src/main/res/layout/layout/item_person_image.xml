@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.bplus.vtpay.view.CircleImageView android:id="@+id/icon_background" android:layout_width="25dp" android:layout_height="25dp" android:src="0x7f0804a5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:civ_fill_color="@color/circle_blue_contact"/>
+    <com.bplus.vtpay.view.CircleImageView android:id="@+id/iv_contact" android:padding="1px" android:layout_width="25dp" android:layout_height="25dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_contact_mask" android:padding="5dp" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="0x7f0806ed" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="bold" android:textColor="@color/colorWhite" android:gravity="center" android:id="@+id/tv_contact" android:padding="2dp" android:layout_width="25dp" android:layout_height="25dp" android:text="CT" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

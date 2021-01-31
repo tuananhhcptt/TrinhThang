@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/iv_logo" android:padding="4dp" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big"/>
+        <View android:background="@drawable/circle_border_bg" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="100" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:id="@+id/tv_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        <TextView android:textSize="14sp" android:id="@+id/tv_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.mikepenz.iconics.view.IconicsImageView android:layout_width="@dimen/popup_arrow_size" android:layout_height="@dimen/popup_arrow_size" android:layout_marginRight="24dp" app:iiv_color="@color/md_grey_500" app:iiv_icon="@string/gmd_keyboard_arrow_right"/>
+</LinearLayout>

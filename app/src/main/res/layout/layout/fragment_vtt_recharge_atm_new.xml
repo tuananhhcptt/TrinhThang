@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_parrent" android:background="@color/md_grey_200" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lo_napas" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="@dimen/layout_margin" android:paddingTop="@dimen/layout_margin_small" android:paddingRight="@dimen/layout_margin" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:id="@+id/tv_amount_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số tiền nạp:" android:layout_centerVertical="true"/>
+                <com.bplus.vtpay.view.SingleLineTextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toRightOf="@+id/tv_amount_label" android:layout_centerVertical="true" android:textAllCaps="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/lo_fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="4">
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:id="@+id/tv_fee_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Phí:" android:layout_toLeftOf="@+id/tv_fee" android:layout_centerVertical="true"/>
+                <com.bplus.vtpay.view.SingleLineTextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:id="@+id/tv_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="0x7f0807b5" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/lo_info" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bplus.vtpay.view.MyRecycleView android:id="@+id/rcv_list_bank" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" app:layoutManager="GridLayoutManager" app:spanCount="3"/>
+    </RelativeLayout>
+</RelativeLayout>

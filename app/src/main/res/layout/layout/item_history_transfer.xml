@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lo_ava" android:background="@drawable/bg_contact_bank_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_6sdp">
+        <RelativeLayout android:id="@+id/layout_avatar" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp">
+            <com.bplus.vtpay.view.CircleImageView android:id="@+id/icon_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+            <TextView android:textSize="18dp" android:textStyle="bold" android:textColor="#000" android:gravity="center" android:id="@+id/tv_contact" android:padding="@dimen/_1sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_bank_icon" android:layout_width="@dimen/_50sdp" android:layout_height="@dimen/_50sdp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+            <ImageView android:id="@+id/bank_icon" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="match_parent" app:srcCompat="@drawable/ic_banklist"/>
+            <View android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/info_layout" android:paddingRight="@dimen/_7sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_16sdp" android:layout_toRightOf="@+id/lo_ava" android:layout_centerVertical="true" android:paddingEnd="@dimen/_7sdp" android:layout_toEndOf="@+id/lo_ava">
+        <TextView android:textSize="16sp" android:textColor="@color/service_title" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+        <TextView android:textSize="14sp" android:textStyle="normal" android:textColor="#aaaaaa" android:id="@+id/txt_subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:background="0x7f08058d" android:layout_width="@dimen/_8sdp" android:layout_height="@dimen/_12sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_below="@+id/lo_ava"/>
+</RelativeLayout>

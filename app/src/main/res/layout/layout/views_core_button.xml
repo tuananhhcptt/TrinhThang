@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/buttonContainer" android:tag="layout/views_core_button_0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <p523vn.viettelpay.views.VDSTextView android:textSize="@dimen/tokenFontSize18" android:textColor="@color/foundations_button_rainbow_blue_text_color" android:gravity="center" android:id="@+id/buttonAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/loadingIndicator" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/views_icon_loading_indicator" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+</FrameLayout>

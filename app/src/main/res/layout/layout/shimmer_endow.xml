@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer_endow_categories" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_base_color="@color/colorWhite" app:shimmer_colored="false" app:shimmer_duration="@integer/shimmer_duration" app:shimmer_highlight_color="@color/colorWhite" app:shimmer_repeat_delay="@integer/shimmer_repeat_delay">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp">
+                <include layout="@layout/shimmer_endow_category"/>
+                <include layout="@layout/shimmer_endow_category"/>
+                <include layout="@layout/shimmer_endow_category"/>
+                <include layout="@layout/shimmer_endow_category"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_8sdp">
+                <include layout="@layout/shimmer_endow_category"/>
+                <include layout="@layout/shimmer_endow_category"/>
+                <include android:visibility="invisible" layout="@layout/shimmer_endow_category"/>
+                <include android:visibility="invisible" layout="@layout/shimmer_endow_category"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <View android:background="@color/tokenDark20" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="@color/md_black_1000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:layout_marginBottom="@dimen/margin_large" android:text="Ưu đãi HOT" android:layout_centerVertical="true" android:layout_marginStart="@dimen/margin_large"/>
+        <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/color_007ddd" android:id="@+id/tv_see_all" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_large" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/shimmer_endow_list" android:layout_width="match_parent" android:layout_height="wrap_content" app:shimmer_base_color="@color/colorWhite" app:shimmer_colored="false" app:shimmer_duration="@integer/shimmer_duration" app:shimmer_highlight_color="@color/colorWhite" app:shimmer_repeat_delay="@integer/shimmer_repeat_delay">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="@dimen/_250sdp" android:layout_height="@dimen/_180sdp" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="@dimen/margin_small" app:cardCornerRadius="@dimen/_16sdp" app:cardElevation="@dimen/_3sdp" app:cardPreventCornerOverlap="true">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <RelativeLayout android:id="@+id/cvBanner" android:layout_width="match_parent" android:layout_height="@dimen/_105sdp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+                            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="16dp">
+                                <View android:id="@+id/ivBanner" android:background="@drawable/background_shimmer" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                        <androidx.cardview.widget.CardView android:id="@+id/ivLogo" android:background="@color/white" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginStart="@dimen/_11sdp" app:cardCornerRadius="@dimen/_20sdp" app:layout_constraintBottom_toBottomOf="@+id/cvBanner" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/cvBanner"/>
+                        <View android:id="@+id/tvTitle" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_marginTop="@dimen/margin_normal" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ivLogo"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewPoint" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_weight="1" android:layout_marginEnd="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewDate" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_weight="1" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView android:layout_width="@dimen/_250sdp" android:layout_height="@dimen/_180sdp" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="@dimen/margin_small" app:cardCornerRadius="16dp" app:cardElevation="@dimen/_3sdp" app:cardPreventCornerOverlap="true">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                        <RelativeLayout android:id="@+id/cvBanner2" android:layout_width="match_parent" android:layout_height="@dimen/_105sdp" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toTopOf="0">
+                            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="16dp">
+                                <View android:id="@+id/ivBanner2" android:background="@drawable/background_shimmer" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+                            </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+                        <androidx.cardview.widget.CardView android:id="@+id/ivLogo2" android:background="@color/white" android:layout_width="@dimen/_40sdp" android:layout_height="@dimen/_40sdp" android:layout_marginStart="@dimen/_11sdp" app:cardCornerRadius="@dimen/_20sdp" app:layout_constraintBottom_toBottomOf="@+id/cvBanner2" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/cvBanner2"/>
+                        <View android:id="@+id/tvTitle2" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_marginTop="@dimen/margin_normal" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/ivLogo2"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:layout_marginBottom="@dimen/_8sdp" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle2">
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewPoint2" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_weight="1" android:layout_marginEnd="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                            <View android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewDate2" android:background="@drawable/background_shimmer" android:layout_width="0dp" android:layout_height="@dimen/_16sdp" android:layout_weight="1" android:layout_marginStart="@dimen/_8sdp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</LinearLayout>

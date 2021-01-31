@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="0x7f0803ec" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="5">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/menu_1" android:paddingBottom="@dimen/_5sdp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bottom_bar_height" android:layout_weight="1">
+            <ImageView android:id="@+id/menu_icon_1" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_menu_icon_size" android:layout_marginTop="@dimen/_15sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:gravity="center" android:id="@+id/menu_title_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/menu_2" android:paddingBottom="@dimen/_5sdp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bottom_bar_height" android:layout_weight="1">
+            <ImageView android:id="@+id/menu_icon_2" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_menu_icon_size" android:layout_marginTop="@dimen/_15sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:gravity="center" android:id="@+id/menu_title_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/_5sdp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bottom_bar_height" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="@dimen/bottom_menu_icon_size" android:layout_marginTop="@dimen/_15sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:gravity="center" android:id="@+id/menu_title_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quét mã" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/menu_4" android:paddingBottom="@dimen/_5sdp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bottom_bar_height" android:layout_weight="1">
+            <ImageView android:id="@+id/menu_icon_4" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_menu_icon_size" android:layout_marginTop="@dimen/_15sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:gravity="center" android:id="@+id/menu_title_4" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/menu_5" android:paddingBottom="@dimen/_5sdp" android:focusable="true" android:clickable="true" android:layout_width="0dp" android:layout_height="@dimen/bottom_bar_height" android:layout_weight="1">
+            <ImageView android:id="@+id/menu_icon_5" android:layout_width="wrap_content" android:layout_height="@dimen/bottom_menu_icon_size" android:layout_marginTop="@dimen/_15sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <TextView android:textSize="@dimen/text_size_12sp" android:gravity="center" android:id="@+id/menu_title_5" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_medium"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/bottom_bar_height" android:layout_height="@dimen/bottom_bar_height" android:layout_marginBottom="@dimen/_18sdp" android:src="@drawable/bg_quet_ma_menu_3" android:adjustViewBounds="true"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@+id/menu_3" android:layout_width="@dimen/bottom_bar_height" android:layout_height="@dimen/bottom_bar_height" android:layout_marginBottom="@dimen/_18sdp" android:adjustViewBounds="true" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/qr_scan"/>
+</FrameLayout>

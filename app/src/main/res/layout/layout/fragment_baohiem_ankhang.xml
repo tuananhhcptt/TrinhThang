@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlBanner" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imgBanner" android:layout_width="match_parent" android:layout_height="@dimen/_159sdp" android:src="@drawable/baoankhang" android:scaleType="fitXY"/>
+        <Button android:textSize="@dimen/_12sdp" android:textColor="@color/colorWhite" android:id="@+id/btn_detail" android:background="@drawable/bg_transparent_btn" android:layout_width="wrap_content" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_100sdp" android:layout_marginRight="9dp" android:text="Chi tiết" android:layout_alignParentRight="true" android:textAllCaps="false"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/frame" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-20dp" android:layout_below="@+id/rlBanner"/>
+</RelativeLayout>

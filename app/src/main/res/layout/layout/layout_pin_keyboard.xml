@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/md_grey_200" android:paddingLeft="@dimen/indicator_margin" android:paddingTop="@dimen/indicator_margin" android:paddingRight="@dimen/indicator_margin" android:paddingBottom="@dimen/indicator_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/height_layout_edtitext" android:layout_weight="3">
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_1" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="1"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_2" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="2"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_3" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="3"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/height_layout_edtitext" android:layout_marginTop="@dimen/indicator_margin" android:weightSum="3">
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_4" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="4"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_5" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="5"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_6" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="6"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/height_layout_edtitext" android:layout_marginTop="@dimen/indicator_margin" android:weightSum="3">
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_7" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="7"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_8" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="8"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_9" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="9"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/height_layout_edtitext" android:layout_marginTop="@dimen/indicator_margin">
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <RelativeLayout android:gravity="center" android:paddingRight="@dimen/indicator_margin" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_0" android:background="@drawable/input_pin_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/selectableItemBackground" android:text="0"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/btn_del" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_del_keyboard" android:scaleType="center" android:tint="#77828b" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

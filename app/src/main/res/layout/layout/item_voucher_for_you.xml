@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_7sdp" app:cardPreventCornerOverlap="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_items" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:padding="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/lo_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_5sdp" android:layout_weight="1">
+                <TextView android:textSize="@dimen/_11sdp" android:textColor="@color/text_color_new" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.bplus.vtpay.view.autofittextview.AutofitTextView android:textSize="@dimen/_10sdp" android:textColor="@color/md_grey_600" android:id="@+id/tv_sub_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1"/>
+            </LinearLayout>
+            <Button android:id="@+id/btn_apply" android:layout_width="wrap_content" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/_3sdp" android:text="@string/apply" android:textAllCaps="false" style="@style/button_gradient"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

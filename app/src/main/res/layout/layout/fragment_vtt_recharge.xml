@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/md_grey_100" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="0x7f0807b5" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:hint="@string/hint_amount" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+            <Button android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_big" android:text="Nạp tiền" style="@style/button_gradient"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/line_height">
+        <LinearLayout android:orientation="vertical" android:paddingTop="7dp" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin">
+                <ProgressBar android:id="@+id/loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webview_cms" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_normal" android:layout_marginRight="@dimen/layout_margin_normal"/>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

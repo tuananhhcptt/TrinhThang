@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15sp" android:textColor="@color/dark_grey_blue" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/_32sdp" android:layout_marginRight="@dimen/_30sdp" android:text="Lựa chọn một trong các hợp đồng dưới đây"/>
+        <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_12sdp" app:cardCornerRadius="@dimen/_5sdp">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcvLstContract" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.cardview.widget.CardView>
+        <Button android:layout_gravity="bottom" android:id="@+id/btnCheck" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_30sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_30sdp" android:layout_marginBottom="16dp" android:foreground="?attr/selectableItemBackground" android:text="Kiểm tra" style="@style/button_send_style"/>
+    </LinearLayout>
+</LinearLayout>

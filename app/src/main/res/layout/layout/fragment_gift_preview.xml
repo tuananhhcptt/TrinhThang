@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ff3729" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.7">
+            <com.bplus.vtpay.view.recyclerviewpager.RecyclerViewPager android:id="@+id/list_preview" android:layout_width="match_parent" android:layout_height="match_parent" app:rvp_singlePageFling="true"/>
+            <RelativeLayout android:id="@+id/navigation_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/previous" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:adjustViewBounds="true" android:layout_centerVertical="true" app:srcCompat="@drawable/icon_previous_gift_vector"/>
+                <ImageView android:id="@+id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:adjustViewBounds="true" android:layout_centerVertical="true" android:rotation="180" android:layout_alignParentEnd="true" app:srcCompat="@drawable/icon_previous_gift_vector"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="0x7f08035b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_100sdp" android:layout_alignTop="@+id/content_layout" android:layout_alignBottom="@+id/content_layout"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/content_layout">
+        <ImageView android:id="@+id/content_background" android:background="0x7f08035b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/content_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/_250sdp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@+id/avatar_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/avatar_background" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:src="@drawable/lucky_bg_avatar_holder" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+            <com.bplus.vtpay.view.CircleImageView android:id="@+id/avatar" android:padding="@dimen/_2sdp" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_60sdp" android:layout_alignLeft="@+id/avatar_background" android:layout_alignTop="@+id/avatar_background" android:layout_alignRight="@+id/avatar_background" android:layout_alignBottom="@+id/avatar_background" android:layout_centerHorizontal="true" android:layout_alignStart="@+id/avatar_background" android:layout_alignEnd="@+id/avatar_background"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/sender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp"/>
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="@android:color/white" android:id="@+id/gift_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lì xì cho bạn"/>
+        <TextView android:textSize="@dimen/_24sdp" android:textStyle="bold" android:textColor="#ffed0e" android:gravity="center" android:id="@+id/gift_amount" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.bplus.vtpay.view.ExpandableTextView android:id="@+id/gift_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_20sdp" android:layout_marginBottom="@dimen/_10sdp" app:DrawableAndTextGravity="2" app:collapseText="Thu gọn" app:contentTextColor="@android:color/white" app:contentTextSize="@dimen/_10sdp" app:expandCollapseTextColor="@android:color/white" app:expandText="Xem thêm" app:maxCollapsedLines="2"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_marginBottom="@dimen/_10sdp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#463d2b" android:gravity="center" android:id="@+id/txt_reply_gift" android:background="0x7f08028d" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="Lì xì lại" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#463d2b" android:gravity="center" android:id="@+id/txt_confirm" android:background="0x7f08028d" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="Chọn thiệp này" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="#463d2b" android:gravity="center" android:id="@+id/txt_view_group" android:background="0x7f08028d" android:visibility="gone" android:layout_width="0dp" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_5sdp" android:layout_marginRight="@dimen/_5sdp" android:text="Xem cả nhóm" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/top_bar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_30sdp" android:adjustViewBounds="true" app:srcCompat="0x7f08045e"/>
+    </RelativeLayout>
+</RelativeLayout>

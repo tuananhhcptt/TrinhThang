@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main_content" android:background="@color/colorWhite" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp" app:popupTheme="@style/AppTheme.PopupOverlay">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentScrim="@color/viettel_color" app:expandedTitleGravity="31" app:layout_scrollFlags="3">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="2">
+                    <ImageView android:id="@+id/image_banner" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:layout_marginTop="32dp" android:layout_marginRight="32dp" android:layout_alignParentTop="true">
+                        <TextView android:textSize="@dimen/text_size_normal_plus" android:textStyle="bold" android:textColor="@android:color/white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/layout_margin_small" android:text="@string/txt_label_title_vinmec" android:textAlignment="center" android:nestedScrollingEnabled="false" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_collapseMode="1"/>
+                        <TextView android:textSize="18sp" android:textColor="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/txt_label_info_vinmec" android:textAlignment="center"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@null" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" android:nestedScrollingEnabled="false" android:elevation="0dp" app:contentInsetStartWithNavigation="0dp" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:layout_collapseMode="1" app:navigationIcon="0x7f08043f" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@color/colorWhite"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <androidx.core.widget.NestedScrollView android:id="@+id/scroll" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/layout_margin_normal">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_money" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/label_text_color_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giá"/>
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_money" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="13dp" android:textColor="@color/md_grey_500" android:id="@+id/tv_price_origin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8.600.000đ"/>
+                            <TextView android:textSize="13dp" android:textColor="#ff0000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_5sdp" android:text="-70%"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_pack" android:visibility="invisible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/label_text_color_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đã mua"/>
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_number_pack" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/text_size_normal" android:textColor="@color/label_text_color_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Độ tuổi"/>
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/tv_age" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18-65"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giới thiệu"/>
+                        <TextView android:textSize="@dimen/labels_text_size" android:textColor="@color/label_text_color" android:id="@+id/tv_info" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="12dp" android:text="@string/txt_label_vinmec_welcome"/>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                        <ImageView android:id="@+id/iv_show_more_1" android:layout_width="100dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tv_show_more_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điều kiện sử dụng"/>
+                        <TextView android:textSize="@dimen/labels_text_size" android:textColor="@color/label_text_color" android:id="@+id/tv_condition" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="12dp" android:text="@string/txt_label_condition_vinmec"/>
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+                        <ImageView android:id="@+id/iv_show_more_2" android:layout_width="100dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tv_show_more_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <View android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin"/>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/layout_margin_normal">
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chi tiết gói khám"/>
+                        <ImageView android:id="@+id/img_table_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+                    </LinearLayout>
+                    <TextView android:textSize="14sp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tv_show_more_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xem thêm" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <View android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="80dp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ImageView android:id="@+id/ic_back" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" app:srcCompat="0x7f08043f"/>
+    <Button android:id="@+id/btn_buy_now" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small" android:text="Mua ngay" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+</RelativeLayout>

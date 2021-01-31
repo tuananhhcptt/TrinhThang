@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_30sdp" android:layout_marginEnd="@dimen/_5sdp" android:elevation="@dimen/_10sdp" app:cardCornerRadius="@dimen/dimen_20dp">
+    <LinearLayout android:id="@+id/linerlayout" android:background="@drawable/button_gradient_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/text_size_14sp" android:textStyle="bold" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="match_parent" android:lines="1" android:singleLine="true" android:layout_weight="1" android:fontFamily="@font/sf_pro_display_medium"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

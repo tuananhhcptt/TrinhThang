@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_search" android:layout_width="match_parent" android:layout_height="40dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0805f3"/>
+        <EditText android:textSize="14sp" android:textColor="#b6b6b6" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="Tìm kiếm"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_contacts" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

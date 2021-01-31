@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_understend">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_guide_step" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_8sdp" android:layout_marginRight="@dimen/_8sdp" android:nestedScrollingEnabled="false"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_15sdp" android:layout_below="@+id/lv_guide_step">
+                <ProgressBar android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp"/>
+                <TextView android:gravity="center_vertical" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="Đang tải dữ liệu"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_banks" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_20sdp" android:layout_below="@+id/lv_guide_step" android:nestedScrollingEnabled="false"/>
+            <ImageView android:id="@+id/imv_map" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_400sdp" android:layout_marginLeft="@dimen/_32sdp" android:layout_marginTop="8dp" android:layout_marginRight="32dp" android:layout_marginBottom="@dimen/_55sdp" android:layout_below="@+id/lv_guide_step"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <Button android:textSize="@dimen/_13sdp" android:id="@+id/btn_understend" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_50sdp" android:layout_marginRight="@dimen/_50sdp" android:layout_marginBottom="@dimen/_20sdp" android:text="Tôi đã hiểu" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/button_gradient"/>
+</RelativeLayout>

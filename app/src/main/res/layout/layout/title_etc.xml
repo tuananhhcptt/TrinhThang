@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="@dimen/_15sdp" app:cardElevation="6dp" app:cardUseCompatPadding="true">
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/etcBanner" android:layout_width="@dimen/_60sdp" android:layout_height="@dimen/_30sdp" android:layout_marginLeft="@dimen/_8sdp" android:layout_marginTop="@dimen/_14sdp" android:layout_marginBottom="@dimen/_14sdp" android:src="@drawable/etc_logo"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:text="@string/auto_pay_epass" android:layout_toRightOf="@+id/etcBanner" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ll_create_loan" android:background="@color/white" android:paddingBottom="@dimen/_20sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_7sdp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/llDesiredLoanAmount" android:layout_width="wrap_content" android:layout_height="@dimen/_18sdp">
+                    <TextView android:textSize="@dimen/_14sp" android:textColor="@color/color_222222" android:gravity="center_vertical" android:id="@+id/tvDesiredLoanAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_loan_amount" android:fontFamily="@font/sf_pro_display_regular"/>
+                    <ImageView android:id="@+id/ivLoanDesiredInfo" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:src="@drawable/ic_easyvay_info" android:layout_marginStart="@dimen/_3sdp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_loan_amount" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_32sp" android:textStyle="bold" android:textColor="@color/color_222222" android:id="@+id/loan_amount_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_regular" android:letterSpacing="-0.04"/>
+                    <TextView android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_vietnam_currency"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_select_loan_amount" android:fontFamily="@font/sf_pro_display_regular" android:letterSpacing="-0.04"/>
+                <com.bplus.vtpay.widget.indicatorseekbar.IndicatorStayLayout android:id="@+id/indicatorStayLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                    <com.bplus.vtpay.widget.indicatorseekbar.IndicatorSeekBar android:id="@+id/indicatorSeekbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:isb_indicator_color="@color/colorPrimary" app:isb_indicator_top_content_layout="@layout/custom_top_content_view_round_millions" app:isb_max="10" app:isb_min="1" app:isb_show_tick_marks_type="1" app:isb_show_tick_texts="true" app:isb_thumb_color="@color/colorPrimary" app:isb_thumb_drawable="@drawable/ic_thumb_indicator_seekbar" app:isb_thumb_size="@dimen/_18sdp" app:isb_tick_first_last_texts_color="@color/color_222222" app:isb_tick_marks_color="@color/colorProgressBackgroundSeekBar" app:isb_tick_marks_drawable="@drawable/ic_tick_mark" app:isb_tick_texts_color="@color/color_red_EFD1D1" app:isb_ticks_count="10" app:isb_track_background_color="@color/colorProgressBackgroundSeekBar" app:isb_track_progress_color="@color/colorProgressBackgroundSeekBar"/>
+                </com.bplus.vtpay.widget.indicatorseekbar.IndicatorStayLayout>
+            </LinearLayout>
+            <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginRight="@dimen/_15sdp">
+                <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_duration" android:fontFamily="@font/sf_pro_display_regular" android:letterSpacing="-0.04"/>
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/duration_lv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" app:layoutManager="androidx.recyclerview.widget.GridLayoutManager" app:spanCount="3"/>
+            </LinearLayout>
+            <View android:background="@color/color_eeeeee" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp"/>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/_80sdp" android:layout_marginStart="@dimen/_14sdp" android:layout_marginEnd="@dimen/_14sdp" app:cardCornerRadius="@dimen/_5sdp" app:cardElevation="@dimen/_2sdp" app:cardUseCompatPadding="true">
+                <LinearLayout android:orientation="horizontal" android:padding="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_7a7a7a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tem_monthly_paid_amount" android:fontFamily="@font/sf_pro_display_regular"/>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tem_monthly_paid_amount" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/_24sp" android:textStyle="bold" android:textColor="@color/color_007ddd" android:id="@+id/tv_instalment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_regular" android:letterSpacing="-0.04"/>
+                            <TextView android:textColor="@color/color_007ddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_vietnam_currency" android:fontFamily="@font/sf_pro_display_regular"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="#eeeeee" android:layout_width="1dp" android:layout_height="match_parent"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/color_7a7a7a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tem_total_paid_amount" android:fontFamily="@font/sf_pro_display_regular"/>
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_tem_total_paid_amount" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/_24sp" android:textStyle="bold" android:textColor="@color/color_007ddd" android:id="@+id/tv_total_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sf_pro_display_regular" android:letterSpacing="-0.04"/>
+                            <TextView android:textColor="@color/color_007ddd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title_vietnam_currency" android:fontFamily="@font/sf_pro_display_regular"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@+id/btn_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/label_continue" android:layout_alignParentBottom="true" android:fontFamily="@font/sf_pro_display_regular" style="@style/button_gradient"/>
+</RelativeLayout>

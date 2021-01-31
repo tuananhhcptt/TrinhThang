@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/_15sdp">
+        <include android:visibility="visible" layout="@layout/easy_vay_personal_info_layout"/>
+        <include android:visibility="visible" layout="@layout/easy_vay_current_address_layout"/>
+        <include android:visibility="visible" layout="@layout/easy_vay_detail_info_layout"/>
+        <include android:visibility="visible" layout="@layout/easy_vay_relationship_layout"/>
+        <TextView android:id="@+id/btn_confirm_detail_info" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp" android:text="XÁC NHẬN THÔNG TIN" style="@style/button_gradient"/>
+    </LinearLayout>
+</ScrollView>

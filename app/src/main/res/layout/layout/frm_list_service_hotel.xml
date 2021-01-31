@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/panel" android:paddingTop="@dimen/statusbar_height" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" app:cardCornerRadius="10dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lo_hotel_gotadi" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0807c7"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Đặt phòng với Gotadi" android:layout_weight="1"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="0x7f08058e"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gotadi ra mắt dịch vụ đặt phòng khách sạn và những chuyến nghỉ gia đình với giá 0 đồng"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" app:cardCornerRadius="10dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lo_hotel_vntrip" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0807de"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/viettel_color" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Đặt phòng với VnTrip" android:layout_weight="1"/>
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="0x7f08058e"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đặt phòng khách sạn giá ưu đãi mỗi ngày cùng VnTrip"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

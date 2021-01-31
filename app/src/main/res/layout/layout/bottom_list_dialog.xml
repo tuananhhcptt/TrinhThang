@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:paddingTop="@dimen/_200sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/container" android:background="@drawable/bg_dialog_finger" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@drawable/ic_indicator" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_4sdp" android:layout_marginTop="@dimen/margin_small"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_14sdp" android:textStyle="bold" android:id="@+id/dialogTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/icClose" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:src="0x7f0804d9" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_large" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcvList" android:padding="@dimen/margin_small" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/margin_small" android:nestedScrollingEnabled="true"/>
+    </LinearLayout>
+</LinearLayout>

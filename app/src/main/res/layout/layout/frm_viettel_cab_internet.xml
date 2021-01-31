@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="0x7f0807b5" android:padding="@dimen/_10sdp" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_5sdp">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/show_provider_view"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/radioGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+                <RadioButton android:gravity="center_vertical" android:id="@+id/rb_identify" android:layout_width="0dp" android:layout_height="wrap_content" android:checked="true" android:text="Số CMND" android:layout_weight="1"/>
+                <RadioButton android:gravity="center_vertical" android:id="@+id/rb_phone" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Điện thoại" android:layout_weight="1"/>
+                <RadioButton android:gravity="center_vertical" android:id="@+id/rb_billcode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tài khoản" android:layout_weight="1"/>
+            </RadioGroup>
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textSize="@dimen/_11sdp" android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionDone" app:met_bottomTextSize="@dimen/_8sdp" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button android:id="@+id/btn_check_debit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="0dp" android:text="@string/next" style="@style/button_gradient"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_20sdp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_5sdp" android:text="THÔNG TIN DỊCH VỤ"/>
+            <WebView android:id="@+id/web_view" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

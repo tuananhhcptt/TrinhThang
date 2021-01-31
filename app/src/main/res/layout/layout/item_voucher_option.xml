@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:id="@+id/container" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/_32sdp" android:layout_marginTop="@dimen/_10sdp" android:weightSum="1">
+    <TextView android:textSize="@dimen/_20sdp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/amount" android:background="@drawable/background_voucher_option" android:paddingLeft="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.6" android:paddingStart="@dimen/_10sdp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/buttonDetail" android:paddingLeft="@dimen/_10sdp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4" android:paddingStart="@dimen/_10sdp">
+        <TextView android:textSize="@dimen/_10sdp" android:textColor="#898a8d" android:gravity="center" android:id="@+id/viewDetail" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/game_voucher_view_detail"/>
+        <ImageView android:id="@+id/indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_voucher_option_indicator"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_width="@dimen/_70sdp" android:layout_height="@dimen/_5sdp" android:layout_marginTop="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="#d8d8d8"/>
+    <com.bplus.vtpay.view.CustomNestedScroll android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/text_color_new" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginBottom="@dimen/dimen_16dp" android:text="@string/select_auto_payment" android:textAlignment="center"/>
+            <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_tien_dien_auto" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_tien_dien_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Tiền điện" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_tien_nuoc_auto" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_tien_nuoc_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Tiền nước" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_tra_truoc_auto" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_tra_truoc_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Nạp ĐT trả trước" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_tra_sau_auto" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_tra_sau_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Thanh toán ĐT trả sau" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_internet_auto" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_internet_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Internet Viettel" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+                <View android:background="@color/gray_color" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lo_giao_dich_mau" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/dimen_45dp" android:layout_height="@dimen/dimen_45dp" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_giao_dich_mau_auto"/>
+                    <TextView android:textSize="@dimen/text_size_16sp" android:textColor="#333333" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_15dp" android:text="Tạo từ lịch sử hoặc GD mẫu" android:layout_weight="1" android:layout_marginStart="@dimen/dimen_15dp"/>
+                    <ImageView android:padding="@dimen/_5sdp" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:adjustViewBounds="true" android:tint="#cccccc" app:srcCompat="@drawable/icon_arrow_vector"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.bplus.vtpay.view.CustomNestedScroll>
+</LinearLayout>

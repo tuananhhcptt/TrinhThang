@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_finger" android:padding="@dimen/margin_large" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-10dp">
+        <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_margin="@dimen/margin_large" android:src="0x7f08036a"/>
+        <View android:background="@color/md_grey_300" android:layout_width="wrap_content" android:layout_height="0.5dp" android:layout_margin="@dimen/margin_large"/>
+        <TextView android:textSize="18sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bảo mật vân tay"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_large" android:text="Vui lòng chạm vào cảm biến vân tay để đăng nhập vào ViettelPay"/>
+        <Button android:id="@+id/btn_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_normal" android:layout_marginBottom="@dimen/layout_margin_normal" android:text="Bỏ qua" style="@style/button_gradient"/>
+    </LinearLayout>
+</LinearLayout>

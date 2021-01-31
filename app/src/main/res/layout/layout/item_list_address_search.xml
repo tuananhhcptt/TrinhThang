@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/selector_bg_item_list" android:paddingLeft="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_bank_item" android:padding="5dp" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_location_vector"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/layout_margin_small" android:layout_toRightOf="@+id/img_bank_item" android:layout_alignParentTop="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-1dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:text="Tài khoản" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:lineSpacingExtra="3dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/text_size_sub" android:textStyle="normal" android:textColor="@color/md_grey_600" android:id="@+id/tv_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Content" android:maxLines="2"/>
+    </LinearLayout>
+    <View android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_toRightOf="@+id/img_bank_item" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

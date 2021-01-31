@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/_240sdp">
+    <View android:id="@+id/lineSpace" android:layout_width="match_parent" android:layout_height="@dimen/_60sdp"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/_2sdp" android:layout_marginStart="@dimen/_8sdp" android:layout_marginEnd="@dimen/_8sdp" app:cardElevation="0dp">
+        <TextView android:textSize="14sp" android:textColor="#7a7a7a" android:gravity="center" android:id="@+id/textView30" android:background="@drawable/background_border_rounded_dot" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="1dp" android:text="Các nhiệm vụ mới đang chuẩn bị ra mắt" android:fontFamily="@font/sf_pro_display_regular" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_marginStart="1dp" android:layout_marginEnd="1dp"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

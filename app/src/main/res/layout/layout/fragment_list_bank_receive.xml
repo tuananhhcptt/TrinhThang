@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scr_container" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+            <ImageView android:id="@+id/btn_close" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:src="@drawable/ic_close_white_vector" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_title" android:paddingLeft="@dimen/layout_margin" android:paddingTop="@dimen/layout_margin_small" android:paddingRight="@dimen/layout_margin" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/btn_close" android:layout_alignParentEnd="true" app:autoSizeMaxTextSize="@dimen/_14sdp" app:autoSizeMinTextSize="@dimen/text_size_10sp" app:autoSizeStepGranularity="2sp" app:autoSizeTextType="1"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/lo_btn" android:paddingTop="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/layout_margin">
+            <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/iv_add_bank"/>
+            <RelativeLayout android:id="@+id/btn_upgrade" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_upgrade" android:layout_width="@dimen/icon_size_big" android:layout_height="@dimen/icon_size_big" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small" android:src="0x7f080419"/>
+                <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/tv_upgrade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small" android:text="Nâng cấp lên ViettelPay" android:layout_toRightOf="@+id/iv_upgrade" android:layout_alignTop="@+id/iv_upgrade" android:layout_alignBottom="@+id/iv_upgrade"/>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/iv_upgrade"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_bank" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="LinearLayoutManager"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_900" android:id="@+id/cre_info_txt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nhập số tiền"/>
+    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:hint="@string/hint_amount" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+    <TextView android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="0dp" android:text="Thanh toán" style="@style/button_gradient"/>
+</LinearLayout>

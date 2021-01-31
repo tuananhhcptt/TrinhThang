@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background_frm" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/rl_terms_conditions" android:padding="@dimen/_15sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:paddingBottom="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/_15sdp" android:textStyle="bold" android:textColor="@color/dark_grey_blue" android:gravity="center_horizontal" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Điều khoản và điều kiện đăng ký vay tiêu dùng tại Easy Credit" android:lineSpacingExtra="4sp"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/loading_bar" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_24sdp" android:layout_below="@+id/title" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <WebView android:id="@+id/term_web_view" android:background="@color/background_frm" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/_12sdp" android:layout_below="@+id/title"/>
+        </RelativeLayout>
+        <TextView android:id="@+id/btn_confirm_term" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_15sdp" android:text="@string/accept" style="@style/button_gradient"/> android:layout_alignParentBottom=&quot;true&quot;\10            android:text=&quot;@string/accept&quot;\10            android:textAllCaps=&quot;true&quot; /&gt; 
+    </LinearLayout>
+    <include layout="@layout/easy_vay_select_loan_amount_layout"/>
+</RelativeLayout>

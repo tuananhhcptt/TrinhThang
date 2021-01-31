@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:elevation="3dp" app:cardElevation="11dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="8dp">
+                <ImageView android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0807ce"/>
+                <TextView android:textColor="#b6b6b6" android:id="@+id/provider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="Nhà cung cấp dịch vụ" android:layout_toRightOf="@+id/logo"/>
+                <TextView android:textSize="@dimen/_13sdp" android:textStyle="bold" android:textColor="#263d60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="3dp" android:text="MB Ageas Life" android:layout_toRightOf="@+id/logo" android:layout_below="@+id/provider"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/lo_select_payment" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp">
+                <RelativeLayout android:id="@+id/lo_list_contract_type" android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_weight="2">
+                    <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Hình thức truy vấn thông tin" android:lines="1" android:editable="false" app:met_bottomTextSize="@dimen/_8sdp" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_style"/>
+                    <com.mikepenz.iconics.view.IconicsImageView android:padding="@dimen/_2sdp" android:layout_width="@dimen/_12sdp" android:layout_height="@dimen/_12sdp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                    <View android:id="@+id/click_spinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/edt_list" android:layout_alignBottom="@+id/edt_list"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_bill_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:hint="Số hợp đồng" android:digits="-_/0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM" app:met_clearButton="true" app:met_floatingLabel="2" app:met_floatingLabelTextSize="@dimen/_8sdp" style="@style/edit_text_bill_code_style"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@+id/tv_check" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="Kiểm tra" style="@style/button_send_style"/>
+    <TextView android:textSize="@dimen/_11sdp" android:id="@+id/tv_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+</LinearLayout>

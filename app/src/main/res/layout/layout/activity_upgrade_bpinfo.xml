@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_upgrade_bpinfo" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/lo_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:orientation="vertical" android:id="@+id/toolbar" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_navigate_before_white" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lo_toolbar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView android:id="@+id/lo_banner" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/banner" android:background="#e1eff6" android:padding="10dp" android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/ic_upgrade_bp_banner"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/lo_banner">
+                <TextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upgrade_bp_feature_title"/>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/colorUpgrade" android:gravity="center" android:id="@+id/icon_1" android:background="@drawable/bg_circle_border" android:layout_width="30dp" android:layout_height="30dp" android:text="1"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/upgrade_bp_feature_1" android:layout_toRightOf="@+id/icon_1" android:layout_toEndOf="@+id/icon_1"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/colorUpgrade" android:gravity="center" android:id="@+id/icon_2" android:background="@drawable/bg_circle_border" android:layout_width="30dp" android:layout_height="30dp" android:text="2"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/upgrade_bp_feature_2" android:layout_toRightOf="@+id/icon_2" android:layout_toEndOf="@+id/icon_2"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="50dp">
+                    <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/colorUpgrade" android:gravity="center" android:id="@+id/icon_3" android:background="@drawable/bg_circle_border" android:layout_width="30dp" android:layout_height="30dp" android:text="3"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/upgrade_bp_feature_3" android:layout_toRightOf="@+id/icon_3" android:layout_toEndOf="@+id/icon_3"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:minHeight="50dp">
+                    <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@color/colorUpgrade" android:gravity="center" android:id="@+id/icon_4" android:background="@drawable/bg_circle_border" android:layout_width="30dp" android:layout_height="30dp" android:text="4"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/upgrade_bp_feature_4" android:layout_toRightOf="@+id/icon_4" android:layout_toEndOf="@+id/icon_4"/>
+                </RelativeLayout>
+                <TextView android:id="@+id/buton_upgrade" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp" android:text="@string/activity_upgrade_bp" style="@style/button_gradient"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

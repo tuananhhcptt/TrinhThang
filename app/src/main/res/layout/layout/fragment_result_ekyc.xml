@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_above="@+id/btn_continue">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="@dimen/dimen_30dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.airbnb.lottie.LottieAnimationView android:id="@+id/lottie_view" android:layout_width="@dimen/dimen_280dp" android:layout_height="@dimen/dimen_280dp" app:lottie_autoPlay="true" app:lottie_loop="true"/>
+                <TextView android:textSize="@dimen/text_size_24sp" android:textColor="@color/tokenRed100" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_40dp" android:layout_marginRight="@dimen/dimen_16dp" style="@style/TxtProDisplayBoldTitleStyle"/>
+                <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_7a7a7a" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_16dp" android:layout_marginTop="@dimen/dimen_16dp" android:layout_marginRight="@dimen/dimen_16dp" style="@style/TxtProDisplayRegularDesStyle"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button android:textSize="@dimen/text_size_18sp" android:id="@+id/btn_continue" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp" android:layout_above="@+id/txt_go_home" android:textAllCaps="false" style="@style/button_gradient"/>
+    <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/txt_go_home" android:paddingBottom="@dimen/dimen_4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen_16dp" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/TxtProDisplayMediumDesStyle"/>
+</RelativeLayout>

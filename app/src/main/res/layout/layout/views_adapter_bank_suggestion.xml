@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:tag="layout/views_adapter_bank_suggestion_0" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <p523vn.viettelpay.views.cell.VDSCell android:id="@+id/cellBank" android:layout_width="match_parent" android:layout_height="wrap_content" app:cContentCell="0335672888" app:cTitleCell="ViettelPay 5.0" app:cellType="4"/>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/layout_parrent" android:background="@color/md_grey_200" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Light" android:orientation="vertical" android:id="@+id/toolbar" android:background="@drawable/color_gradient_new" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" app:contentInsetStartWithNavigation="0dp" app:layout_collapseMode="1" app:navigationIcon="@drawable/ic_close_white_vector" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:title="Thay đổi gói ViettelPay" app:titleTextAppearance="@style/Toolbar.TitleText" app:titleTextColor="@android:color/white"/>
+    <RelativeLayout android:id="@+id/layout_check" android:background="@color/viettel_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_check1" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/img_start" android:layout_width="0dp" android:layout_height="@dimen/icon_size_normal" android:src="0x7f080606" android:layout_weight="1"/>
+            <RelativeLayout android:background="#e0f2f1" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+            <ImageView android:id="@+id/img_flex" android:layout_width="0dp" android:layout_height="@dimen/icon_size_normal" android:src="0x7f080605" android:layout_weight="1"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_package_name" android:paddingTop="@dimen/layout_margin_small" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_check1">
+            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_start" android:layout_width="0dp" android:layout_height="wrap_content" android:text="GÓI 1" android:layout_weight="5"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_flex" android:layout_width="0dp" android:layout_height="wrap_content" android:text="GÓI 2" android:layout_weight="5"/>
+            <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="2" android:layout_alignBottom="@+id/lo_package_name">
+            <RelativeLayout android:id="@+id/layout_start" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:id="@+id/line_start" android:background="@color/md_orange_A200" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/layout_flex" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:id="@+id/line_flex" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_check_all" android:background="@color/viettel_color" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/toolbar">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_check_all1" android:background="@color/viettel_color" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <ImageView android:id="@+id/img_flex_new" android:layout_width="0dp" android:layout_height="@dimen/icon_size_normal" android:src="0x7f080606" android:layout_weight="1"/>
+            <View android:background="#e0f2f1" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+            <ImageView android:id="@+id/img_eco" android:layout_width="0dp" android:layout_height="@dimen/icon_size_normal" android:src="0x7f080606" android:layout_weight="1"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lo_package_name_new" android:background="@color/viettel_color" android:paddingTop="@dimen/layout_margin_small" android:paddingBottom="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_check_all1">
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_flex_new" android:layout_width="0dp" android:layout_height="wrap_content" android:text="GÓI 2" android:layout_weight="5"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="2"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_eco" android:layout_width="0dp" android:layout_height="wrap_content" android:text="GÓI 3" android:layout_weight="5"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignBottom="@+id/lo_package_name_new">
+            <RelativeLayout android:id="@+id/layout_flex_new" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:id="@+id/line_flex_new" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/layout_eco" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <View android:id="@+id/line_eco" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <Button android:id="@+id/btn_send_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin" android:text="THÊM" android:layout_alignParentBottom="true" style="@style/button_gradient"/>
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/btn_send_bottom" android:layout_below="@+id/layout_check">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewpage" android:background="#fff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

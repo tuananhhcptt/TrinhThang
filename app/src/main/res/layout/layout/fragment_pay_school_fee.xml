@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/layout_margin">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin">
+                <ImageView android:id="@+id/iv_provider" android:layout_width="@dimen/iv_provider_width" android:layout_height="@dimen/iv_provider_height"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp">
+                    <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đơn vị phát hành" android:includeFontPadding="false"/>
+                    <TextView android:textSize="@dimen/text_size_provider" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_provider_padding_top" android:maxLines="2" android:includeFontPadding="false"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin">
+                <Spinner android:id="@+id/spinner_city" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Chọn Thành phố/Tỉnh" android:editable="false" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+                <com.mikepenz.iconics.view.IconicsImageView android:padding="4dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                <View android:id="@+id/service_click_city" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edt_city" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin">
+                <Spinner android:id="@+id/spinner_district" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_district" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Quận/Huyện" android:editable="false" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+                <com.mikepenz.iconics.view.IconicsImageView android:padding="4dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                <View android:id="@+id/service_click_district" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edt_district" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin">
+                <Spinner android:id="@+id/spinner_street" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_street" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Phường/Xã" android:editable="false" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+                <com.mikepenz.iconics.view.IconicsImageView android:padding="4dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                <View android:id="@+id/service_click_street" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edt_street" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin">
+                <Spinner android:id="@+id/spinner_school" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_school" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Trường" android:editable="false" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+                <com.mikepenz.iconics.view.IconicsImageView android:padding="4dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                <View android:id="@+id/service_click_school" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edt_school" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:background="@color/md_white_1000" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin">
+                <Spinner android:id="@+id/spinner_school_year" android:background="@null" android:layout_width="match_parent" android:layout_height="0dp"/>
+                <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_school_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Năm học" android:editable="false" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+                <com.mikepenz.iconics.view.IconicsImageView android:padding="4dp" android:layout_width="16dp" android:layout_height="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:iiv_icon="@string/gmd_arrow_drop_down"/>
+                <View android:id="@+id/service_click_school_year" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/edt_school_year" android:layout_alignParentTop="true"/>
+            </RelativeLayout>
+            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:id="@+id/edt_student_iden" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/layout_margin" android:hint="Mã học sinh" android:maxLength="30" android:layout_centerVertical="true" style="@style/edit_text_style"/>
+            <Button android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/layout_margin" android:text="@string/pay" style="@style/button_gradient"/>
+            <View android:background="@color/color_line" android:layout_width="match_parent" android:layout_height="@dimen/line_height"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin"/>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

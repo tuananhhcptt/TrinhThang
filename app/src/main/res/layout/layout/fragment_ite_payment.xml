@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Mã học sinh" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_student_code" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Họ tên học sinh" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_student_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Trường" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_school_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Lớp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_class_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tổng tiền nợ" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_sum_money" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/border_black" android:paddingLeft="@dimen/_5sdp" android:paddingRight="@dimen/_5sdp" android:layout_width="match_parent" android:layout_height="32dp" android:layout_marginTop="8dp">
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Kỳ thanh toán" android:layout_weight="2"/>
+            <View android:background="#979797" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số tiền" android:layout_weight="2"/>
+            <View android:background="#979797" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textColor="@android:color/black" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Chọn" android:layout_weight="1"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_fee" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="false"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Số tiền thanh toán" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_trant_amount" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#979797" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Phí giao dịch" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_transfer_fee" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#979797" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <TextView android:textSize="@dimen/text_size_normal" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tổng tiền khách hàng nộp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_normal" android:textColor="@android:color/black" android:gravity="right" android:id="@+id/txt_sum_money_customer" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#979797" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="4dp"/>
+        <Button android:id="@+id/btn_send" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginBottom="@dimen/layout_margin" android:text="Thanh toán" style="@style/button_gradient"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

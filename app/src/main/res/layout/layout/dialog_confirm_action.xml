@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="24dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thông báo"/>
+    <TextView android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small"/>
+    <LinearLayout android:gravity="center" android:id="@+id/rl_actions" android:background="@drawable/bg_gray_new" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small">
+        <TextView android:textSize="14dp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/tv_no" android:layout_width="0dp" android:layout_height="match_parent" android:text="Không" android:layout_weight="1"/>
+        <View android:id="@+id/view_line" android:background="@android:color/black" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/tv_yes" android:layout_width="0dp" android:layout_height="match_parent" android:text="Có" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

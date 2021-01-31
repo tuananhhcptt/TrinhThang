@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_bar" android:background="@drawable/color_gradient_new" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="@dimen/_35sdp">
+        <LinearLayout android:gravity="center" android:layout_width="@dimen/_35sdp" android:layout_height="@dimen/_35sdp">
+            <ImageView android:id="@+id/back" android:padding="@dimen/_5sdp" android:layout_width="@dimen/_25sdp" android:layout_height="@dimen/_25sdp" android:foreground="?android:attr/selectableItemBackground" android:adjustViewBounds="true" app:srcCompat="0x7f0804b6"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/_16sdp" android:textColor="@android:color/white" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receiver_last" android:layout_centerInParent="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_slider_right" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/lo_search_contact_full" android:background="#f5f5f5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/lo_search_contact" android:background="@drawable/bg_contact_search_new" android:paddingTop="@dimen/_8sdp" android:paddingBottom="@dimen/_8sdp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+                <ImageView android:id="@+id/ic_search_ct" android:paddingLeft="@dimen/_3sdp" android:layout_width="26dp" android:layout_height="26dp" android:layout_margin="@dimen/_3sdp" android:layout_centerVertical="true" android:paddingStart="@dimen/_8sdp" app:srcCompat="@drawable/icon_search_contact_vector"/>
+                <EditText android:textSize="@dimen/_14sdp" android:textColor="#b6b6b6" android:textColorHint="@color/colorBlackTrans40" android:id="@+id/txt_search" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_4sdp" android:hint="Tìm kiếm" android:maxLines="1" android:maxLength="20" android:layout_toRightOf="@+id/ic_search_ct" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone" android:layout_marginStart="@dimen/_4sdp" android:layout_marginEnd="@dimen/activity_horizontal_margin" android:layout_toEndOf="@+id/ic_search_ct"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:layout_below="@+id/lo_search_contact_full"/>
+    </RelativeLayout>
+</LinearLayout>

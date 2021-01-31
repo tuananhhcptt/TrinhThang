@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layout_header" android:background="@color/viettel_color" android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height">
+        <ImageView android:id="@+id/btn_close" android:layout_width="@dimen/icon_size_normal" android:layout_height="@dimen/icon_size_normal" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_navigate_before_white"/>
+        <TextView android:textAppearance="@style/Toolbar.TitleText" android:textColor="@color/colorWhite" android:id="@+id/header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saving_title" android:layout_toRightOf="@+id/btn_close" android:layout_centerVertical="true"/>
+        <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/empty_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="0x7f080858"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_800" android:gravity="center" android:id="@+id/saving_empty_txt" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/saving_empty_detail"/>
+            <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="30dp" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="30dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/saving_ad_new_empty" android:background="?attr/selectableItemBackground" android:padding="@dimen/layout_margin_small" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="1dp" android:src="0x7f080419" android:scaleType="fitCenter" android:tint="@color/viettel_color"/>
+                <TextView android:textSize="@dimen/text_size_button" android:textColor="@color/viettel_color" android:gravity="left" android:paddingLeft="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mở thêm sổ mới"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:id="@+id/content_container" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.bplus.vtpay.view.MyListView android:id="@+id/lv_saving" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="#e0e0e0" android:dividerHeight="1dp" android:layout_below="@+id/layout_header"/>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/saving_ad_new_list" android:background="?attr/selectableItemBackground" android:padding="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="@dimen/list_rate_height" android:layout_height="@dimen/list_rate_height" android:layout_marginTop="1dp" android:src="0x7f080419" android:scaleType="fitCenter" android:tint="@color/viettel_color"/>
+                    <TextView android:textSize="@dimen/text_size_button" android:textColor="@color/viettel_color" android:gravity="left|center_vertical|center_horizontal|center" android:paddingLeft="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mở thêm sổ mới"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

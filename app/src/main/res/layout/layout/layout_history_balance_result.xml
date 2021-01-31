@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_history_balance_1" android:padding="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_time_transfer_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_amount_transfer_1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_history_balance_2" android:padding="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_time_transfer_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_amount_transfer_2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_history_balance_3" android:padding="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_time_transfer_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_amount_transfer_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_history_balance_4" android:padding="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_time_transfer_4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_amount_transfer_4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/item_history_balance_5" android:padding="@dimen/layout_margin_small" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_time_transfer_5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+            <TextView android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/txt_amount_transfer_5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/ll_start_qr" android:background="@color/white" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="@dimen/_10sdp" android:layout_weight="1">
+        <ImageView android:background="0x7f08035c" android:layout_width="@dimen/_250sdp" android:layout_height="@dimen/_250sdp" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="@dimen/_18sdp" android:textStyle="bold" android:textColor="@color/color_222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="Lì xì bạn bè bằng mã QR" android:lineSpacingExtra="8sp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_20sdp" android:layout_marginRight="@dimen/_20sdp">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:background="@drawable/background_circle_fed" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:text="1"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tạo phong bao lì xì QR để tặng" android:layout_marginStart="@dimen/_10sdp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_20sdp">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:background="@drawable/background_circle_fed" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:text="2"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#222222" android:id="@+id/txt_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bạn bè dùng ViettelPay quét mã QR để nhận lì xì" android:layout_marginStart="@dimen/_10sdp"/>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_20sdp" android:layout_marginTop="@dimen/_12sdp" android:layout_marginRight="@dimen/_20sdp">
+            <TextView android:textSize="@dimen/_16sdp" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/txt_3" android:background="@drawable/background_circle_fed" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginTop="@dimen/_5sdp" android:text="3"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tiền lì xì trong mỗi phong bao sẽ được chuyển cho người quét QR thành công" android:layout_marginStart="@dimen/_10sdp" android:layout_toEndOf="@+id/txt_3"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txt_start_qr" android:background="0x7f08028b" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_20sdp" android:text="Bắt đầu tạo"/>
+</LinearLayout>

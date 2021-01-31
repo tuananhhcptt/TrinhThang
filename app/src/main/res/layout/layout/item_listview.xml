@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="10dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/list_rate_height" android:weightSum="100">
+    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="normal" android:textColor="@color/md_grey_800" android:id="@+id/tv_lable1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="48"/>
+    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="4"/>
+    <TextView android:textSize="@dimen/text_size_normal" android:textStyle="normal" android:textColor="@color/md_grey_800" android:id="@+id/tv_lable2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="48"/>
+</LinearLayout>

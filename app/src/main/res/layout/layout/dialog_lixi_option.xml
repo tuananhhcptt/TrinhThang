@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center" android:id="@+id/imv" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_5sdp" android:src="@drawable/line_control" android:tint="#d8d8d8"/>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/_20sdp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="@dimen/_40sdp">
+                <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/color_222222" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chọn hình thức lì xì" android:layout_centerInParent="true" android:lineSpacingExtra="6sp"/>
+                <ImageView android:id="@+id/imv_back" android:background="0x7f080758" android:visibility="gone" android:layout_width="@dimen/_22sdp" android:layout_height="@dimen/_22sdp" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/line_header" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp"/>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_equa_lixi" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_15sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" android:src="0x7f080497" android:layout_marginEnd="@dimen/_10sdp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chia đều"/>
+                    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_4e4e4e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Người nhận sẽ nhận được số tiền bằng nhau"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080757"/>
+            </LinearLayout>
+            <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp"/>
+            <LinearLayout android:gravity="center" android:id="@+id/ll_random_lixi" android:paddingLeft="@dimen/_10sdp" android:paddingTop="@dimen/_15sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_15sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/_45sdp" android:layout_height="@dimen/_45sdp" android:src="0x7f080593" android:layout_marginEnd="@dimen/_10sdp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="@dimen/_10sdp">
+                    <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/color_222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chia ngẫu nhiên"/>
+                    <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@color/color_4e4e4e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_3sdp" android:text="Người nhận sẽ nhận được số tiền ngẫu nhiên"/>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080757"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="0x7f08025f" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp" android:layout_centerInParent="true" app:cardBackgroundColor="@color/colorWhite" app:cardCornerRadius="@dimen/_7sdp" app:cardElevation="0dp" app:cardPreventCornerOverlap="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/gradient_background_no_round" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin" android:text="Chọn Ngân hàng" android:layout_centerHorizontal="true"/>
+                <ImageView android:id="@+id/iv_dismiss" android:layout_width="@dimen/_14sdp" android:layout_height="@dimen/_14sdp" android:layout_marginRight="@dimen/layout_margin" android:src="0x7f0804da" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_bank" android:background="#ffffff" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:nestedScrollingEnabled="true"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

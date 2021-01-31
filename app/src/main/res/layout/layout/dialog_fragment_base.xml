@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog_white" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin_big" android:layout_centerInParent="true">
+        <TextView android:textSize="24dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thông báo"/>
+        <TextView android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/checkbox_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_small">
+            <CheckBox android:id="@+id/checkbox_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <TextView android:textColor="@color/text_color_new" android:id="@+id/tv_checkbox_agreement" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@drawable/bg_gray_new" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin_small">
+            <TextView android:textSize="14dp" android:textColor="@color/text_color_new" android:gravity="center" android:id="@+id/cancel_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            <View android:id="@+id/view_line" android:background="@color/colorWhite" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <TextView android:textSize="14dp" android:textColor="@color/viettel_color" android:gravity="center" android:id="@+id/confirm_btn" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

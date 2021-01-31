@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cardCornerRadius="@dimen/_6sdp">
+    <RelativeLayout android:id="@+id/container" android:layout_width="@dimen/_80sdp" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground">
+        <ImageView android:id="@+id/iv_card" android:layout_width="@dimen/_80sdp" android:layout_height="@dimen/_120sdp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true"/>
+        <View android:id="@+id/selected_frame" android:background="@drawable/gift_card_selected_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/iv_card" android:layout_alignTop="@+id/iv_card" android:layout_alignRight="@+id/iv_card" android:layout_alignBottom="@+id/iv_card" android:layout_alignStart="@+id/iv_card" android:layout_alignEnd="@+id/iv_card"/>
+        <ImageView android:id="@+id/check" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_5sdp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerInParent="true" app:srcCompat="0x7f080495"/>
+        <ImageView android:id="@+id/iv_zoom_in" android:padding="@dimen/_3sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/_2sdp" android:src="0x7f0803f8" android:layout_alignRight="@+id/iv_card" android:layout_alignBottom="@+id/iv_card" android:layout_alignEnd="@+id/iv_card"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

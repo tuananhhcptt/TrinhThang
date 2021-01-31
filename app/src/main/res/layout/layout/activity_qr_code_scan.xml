@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:tag="layout/activity_qr_code_scan_0" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bplus.vtpay.bcode.views.BarcodeView android:id="@+id/barCode" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/view_bg_black" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/view_deny_permissions" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="@dimen/_64sdp" android:layout_height="@dimen/_64sdp" android:src="0x7f080470"/>
+            <TextView android:textSize="@dimen/text_size_18sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/viettelpay_can_truy_cap_may_anh" android:singleLine="true" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp"/>
+            <TextView android:textSize="@dimen/text_size_16sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_5sdp" android:text="@string/bam_cho_phep_truy_cap" android:layout_marginStart="@dimen/_16sdp" android:layout_marginEnd="@dimen/_16sdp"/>
+            <Button android:id="@+id/btn_register_permission" android:background="@drawable/bg_white_radius_20sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:text="@string/cho_phep_truy_cap" android:layout_marginStart="@dimen/_45sdp" android:layout_marginEnd="@dimen/_45sdp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:background="@color/colorBlackTrans10" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view_anim_scan_code" android:background="@drawable/ic_scan_code_pattern_top_to_bottom" android:layout_width="match_parent" android:layout_height="@dimen/_200sdp" android:layout_marginTop="-260dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/actionbar_height" android:layout_marginTop="@dimen/_30sdp">
+            <ImageView android:id="@+id/btn_back_camera" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:src="@drawable/ic_left_arrow_long_32_round" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_8sdp" android:layout_alignParentStart="true"/>
+            <ImageView android:id="@+id/btn_on_off_flash" android:layout_width="@dimen/_32sdp" android:layout_height="@dimen/_32sdp" android:src="@drawable/ic_bat_den_32_round" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/_8sdp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/btn_input_code" android:background="@drawable/bg_black_border_16_opacity_0_5" android:padding="@dimen/_6sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_50dp" android:layout_alignParentBottom="true" android:layout_marginStart="@dimen/_16sdp" android:layout_alignParentStart="true">
+            <ImageView android:id="@+id/img_input_code" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_nhap_ma_cua_hang_24_white"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nhap_ma_cua_hang" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_4sdp" android:layout_toEndOf="@+id/img_input_code"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/btn_use_image" android:background="@drawable/bg_black_border_16_opacity_0_5" android:padding="@dimen/_6sdp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_50dp" android:layout_alignParentBottom="true" android:layout_marginEnd="@dimen/_16sdp" android:layout_alignParentEnd="true">
+            <ImageView android:id="@+id/img_use_image" android:layout_width="@dimen/_24sdp" android:layout_height="@dimen/_24sdp" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_thu_vien_anh_32_white"/>
+            <TextView android:textSize="@dimen/text_size_14sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/su_dung_anh" android:layout_centerVertical="true" android:layout_marginStart="@dimen/_4sdp" android:layout_toEndOf="@+id/img_use_image"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

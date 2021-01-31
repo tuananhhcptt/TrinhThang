@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/background_frm" android:padding="@dimen/_10sdp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_package_insurance" android:textAllCaps="true" android:letterSpacing="-0.04"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_rounded_shadow_5sdp" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/info_package"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/name_package" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tình yêu bạc"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insurance_fee"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/amount_package" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="480.000đ"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:text="@string/time_waiting_wedding"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_start"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/time_start_wait" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="19/03/2019"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_finish"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/time_finish_wait" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="19/03/2022"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp" android:text="@string/main_time_insurance"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_start"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/time_start_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="19/03/2022"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_finish"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/time_finish_main" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="19/03/2027"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/text_color_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_12sdp" android:text="@string/info_person_insurance" android:textAllCaps="true" android:letterSpacing="-0.04"/>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/background_white_rounded_shadow_5sdp" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_10sdp" android:paddingRight="@dimen/_10sdp" android:paddingBottom="@dimen/_10sdp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_8sdp">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_name_full"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/my_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Phạm Mạnh Tùng"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_birthday"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/my_dob" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15/02/1993"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sex"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/my_gender" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nam"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identify_insurance"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/my_idNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="151962858"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/email_hint"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/my_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="michaeljack.0303@gmail.com"/>
+                </LinearLayout>
+                <View android:background="@color/md_grey_300" android:layout_width="match_parent" android:layout_height="0.7dp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginBottom="@dimen/_15sdp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_name_full"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/partner_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Phạm Mạnh Tùng"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/date_birthday"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/partner_dob" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15/02/1993"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sex"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/partner_gender" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nam"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_8sdp">
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/color_4a4a4a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/identify_insurance"/>
+                    <TextView android:textSize="@dimen/_14sdp" android:textColor="@color/text_color_new" android:gravity="right" android:id="@+id/partner_idNo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="151962858"/>
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="0dp" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/confirm" style="@style/button_gradient"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

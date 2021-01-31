@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_parrent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <androidx.core.widget.NestedScrollView android:id="@+id/scroll_content" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_transaction_point" android:layout_width="match_parent" android:layout_height="@dimen/_140sdp" android:scaleType="fitXY"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/_12sdp" android:textColor="@color/blue_color_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_10sdp" android:text="CHI TIẾT GIAO DỊCH"/>
+            <androidx.cardview.widget.CardView android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp" app:cardCornerRadius="8dp" app:cardElevation="0dp">
+                <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/_10sdp">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/lv_info" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <View android:background="@color/background_frm" android:layout_width="match_parent" android:layout_height="@dimen/_1sdp" android:layout_marginLeft="@dimen/_10sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_10sdp"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textColor="@android:color/black" android:id="@+id/edt_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:hint="Số tiền thanh toán(đ)" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_amount_style"/>
+                            <com.bplus.vtpay.util.materialedittext.MaterialEditText android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/edt_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp" android:layout_marginBottom="@dimen/layout_margin_small" android:hint="Nội dung (tùy chọn)" android:singleLine="true" android:maxLength="@integer/content_length" android:inputType="textCapSentences" app:met_bottomTextSize="@dimen/text_size_sub" app:met_clearButton="true" app:met_floatingLabel="2" app:met_primaryColor="@color/tokenDark100" style="@style/edit_text_style"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <Button android:id="@+id/tv_send_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin" android:layout_marginBottom="@dimen/layout_margin" android:text="THANH TOÁN" style="@style/button_gradient"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

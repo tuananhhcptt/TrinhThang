@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/payment_point" android:tag="layout/fragment_register_payment_point_0" android:background="@color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/img_top" android:layout_width="match_parent" android:layout_height="@dimen/_110sdp" android:layout_margin="@dimen/_16sdp" android:src="@drawable/bg_dang_ky_diem_thanh_toan_loi_ich" android:scaleType="fitXY" android:layout_alignParentTop="true"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rcv_list_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/img_top"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/btn_register" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_14sdp" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/_14sdp" android:layout_marginBottom="@dimen/_10sdp" android:text="@string/dang_ky_ngay" style="@style/button_gradient"/>
+        <TextView android:textSize="@dimen/text_size_18sp" android:textColor="@color/color_red_EE0033" android:layout_gravity="center" android:id="@+id/btn_call_support" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_16sdp" android:text="@string/call_hotline_free"/>
+    </LinearLayout>
+</RelativeLayout>

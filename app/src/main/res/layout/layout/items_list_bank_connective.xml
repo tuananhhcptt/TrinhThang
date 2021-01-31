@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="80dp" android:layout_margin="5dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/border_stroke_grey_10dp" android:paddingLeft="@dimen/layout_margin_small" android:paddingTop="3dp" android:paddingRight="@dimen/layout_margin_small" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_logo" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="fitCenter" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/md_grey_800" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/tv_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.5"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:id="@+id/ll_select" android:background="@drawable/bg_select_bank" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:background="@drawable/bg_circle_green_navi" android:padding="2dp" android:layout_width="15dp" android:layout_height="15dp" android:layout_margin="5dp" app:srcCompat="@drawable/ic_circle_check"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

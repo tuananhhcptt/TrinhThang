@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/viettel_color" android:focusable="true" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="#f7f8f8" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#f7f8f8" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/linearSuccessView">
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#7e7f7f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:text="Thông tin người được bảo hiểm" android:textAllCaps="true"/>
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" app:tabGravity="0" app:tabIndicatorColor="#ee0033" app:tabMode="0" app:tabSelectedTextColor="#ee0033" app:tabTextColor="#b6b6b6"/>
+            <com.bplus.vtpay.view.recyclerviewpager.RecyclerViewPager android:id="@+id/ins_info" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+            <TextView android:textSize="@dimen/_14sdp" android:textColor="#7e7f7f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:text="Thông tin nhận hợp đồng bảo hiểm" android:textAllCaps="true"/>
+            <androidx.cardview.widget.CardView android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:elevation="3dp" app:cardElevation="3dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Họ và tên" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lê Tuấn Hùng" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Giới tính" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nam" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày sinh" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="03/11/1997" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số CMND" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lê Tuấn Hùng" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Địa chỉ" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This that these those daidong" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Số điện thoại" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0987456321" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="14sp" android:textColor="#263d60" android:id="@+id/receiver_mail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="glhp.ggwp@gmail.com" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/linearSuccessView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="@dimen/_16sdp" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/_14sdp" android:gravity="center" android:id="@+id/tv_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="Thanh toán" style="@style/btn_gradient_rounded"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

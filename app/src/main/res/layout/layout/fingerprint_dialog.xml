@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/fingerprint_decrypt_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/lo_header" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/cancel_button" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@android:color/black" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_close_white_vector"/>
+        <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@android:color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/fingerprint_icon_decrypt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_small" android:src="0x7f080507"/>
+    <TextView android:textAppearance="@style/TextAppearance.Medium" android:textColor="@color/md_black_1000" android:gravity="center" android:id="@+id/fingerprint_description" android:paddingBottom="@dimen/layout_margin_big" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_margin_normal" android:text="@string/msg_login_finger_print" android:paddingStart="@dimen/layout_margin" android:paddingEnd="@dimen/layout_margin"/>
+</LinearLayout>

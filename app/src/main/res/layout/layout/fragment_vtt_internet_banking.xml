@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="0x7f0807b5" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/md_grey_100" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0x7f07030f">
+                    <ImageView android:id="@+id/iv_bank1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080537" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:text="@string/internet_banking_step_1" android:layout_toLeftOf="@+id/iv_bank1"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0x7f07030f">
+                    <ImageView android:id="@+id/iv_bank2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:src="0x7f080538" android:layout_alignParentBottom="true"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin_small" android:text="@string/internet_banking_step_2" android:layout_toRightOf="@+id/iv_bank2"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_step3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:text="@string/internet_banking_step_3"/>
+                    <RelativeLayout android:background="@drawable/bg_border" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin">
+                        <ImageView android:id="@+id/btn_copy" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin_small" android:layout_marginRight="@dimen/layout_margin_small" android:tint="@color/md_grey_600" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@drawable/ic_content_copy_vector"/>
+                        <TextView android:textSize="@dimen/text_size_header" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@+id/tv_number_card" android:padding="@dimen/layout_margin_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/btn_copy" android:inputType="number"/>
+                        <View android:background="#66aba000" android:layout_width="1dp" android:layout_height="wrap_content" android:layout_toRightOf="@+id/tv_number_card" android:layout_alignTop="@+id/tv_number_card" android:layout_alignBottom="@+id/tv_number_card"/>
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/text_size_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:text="Đây là số thẻ duy nhất được phát hành cho tài khoản ViettelPay của quý khách"/>
+                    <TextView android:textSize="@dimen/text_size_normal" android:id="@+id/tv_view_more" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:text="@string/service_view_more"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

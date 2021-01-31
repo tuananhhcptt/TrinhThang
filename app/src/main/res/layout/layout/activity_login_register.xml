@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lo_home" android:background="0x7f08088a" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_10sdp">
+            <com.bplus.vtpay.view.action.ActionImageView android:id="@+id/iv_back" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_margin="@dimen/_7sdp" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_centerVertical="true" app:srcCompat="@drawable/icon_back_vector"/>
+            <TextView android:textSize="@dimen/_13sdp" android:textColor="@color/colorWhite" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            <com.bplus.vtpay.view.action.ActionImageView android:id="@+id/iv_help" android:layout_width="@dimen/_30sdp" android:layout_height="@dimen/_30sdp" android:layout_marginRight="@dimen/_10sdp" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginEnd="@dimen/_10sdp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_help_outline_white_vector"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@+id/logo_viettelpay" android:layout_width="@dimen/_55sdp" android:layout_height="@dimen/_55sdp" android:layout_marginTop="@dimen/_48sdp" android:src="0x7f0808dd" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/_15sdp" android:paddingTop="@dimen/_12sdp" android:paddingRight="@dimen/_15sdp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/lo_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25sdp" android:layout_marginTop="@dimen/_5sdp" android:layout_marginRight="@dimen/_25sdp">
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/colorWhite" android:gravity="start" android:id="@+id/tv_login" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Đăng nhập" android:layout_weight="1" android:fontFamily="SF-Pro-Text-Medium"/>
+                <TextView android:textSize="@dimen/_15sdp" android:textColor="@color/colorWhite" android:gravity="end" android:id="@+id/tv_register" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Đăng ký" android:layout_weight="1"/>
+            </LinearLayout>
+            <com.bplus.vtpay.view.NonSwipeableViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_25sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_25sdp" android:layout_weight="1" android:overScrollMode="never"/>
+            <LinearLayout android:layout_gravity="center" android:id="@+id/lo_support_phone" android:background="@drawable/button_call_action_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/layout_margin">
+                <ImageView android:padding="@dimen/padding_normal" android:layout_width="@dimen/icon_size_medium" android:layout_height="@dimen/icon_size_medium" android:src="0x7f08071b"/>
+                <TextView android:textSize="@dimen/text_size_small" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_gravity="center" android:paddingRight="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18009000 (miễn phí)" android:textAlignment="center" android:paddingEnd="@dimen/padding_normal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

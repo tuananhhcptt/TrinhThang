@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_provider" android:layout_width="@dimen/_90sdp" android:layout_height="@dimen/_50sdp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/_20sdp">
+        <TextView android:textSize="@dimen/text_size_title_new" android:textColor="@color/md_grey_500" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đơn vị phát hành" android:includeFontPadding="false"/>
+        <TextView android:textSize="@dimen/text_size_provider_new" android:textColor="@android:color/black" android:id="@+id/tv_provider_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/layout_provider_padding_top" android:includeFontPadding="false"/>
+    </LinearLayout>
+</LinearLayout>

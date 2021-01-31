@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lo_panel" android:background="@drawable/color_gradient_new" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ln_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_3sdp" android:layout_marginBottom="@dimen/_3sdp" android:scaleType="fitCenter" android:adjustViewBounds="true" app:srcCompat="@drawable/icon_back_vector"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/_28sdp" android:layout_marginTop="@dimen/_3sdp" android:layout_marginRight="@dimen/_12sdp" android:layout_marginBottom="@dimen/_3sdp" android:layout_marginEnd="@dimen/_12sdp">
+                <TextView android:textSize="17dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xác nhận thông tin cá nhân"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/md_grey_600" android:gravity="center" android:id="@+id/tv_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_24sdp" android:layout_marginTop="@dimen/_15sdp" android:layout_marginRight="@dimen/_24sdp" android:text="@string/confirm_info" android:lines="2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/_20sdp">
+                <RelativeLayout android:id="@+id/lo_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_name" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Họ tên" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_birthday" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Ngày sinh" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_telecom" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Số điện thoại" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_species_GTTT" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Loại GTTT" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_number_GTTT" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Số GTTT" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_date_range" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Ngày cấp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/md_light_blue_900" android:id="@+id/tv_issued_by" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/_12sdp" android:text="" android:layout_alignParentRight="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/md_grey_600" android:background="?attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_12sdp" android:text="Nơi cấp" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:layout_gravity="bottom" android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/_7sdp" android:text="Tiếp tục" style="@style/button_gradient"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

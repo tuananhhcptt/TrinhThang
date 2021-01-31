@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:id="@+id/tv_position_seat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_price_seat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:id="@+id/tv_title_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:textAllCaps="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:id="@+id/tv_title_billcode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="CMND/ Hộ chiếu/ GPLX" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_billcode" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Phí bảo hiểm" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_fee_ins" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Giảm đối tượng" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_fee_down" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_pro" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Khuyến mãi" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_promotion" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Ghi chú" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_note" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="#7d7d7d" android:layout_width="0dp" android:layout_height="wrap_content" android:text="Tiền thu" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="#333333" android:gravity="right" android:id="@+id/tv_total" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+        <View android:background="#c7c7c7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="@dimen/margin_large"/>
+    </LinearLayout>
+</LinearLayout>

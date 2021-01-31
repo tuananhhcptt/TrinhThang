@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/_10sdp" android:textStyle="bold" android:textColor="@color/text_color_new" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/_15sdp" android:layout_marginTop="@dimen/_10sdp" android:layout_marginRight="@dimen/_15sdp" android:layout_marginBottom="@dimen/_5sdp" android:text="CHUYỂN TIỀN GẦN ĐÂY"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.bplus.vtpay.view.NestedRecyclerView android:layout_gravity="center" android:id="@+id/recycler_view" android:paddingLeft="@dimen/_6sdp" android:paddingRight="@dimen/_6sdp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/empty_layout" android:padding="@dimen/_20sdp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/empty_icon" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="@dimen/_10sdp" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/_10sdp" android:textColor="#8e8e8e" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bạn chưa có giao dịch chuyển tiền nào"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@+id/divider" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>
