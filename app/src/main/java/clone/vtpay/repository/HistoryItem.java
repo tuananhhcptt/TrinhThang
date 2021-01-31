@@ -3,9 +3,11 @@ package clone.vtpay.repository;
 
 import android.text.TextUtils;
 
+import java.io.Serializable;
+
 import clone.vtpay.utils.Utils;
 
-public class HistoryItem {
+public class HistoryItem implements Serializable {
 
     private String trade_code;
     private String phatsinhno;

@@ -1,5 +1,6 @@
 package clone.vtpay.fragment
 
+import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import clone.vtpay.R
+import clone.vtpay.activity.DealDetailActivity
 import clone.vtpay.adapter.HistoryAdapter
 import clone.vtpay.adapter.ItemArrayAdapter
 import clone.vtpay.repository.HistoryItem
@@ -23,7 +25,7 @@ import java.nio.charset.Charset
 
 
 class HistoryFragment : Fragment() {
-    val TAG="HistoryFragment"
+    val TAG = "HistoryFragment"
     lateinit var itemArrayAdapter: HistoryAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,7 +37,13 @@ class HistoryFragment : Fragment() {
         val listView: RecyclerView = view.findViewById(R.id.rv_history)
 
 //
-        itemArrayAdapter = HistoryAdapter()
+        itemArrayAdapter = HistoryAdapter(onItemClick = {
+            var intent = Intent(context, DealDetailActivity::class.java)
+            var bundle = Bundle()
+            bundle.putSerializable("DATA", it)
+            intent.putExtras(bundle)
+            startActivity(intent)
+        })
         listView.layoutManager = LinearLayoutManager(context)
         listView.adapter = itemArrayAdapter
         return view
@@ -56,9 +64,15 @@ class HistoryFragment : Fragment() {
             val list = ArrayList<HistoryItem>()
             var line: String?
             while (bufferReader.readLine().also { line = it } != null) {
-                Log.d(TAG, "doInBackground: "+line)
+                Log.d(TAG, "doInBackground: " + line)
                 val token = line!!.split(",");
-                val sample = HistoryItem(token[1]?:"", token[2]?:"", token[3]?:"", token[4]?:"", token[5]?:"")
+                val sample = HistoryItem(
+                    token[1] ?: "",
+                    token[2] ?: "",
+                    token[3] ?: "",
+                    token[4] ?: "",
+                    token[5] ?: ""
+                )
                 list.add(sample)
 
                 Log.i("thang.nt1", "create: $sample")

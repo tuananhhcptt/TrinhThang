@@ -4,14 +4,16 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
 import clone.vtpay.R
+import clone.vtpay.adapter.HistoryAdapter.ViewHolder
 import clone.vtpay.repository.HistoryItem
 
-class HistoryAdapter :
-    RecyclerView.Adapter<HistoryAdapter.ViewHolder>() {
+class HistoryAdapter(val onItemClick: ((HistoryItem) -> (Unit))?) :
+    RecyclerView.Adapter<ViewHolder>() {
     val TAG = "HistoryAdapter"
     private val dataSet = ArrayList<HistoryItem>()
 
@@ -19,7 +21,7 @@ class HistoryAdapter :
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
      */
-    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         var mIcon: AppCompatImageView? = null
         var mTvHeaderTitle: TextView? = null
         var mTvHeaderValue: TextView? = null
@@ -37,6 +39,10 @@ class HistoryAdapter :
                 view.findViewById(R.id.tv_content)
             mTvDate = view.findViewById(R.id.tv_date)
             mTvStatus = view.findViewById(R.id.tv_status)
+            view.findViewById<LinearLayout>(R.id.root).setOnClickListener {
+                onItemClick?.invoke(dataSet[adapterPosition])
+            }
+
         }
     }
 
@@ -50,16 +56,15 @@ class HistoryAdapter :
     override fun onCreateViewHolder(
         viewGroup: ViewGroup,
         viewType: Int
-    ): HistoryAdapter.ViewHolder {
+    ): ViewHolder {
         // Create a new view, which defines the UI of the list item
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.history_item, viewGroup, false)
-
-        return HistoryAdapter.ViewHolder(view)
+        return ViewHolder(view)
     }
 
     // Replace the contents of a view (invoked by the layout manager)
-    override fun onBindViewHolder(viewHolder: HistoryAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
@@ -68,13 +73,17 @@ class HistoryAdapter :
         Log.d(TAG, "onBindViewHolder: " + item.iconDrawable)
         viewHolder.apply {
             var drawable =
-                context.resources.getIdentifier(item.iconDrawable?:"icon_34", "drawable", context.packageName)
+                context.resources.getIdentifier(
+                    item.iconDrawable ?: "icon_34",
+                    "drawable",
+                    context.packageName
+                )
             mIcon?.setImageDrawable(context.getDrawable(drawable))
-            mTvHeaderValue?.text=item.money
-            mTvContent?.text=item.noidung
-            mTvDate?.text=item.thoigian
-            if ("03".equals(item.type)){
-                mTvHeaderTitle?.text="Lương"
+            mTvHeaderValue?.text = item.money
+            mTvContent?.text = item.noidung
+            mTvDate?.text = item.thoigian
+            if ("03".equals(item.type)) {
+                mTvHeaderTitle?.text = "Lương"
             }
         }
     }
