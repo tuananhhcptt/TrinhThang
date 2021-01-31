@@ -1,50 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/trade_code"/>
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        tools:src="@drawable/icon_39"
+        android:layout_height="30dp" />
 
     <LinearLayout
+        android:id="@+id/content_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="4">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Phát sinh nợ: "/>
-        
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/phatsinhno"
-            android:layout_weight="2"/>
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Phát sinh có: "/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_header_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/colorGrey"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:text="Luowng" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_header_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:text="+179" />
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/phatsinhco"
-            android:layout_weight="2"/>
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#50515A"
+            tools:text="adaldasdlasdalsdaldsad" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textColor="#6C6D77"
+                tools:text="18/12" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="5dp"
+                app:srcCompat="@drawable/ic_dot"
+                app:tint="#4D8B25" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6C6D77"
+                android:text="Thành công" />
+        </LinearLayout>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/noidung"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/thoigian"/>
 
 </LinearLayout>

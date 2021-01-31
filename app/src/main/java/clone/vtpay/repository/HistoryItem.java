@@ -1,13 +1,19 @@
 package clone.vtpay.repository;
 
+
+import android.text.TextUtils;
+
+import clone.vtpay.utils.Utils;
+
 public class HistoryItem {
+
     private String trade_code;
     private String phatsinhno;
     private String phatsinhco;
     private String noidung;
     private String thoigian;
 
-    public HistoryItem(String trade_code1, String phatsinhno1, String phatsinhco1, String noidung1, String thoigian1) {
+    public HistoryItem(String thoigian1, String trade_code1, String phatsinhno1, String phatsinhco1, String noidung1 ) {
         this.trade_code = trade_code1;
         this.phatsinhno = phatsinhno1;
         this.phatsinhco = phatsinhco1;
@@ -65,4 +71,30 @@ public class HistoryItem {
                 ", thoigian='" + thoigian + '\'' +
                 '}';
     }
+
+    public String getIconDrawable() {
+        if (!TextUtils.isEmpty(noidung)) {
+            return Utils.INSTANCE.getHistoryIcon(getType());
+        }
+        return null;
+    }
+
+    public String getType() {
+        if (!TextUtils.isEmpty(noidung)) {
+            return noidung.substring(0, 2);
+        }
+        return "";
+    }
+
+    public String getMoney() {
+        if (!TextUtils.isEmpty(phatsinhno) && !phatsinhno.equals("0")) {
+            return "+" + phatsinhno + "đ";
+        }
+        if (!TextUtils.isEmpty(phatsinhco) && !phatsinhco.equals("0")) {
+            return "-" + phatsinhco + "đ";
+        }
+        return "";
+    }
 }
+
+
