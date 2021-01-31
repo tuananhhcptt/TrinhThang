@@ -49,7 +49,7 @@ class HistoryFragment : Fragment() {
     inner class LoadTextAsync : AsyncTask<Void, Void, List<HistoryItem>>() {
         override fun doInBackground(vararg params: Void?): List<HistoryItem> {
 
-            val inputStream: InputStream = resources.openRawResource(R.raw.data)
+            val inputStream: InputStream = resources.openRawResource(R.raw.finaldata)
             val bufferReader = BufferedReader(
                 InputStreamReader(inputStream, Charset.forName("UTF-8"))
             )
