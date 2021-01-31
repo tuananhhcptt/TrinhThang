@@ -5,174 +5,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints">
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Vé xem phim"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="481dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="98dp"
-                android:layout_height="35dp"
-                android:text="Đặt vé Vietlott Mobilott"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="312dp"
-                tools:layout_editor_absoluteY="354dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Nạp ĐT"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="216dp"
-                tools:layout_editor_absoluteY="354dp"
-                android:gravity="center_horizontal" />
-
             <ImageView
                 android:id="@+id/imageView16"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="324dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_13"
-                tools:layout_editor_absoluteX="324dp"
-                tools:layout_editor_absoluteY="521dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
             <ImageView
                 android:id="@+id/imageView15"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="224dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_35"
-                tools:layout_editor_absoluteX="224dp"
-                tools:layout_editor_absoluteY="521dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
             <ImageView
                 android:id="@+id/imageView14"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="324dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_8"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="324dp"
-                tools:layout_editor_absoluteY="398dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView13"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="224dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_7"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="224dp"
-                tools:layout_editor_absoluteY="398dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView17"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_12"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="521dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView12"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_6"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="398dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_10"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="521dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView7"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="102dp"
                 android:src="@drawable/icon_1"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="276dp" />
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="35dp"
-                android:text="Chuyển tiền đến số TK"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteY="354dp"
-                android:gravity="center_horizontal" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView7"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="52dp"
                 android:src="@drawable/icon_5"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="398dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="324dp"
+                android:layout_marginLeft="324dp"
+                android:layout_marginTop="102dp"
                 android:src="@drawable/icon_4"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="324dp"
-                tools:layout_editor_absoluteY="276dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="102dp"
                 android:src="@drawable/icon2"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="276dp" />
-
-            <TextView
-                android:layout_width="98dp"
-                android:layout_height="35dp"
-                android:text="Chuyển tiền đến số ĐT"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="108dp"
-                tools:layout_editor_absoluteY="354dp"
-                android:gravity="center_horizontal" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/constraintLayout"
@@ -180,6 +152,10 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_red_dark"
                 android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints">
 
                 <ImageView
@@ -317,8 +293,8 @@
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#FFFFFF"
-                tools:ignore="MissingConstraints">
+                tools:ignore="MissingConstraints"
+                android:background="#FFFFFF">
 
             </FrameLayout>
 
@@ -326,140 +302,62 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="4dp"
                 android:text="Xem số dư"
                 android:textColor="#000000"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="226dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginTop="28dp"
                 android:text="Tài khoản ViettelPay"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="202dp" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:layout_width="26dp"
                 android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="48dp"
                 android:src="@drawable/icon_21"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="157dp"
-                tools:layout_editor_absoluteY="222dp" />
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="37dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginRight="44dp"
                 android:src="@drawable/icon_39"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="327dp"
-                tools:layout_editor_absoluteY="206dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView17"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
+                android:layout_marginStart="224dp"
+                android:layout_marginLeft="224dp"
+                android:layout_marginTop="102dp"
                 android:src="@drawable/icon_3"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="224dp"
-                tools:layout_editor_absoluteY="276dp" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Tiền điện"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="107dp"
-                tools:layout_editor_absoluteY="481dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Tấm lòng nhân ái"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="214dp"
-                tools:layout_editor_absoluteY="481dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Thanh toán khoản vay"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="321dp"
-                tools:layout_editor_absoluteY="480dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:text="Vay tiền"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="599dp"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView15"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginTop="8dp"
-                android:text="Gửi tiết kiệm"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                app:layout_constraintStart_toEndOf="@+id/textView14"
-                app:layout_constraintTop_toBottomOf="@+id/imageView11"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:text="Dịch vụ Viettel"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                app:layout_constraintStart_toEndOf="@+id/textView15"
-                app:layout_constraintTop_toBottomOf="@+id/imageView15"
-                android:gravity="center_horizontal" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="87dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="8dp"
-                android:text="Xem thêm"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="13dp"
-                app:layout_constraintStart_toEndOf="@+id/textView16"
-                app:layout_constraintTop_toBottomOf="@+id/imageView16"
-                android:gravity="center_horizontal" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
