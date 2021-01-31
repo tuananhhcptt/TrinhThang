@@ -36,6 +36,10 @@ class MainActivity : AppCompatActivity() {
         fm!!.beginTransaction().add(R.id.frame_container, historyFragment!!, "history")
             .hide(historyFragment!!).commit()
         fm!!.beginTransaction().add(R.id.frame_container, homeFragment!!, "home").commit()
+        bottom_navigation_view.menu.findItem(R.id.navigation_scan).isEnabled = false
+        ic_scan.setOnClickListener {
+
+        }
     }
 
     private fun initListener() {
@@ -55,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.navigation_dashboard -> {
+                R.id.navigation_scan -> {
                     Log.d("MainActivity", "initListener: ")
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -64,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 
                     transaction.hide(active!!).show(historyFragment!!).commit()
                     active = historyFragment
-                    
+
 
                     return@setOnNavigationItemSelectedListener true
                 }
