@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import clone.vtpay.fragment.HistoryFragment
 import clone.vtpay.fragment.HomeFragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private var homeFragment: HomeFragment? = null
     private var fm: FragmentManager? = null
     private var active: Fragment? = null
+    private var bottomNavigation: BottomNavigationView? = null;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-
         historyFragment = HistoryFragment()
         homeFragment = HomeFragment()
         fm = supportFragmentManager
@@ -39,7 +40,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun initListener() {
 
-        navigation.setOnNavigationItemSelectedListener {
+        bottomNavigation = findViewById(R.id.bottom_navigation_view)
+        bottomNavigation!!.setItemIconTintList(null)
+        bottomNavigation!!.setOnNavigationItemSelectedListener {
             val transaction = fm!!.beginTransaction()
             when (it.itemId) {
                 R.id.navigation_home -> {

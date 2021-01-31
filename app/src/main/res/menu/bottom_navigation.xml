@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/navigation_history"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/history_ic"
         android:title="history" />
 
 </menu>
