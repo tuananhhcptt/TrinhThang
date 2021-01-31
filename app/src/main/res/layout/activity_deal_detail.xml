@@ -167,7 +167,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_term_header"
             style="@style/DealDetailHeader"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Kỳ lương"
@@ -178,7 +178,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_term_value"
             style="@style/DealDetailValue"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toEndOf="@id/tv_term_header"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -189,7 +190,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_time_header"
             style="@style/DealDetailHeader"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Thời gian giao dịch"
@@ -200,10 +201,11 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_time_value"
             style="@style/DealDetailValue"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_time_header"
             app:layout_constraintTop_toTopOf="@id/tv_time_header"
             tools:text="Số tiền" />
 
@@ -211,7 +213,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_code_header"
             style="@style/DealDetailHeader"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:text="Mã giao dịch"
@@ -222,10 +224,11 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_code_value"
             style="@style/DealDetailValue"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_code_header"
             app:layout_constraintTop_toTopOf="@id/tv_code_header"
             tools:text="Số tiền" />
 
