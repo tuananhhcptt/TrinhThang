@@ -17,6 +17,8 @@ import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
 import java.nio.charset.Charset
+import java.util.*
+import kotlin.collections.ArrayList
 
 
 class HistoryFragment : Fragment() {
@@ -59,7 +61,7 @@ class HistoryFragment : Fragment() {
     inner class LoadTextAsync : AsyncTask<Void, Void, List<HistoryItem>>() {
         override fun doInBackground(vararg params: Void?): List<HistoryItem> {
 
-            val inputStream: InputStream = resources.openRawResource(R.raw.finaldata)
+            val inputStream: InputStream = resources.openRawResource(R.raw.data)
             val bufferReader = BufferedReader(
                 InputStreamReader(inputStream, Charset.forName("UTF-8"))
             )
@@ -79,6 +81,7 @@ class HistoryFragment : Fragment() {
 
                 Log.i("thang.nt1", "create: $sample")
             }
+            list.reverse()
             return list
         }
 
