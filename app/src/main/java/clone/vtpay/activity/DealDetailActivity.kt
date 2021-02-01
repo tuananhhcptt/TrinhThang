@@ -13,6 +13,10 @@ class DealDetailActivity : AppCompatActivity() {
 
         tv_term_value.isSelected = true
 
+        toolbar.setNavigationOnClickListener {
+            onBackPressed()
+        }
+
         setupData()
     }
 
@@ -24,14 +28,15 @@ class DealDetailActivity : AppCompatActivity() {
 
                 var nd = item.noidung
                 if ("03".equals(item.type)) {
-                    tv_header?.text = "Lương"
                     nd = item.noidung.substring(3)
                 } else if (item.noidung.startsWith("01:") || item.noidung.startsWith("02:") ) {
-                    tv_header?.text = item.randomPhoneNumber
                     nd = item.noidung.substring(3)
                 } else if (item.noidung.startsWith("01") || item.noidung.startsWith("02") ) {
-                    tv_header?.text = item.randomPhoneNumber
                     nd = item.noidung.substring(2)
+                }
+
+                if (item.isIsluong){
+                    tv_header?.text = "Lương"
                 } else {
                     tv_header?.text = item.randomPhoneNumber
                 }

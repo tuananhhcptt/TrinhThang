@@ -87,18 +87,22 @@ class HistoryAdapter(val onItemClick: ((HistoryItem) -> (Unit))?) :
 
             mTvDate?.text = item.thoigian
             if ("03".equals(item.type)) {
-                mTvHeaderTitle?.text = "Lương"
                 nd = item.noidung.substring(3)
             } else if (item.noidung.startsWith("01:") || item.noidung.startsWith("02:") ) {
                 nd = item.noidung.substring(3)
             } else if (item.noidung.startsWith("01") || item.noidung.startsWith("02") ) {
                 nd = item.noidung.substring(2)
             }
-            if (mTvHeaderTitle?.text != "Lương") {
+
+            if (item.isIsluong) {
+                mTvHeaderTitle?.text = "Lương"
+                item.randomPhoneNumber = "Lương"
+            } else {
                 val rd = randomPhoneNumber()
                 mTvHeaderTitle?.text = rd
                 item.randomPhoneNumber = rd
             }
+
             mTvContent?.text = nd
         }
     }
