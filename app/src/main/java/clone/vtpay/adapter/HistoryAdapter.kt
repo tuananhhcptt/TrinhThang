@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import clone.vtpay.R
 import clone.vtpay.adapter.HistoryAdapter.ViewHolder
 import clone.vtpay.repository.HistoryItem
+import java.util.*
+import kotlin.collections.ArrayList
 
 class HistoryAdapter(val onItemClick: ((HistoryItem) -> (Unit))?) :
     RecyclerView.Adapter<ViewHolder>() {
@@ -80,12 +82,36 @@ class HistoryAdapter(val onItemClick: ((HistoryItem) -> (Unit))?) :
                 )
             mIcon?.setImageDrawable(context.getDrawable(drawable))
             mTvHeaderValue?.text = item.money
-            mTvContent?.text = item.noidung
+
+            var nd = item.noidung
+
             mTvDate?.text = item.thoigian
             if ("03".equals(item.type)) {
                 mTvHeaderTitle?.text = "Lương"
+                nd = item.noidung.substring(3)
+            } else if (item.noidung.startsWith("01:") || item.noidung.startsWith("02:") ) {
+                nd = item.noidung.substring(3)
+            } else if (item.noidung.startsWith("01") || item.noidung.startsWith("02") ) {
+                nd = item.noidung.substring(2)
             }
+            if (mTvHeaderTitle?.text != "Lương") {
+                val rd = randomPhoneNumber()
+                mTvHeaderTitle?.text = rd
+                item.randomPhoneNumber = rd
+            }
+            mTvContent?.text = nd
         }
+    }
+
+    fun randomPhoneNumber() : String{
+        val random = Random()
+        val x: Int = random.nextInt(9000) + 1000
+        val y: Int = random.nextInt(9000) + 1000
+
+        var arr = arrayOf<String>("03", "09")
+        val index = random.nextInt(2)
+
+        return arr[index] + x + "" + y
     }
 
     // Return the size of your dataset (invoked by the layout manager)

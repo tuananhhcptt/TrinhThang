@@ -4,6 +4,8 @@ package clone.vtpay.repository;
 import android.text.TextUtils;
 
 import java.io.Serializable;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 import clone.vtpay.utils.Utils;
 
@@ -14,6 +16,7 @@ public class HistoryItem implements Serializable {
     private String phatsinhco;
     private String noidung;
     private String thoigian;
+    private String randomPhoneNumber = "";
 
     public HistoryItem(String thoigian1, String trade_code1, String phatsinhno1, String phatsinhco1, String noidung1 ) {
         this.trade_code = trade_code1;
@@ -21,6 +24,14 @@ public class HistoryItem implements Serializable {
         this.phatsinhco = phatsinhco1;
         this.noidung = noidung1;
         this.thoigian = thoigian1;
+    }
+
+    public String getRandomPhoneNumber() {
+        return randomPhoneNumber;
+    }
+
+    public void setRandomPhoneNumber(String randomPhoneNumber) {
+        this.randomPhoneNumber = randomPhoneNumber;
     }
 
     public String getTrade_code() {
@@ -90,12 +101,24 @@ public class HistoryItem implements Serializable {
 
     public String getMoney() {
         if (!TextUtils.isEmpty(phatsinhno) && !phatsinhno.equals("0")) {
-            return "+" + phatsinhno + "đ";
+            return "+" + formatMoney(phatsinhno) + "đ";
         }
         if (!TextUtils.isEmpty(phatsinhco) && !phatsinhco.equals("0")) {
-            return "-" + phatsinhco + "đ";
+            String pm = "-";
+            if (noidung.startsWith("03")){
+                pm = "+";
+            }
+            return pm + formatMoney(phatsinhco) + "đ";
         }
         return "";
+    }
+
+    public String formatMoney(String money) {
+        String m = money.replaceAll("[,.]", "");
+        double mn = Double.parseDouble(m);
+
+        NumberFormat formatter = new DecimalFormat("#,###");
+        return formatter.format(mn);
     }
 }
 

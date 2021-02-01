@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/home_ic"
         android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/navigation_sale"
+        android:icon="@drawable/icon_sale"
+        android:title="Ưu đãi" />
 
     <item
         android:id="@+id/navigation_scan"
@@ -13,5 +18,10 @@
         android:id="@+id/navigation_history"
         android:icon="@drawable/history_ic"
         android:title="Lịch sử" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/icon_info"
+        android:title="Cá nhân" />
 
 </menu>

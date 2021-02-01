@@ -14,7 +14,7 @@ class CustomBottomNavigation(context: Context, attrs: AttributeSet?) :
     private var mNavigationBarHeight = 0;
 
     // The radius of fab button
-    val CURVE_CIRCLE_RADIUS = 90
+    val CURVE_CIRCLE_RADIUS = 50
 
     // The coordinates of the first curve
     private var mFirstCurveStartPoint: Point = Point()

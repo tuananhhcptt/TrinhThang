@@ -170,6 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="Kỳ lương"
             app:layout_constraintEnd_toStartOf="@+id/tv_term_value"
             app:layout_constraintStart_toStartOf="parent"
@@ -178,6 +179,8 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_term_value"
             style="@style/DealDetailValue"
+            android:singleLine="true"
+            android:ellipsize="marquee"
             android:layout_width="0dp"
             app:layout_constraintStart_toEndOf="@id/tv_term_header"
             android:layout_height="wrap_content"

@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             .hide(historyFragment!!).commit()
         fm!!.beginTransaction().add(R.id.frame_container, homeFragment!!, "home").commit()
         bottom_navigation_view.menu.findItem(R.id.navigation_scan).isEnabled = false
+        bottom_navigation_view.selectedItemId = R.id.navigation_home
         ic_scan.setOnClickListener {
 
         }
