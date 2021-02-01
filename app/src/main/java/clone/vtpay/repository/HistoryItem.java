@@ -17,6 +17,7 @@ public class HistoryItem implements Serializable {
     private String noidung;
     private String thoigian;
     private String randomPhoneNumber = "";
+    private boolean isluong;
 
     public HistoryItem(String thoigian1, String trade_code1, String phatsinhno1, String phatsinhco1, String noidung1 ) {
         this.trade_code = trade_code1;
@@ -24,6 +25,17 @@ public class HistoryItem implements Serializable {
         this.phatsinhco = phatsinhco1;
         this.noidung = noidung1;
         this.thoigian = thoigian1;
+
+        isluong = doubleMoney() > 40000000;
+    }
+
+
+    public boolean isIsluong() {
+        return isluong;
+    }
+
+    public void setIsluong(boolean isluong) {
+        this.isluong = isluong;
     }
 
     public String getRandomPhoneNumber() {
@@ -87,7 +99,7 @@ public class HistoryItem implements Serializable {
 
     public String getIconDrawable() {
         if (!TextUtils.isEmpty(noidung)) {
-            return Utils.INSTANCE.getHistoryIcon(getType());
+            return Utils.INSTANCE.getHistoryIcon(isluong);
         }
         return null;
     }
@@ -119,6 +131,11 @@ public class HistoryItem implements Serializable {
 
         NumberFormat formatter = new DecimalFormat("#,###");
         return formatter.format(mn);
+    }
+
+    public double doubleMoney() {
+        String m = phatsinhco.replaceAll("[,.]", "");
+        return Double.parseDouble(m);
     }
 }
 
