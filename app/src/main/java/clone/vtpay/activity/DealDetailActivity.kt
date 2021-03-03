@@ -49,7 +49,7 @@ class DealDetailActivity : AppCompatActivity() {
                     )
                 icon?.setImageDrawable(getDrawable(drawable))
                 tv_money_value?.text = item.money
-                tv_term_value?.text = nd
+                tv_term_value?.text = item.noidung
                 tv_time_value?.text = item.thoigian
                 tv_code_value?.text = item.trade_code
             }

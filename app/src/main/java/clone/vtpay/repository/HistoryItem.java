@@ -26,7 +26,7 @@ public class HistoryItem implements Serializable {
         this.noidung = noidung1;
         this.thoigian = thoigian1;
 
-        isluong = doubleMoney() > 40000000;
+        isluong = doubleMoney() > 20000000;
     }
 
 
@@ -106,7 +106,7 @@ public class HistoryItem implements Serializable {
 
     public String getType() {
         if (!TextUtils.isEmpty(noidung)) {
-            return noidung.substring(0, 2);
+            return noidung;
         }
         return "";
     }
@@ -126,7 +126,7 @@ public class HistoryItem implements Serializable {
     }
 
     public String formatMoney(String money) {
-        String m = money.replaceAll("[,.]", "");
+        String m = money.replaceAll("[,.\"]", "");
         double mn = Double.parseDouble(m);
 
         NumberFormat formatter = new DecimalFormat("#,###");
@@ -134,7 +134,7 @@ public class HistoryItem implements Serializable {
     }
 
     public double doubleMoney() {
-        String m = phatsinhco.replaceAll("[,.]", "");
+        String m = phatsinhco.replaceAll("[,.\"]", "");
         return Double.parseDouble(m);
     }
 }

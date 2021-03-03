@@ -103,7 +103,7 @@ class HistoryAdapter(val onItemClick: ((HistoryItem) -> (Unit))?) :
                 item.randomPhoneNumber = rd
             }
 
-            mTvContent?.text = nd
+            mTvContent?.text = item.noidung
         }
     }
 
