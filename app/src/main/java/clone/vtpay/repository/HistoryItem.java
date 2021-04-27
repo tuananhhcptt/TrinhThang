@@ -113,11 +113,11 @@ public class HistoryItem implements Serializable {
 
     public String getMoney() {
         if (!TextUtils.isEmpty(phatsinhno) && !phatsinhno.equals("0")) {
-            return "+" + formatMoney(phatsinhno) + "đ";
+            return "-" + formatMoney(phatsinhno) + "đ";
         }
         if (!TextUtils.isEmpty(phatsinhco) && !phatsinhco.equals("0")) {
-            String pm = "-";
-            if (noidung.startsWith("03")){
+            String pm = "+";
+            if (isluong){
                 pm = "+";
             }
             return pm + formatMoney(phatsinhco) + "đ";
