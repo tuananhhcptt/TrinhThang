@@ -26,7 +26,8 @@ public class HistoryItem implements Serializable {
         this.noidung = noidung1;
         this.thoigian = thoigian1;
 
-        isluong = doubleMoney() > 20000000;
+//        isluong = doubleMoney() > 20000000;
+        isluong = noidung.contains("Chi luong") || noidung.contains("chi luong");
     }
 
 

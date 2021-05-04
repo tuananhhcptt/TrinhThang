@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import clone.vtpay.R
+import kotlinx.android.synthetic.main.frm_home.view.*
 
 class HomeFragment : Fragment () {
     override fun onCreateView(
@@ -15,6 +16,7 @@ class HomeFragment : Fragment () {
     ): View? {
         val view = inflater.inflate(R.layout.frm_home, container, false)
 
+        view.textView.text = "Nguyễn Vĩnh Đạt"
         return view
     }
 }
